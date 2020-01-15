@@ -34,6 +34,7 @@ button{
 	cursor: pointer;
 	font-size: 2em;
 	color: #571745;
+	display: inline-block;
 	}
 }
 #txtColor{
