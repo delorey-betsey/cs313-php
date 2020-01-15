@@ -27,7 +27,7 @@
 	font-size: 10em;
 }
 button{
-	width: 30%;
+	width: 5em;
 	padding: .25em;
 	border: .75em solid #f1593a;
 	background-color: #ffc30d;
@@ -37,7 +37,7 @@ button{
 	}
 }
 #txtColor{
-	width: 25%;
+	width: 5em;
 	padding: .25em;
 	border: .75em solid #f1593a;
 	background-color: #ffc30d;
