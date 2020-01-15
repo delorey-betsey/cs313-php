@@ -37,11 +37,24 @@ button{
 	}
 }
 #txtColor{
-	width: 5em;
+	width: 10em;
 	padding: .25em;
 	border: .75em solid #f1593a;
 	background-color: #ffc30d;
 	cursor: pointer;
 	font-size: 3em;
 	color: #571745;
+	text-align: center;
 	}
+.label{
+	width: 10em;
+	text-align: center;
+	font-size: 3em;
+	color: #571745;
+}
+.input{
+	width: 10em;
+	text-align: center;
+	font-size: 3em;
+	color: #571745;	
+}
