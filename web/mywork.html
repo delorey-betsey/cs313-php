@@ -13,9 +13,16 @@
 		<div id="div2" class="hover-bold">DOS</div>
 		<div id="div3" class="hover-bold">TRES</div>
 
-		<button onclick="clickFunction()">Click Me</button>
+		
+		<div>
+			<label for="txtColor">Specify Color:</label>
+			<br /> 
+			<input type="text" id="txtColor" placeholder="#cccccc">
+		</div>
+		<br />
 		​<button onclick="changeColor()">Change color</button>
-		<label for="txtColor">Color:</label> <input type="text" id="txtColor" placeholder="#cccccc"><br />
+		<br />
+		<button onclick="clickFunction()">Click Me</button>
 ​
 		<script>
 			function clickFunction() {
@@ -26,10 +33,10 @@
 		<script>
 			function changeColor() {
 				var textbox_id = "txtColor";
-				var textbox = document.getElementById(textbox_id);
+				var textbox = document.getElementById("textbox_id");
 			​
 				var div_id = "div1";
-				var div = document.getElementById(div_id);
+				var div = document.getElementById("div_id");
 			​
 				// We should verify values here before we use them...
 				var color = textbox.value;
