@@ -13,30 +13,31 @@
 
 		<script>
 			function changeColor() {
-				var textbox_id = "txtColor";
-				var textbox = document.getElementById("textbox_id");
-			​
-				var div_id = "div1";
-				var div = document.getElementById("div_id");
-			​
-				// We should verify values here before we use them...
-				var color = textbox.value;
-				div.style.backgroundColor = color;		​
+				var newColor = document.getElementById("txtBox").value;
+			​	 newColor = document.getElementById("div1").style.backroundColor;
+			// 	var userChoice = "txtColor";
+			// 	var changeCode = document.getElementById("userChoice");
+			// ​
+			// 	var div_id = "div1";
+			// 	var div = document.getElementById("div_id");
+			// ​
+			// 	// We should verify values here before we use them...
+			// 	var color = textbox.value;
+			// 	div.style.backgroundColor = color;		​
 			}
 		</script>
 	</head>
-​
+
 	<body>
 		
 		<div id="div1" class="hover-bold">UNO</div>
 		<div id="div2" class="hover-bold">DOS</div>
 		<div id="div3" class="hover-bold">TRES</div>
 
-		
 		<div>
-			<label for="txtColor">Specify Color:</label>
+			<label for="txtBox">Specify Color:</label>
 			<br /> 
-			<input id="txtColor" type="text" placeholder="Enter hex color code.">
+			<input id="txtBox" type="text" placeholder="Enter hex color code.">
 		</div>
 		<br />
 		​<button onclick="changeColor()">Change color</button>
