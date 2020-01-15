@@ -33,5 +33,27 @@
 
 .hover-bold:hover {
 	font-weight: bold;
-	font-size: 10em;
+	font-size: 4em;
+}
+button{
+	width: 10em;
+	padding: .5em;
+	border: .75em solid #f1593a;
+	background-color: #ffc30d;
+	cursor: pointer;
+	font-size: 2em;
+	color: #571745;
+	display: inline-flexbox;
+    }
+.label{
+    width: 10em;
+    text-align: center;
+    font-size: 3em;
+    color: #571745;
+}
+.input{
+    width: 10em;
+    text-align: center;
+    font-size: 3em;
+    color: #571745;	
 }
