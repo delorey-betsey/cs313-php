@@ -31,9 +31,8 @@
 	font-weight: bold;
 }
 button{
-	width: 100%;
 	padding: .5em;
-    border: .75em solid #f1593a;
+    border: .5em solid #f1593a;
     border-radius: 0.625em;
 	background-color: #ffc30d;
 	cursor: pointer;
@@ -42,16 +41,9 @@ button{
 	display: inline-flexbox;
     }
 .label{
-	width: 100%;
     text-align: center;
     font-size: 3em;
     color: #571745;
-}
-.input{
-    width: 100%;
-    text-align: center;
-    font-size: 3em;
-    color: #571745;	
 }
 p {
 	text-align: center;
