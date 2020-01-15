@@ -25,11 +25,11 @@
 }
 button{
 	background-color: white;
-	border: 0;
+	border: 1em;
 	padding: 10px 15px;
 	color: purple;
-	border-radius: 3px;
-	width: 250px;
+	border-radius: 1em;
+	width: 80em;
 	cursor: pointer;
 	font-size: 5em;
 	}
