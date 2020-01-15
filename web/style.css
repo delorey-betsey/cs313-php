@@ -1,21 +1,24 @@
 #div1 {
-	background-color: red;
+	background-color: #571745;
 	height: 3em;
 	font-size: 2em;
+	color: white;
 	padding-top: 2em;
 	text-align: center;
 }
 #div2 {
-	background-color: green;
+	background-color: #8f1940;
 	height: 3em;
 	font-size: 2em;
+	color: white;
 	padding-top: 2em;
 	text-align: center;
 }
 #div3 {
-	background-color: #4DD0E1;
+	background-color: #c91f3d;
 	height: 3em;
 	font-size: 2em;
+	color: white;
 	padding-top: 2em;
 	text-align: center;
 }
@@ -26,10 +29,10 @@
 button{
 	width: 5em;
 	padding: .5em;
-	border: .5em solid purple;
-	background-color: yellow;
+	border: .5em solid #f1593a;
+	background-color: #ffc30d;
 	cursor: pointer;
 	font-size: 5em;
-	color: purple;
+	color: #571745;
 	}
 }
