@@ -1,7 +1,7 @@
 /* style.css */
 ​
 .div-first {
-	background-color: #00BCD4;
+	/* background-color: #00BCD4; */
 	font-size: 2em;
 }
 ​
@@ -10,7 +10,7 @@
 }
 ​
 #div1 {
-	background-color: green;
+	background-color: red;
 	height: 10em;
 }
 
@@ -19,7 +19,7 @@
 }
 ​
 #div3 {
-	background-color: green;
+	background-color: blue;
 }
 ​
 .hover-bold:hover {
