@@ -47,6 +47,7 @@ button{
 	}
 
 	.btn-group .button {
+		width: 25%;
 		background-color: #4CAF50; /* Green */
 		border: 1px solid green;
 		color: white;
