@@ -10,7 +10,7 @@
 }
 ​
 #div1 {
-	background-color: red;
+	background-color: green;
 	height: 10em;
 }
 
@@ -19,7 +19,7 @@
 }
 ​
 #div3 {
-	background-color: blue;
+	background-color: green;
 }
 ​
 .hover-bold:hover {
