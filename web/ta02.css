@@ -36,7 +36,7 @@
 	font-size: 4em;
 }
 button{
-	/* width: 10em; */
+	width: 100%;
 	padding: .5em;
 	border: .75em solid #f1593a;
 	background-color: #ffc30d;
@@ -46,13 +46,13 @@ button{
 	display: inline-flexbox;
     }
 .label{
-    /* width: 10em; */
+	width: 100%;
     text-align: center;
     font-size: 3em;
     color: #571745;
 }
 .input{
-    /* width: 10em; */
+    width: 100%;
     text-align: center;
     font-size: 3em;
     color: #571745;	
