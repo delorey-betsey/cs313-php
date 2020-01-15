@@ -23,3 +23,14 @@
 	font-weight: bold;
 	font-size: 10em;
 }
+button{
+	background-color: white;
+	border: 0;
+	padding: 10px 15px;
+	color: purple;
+	border-radius: 3px;
+	width: 250px;
+	cursor: pointer;
+	font-size: 5em;
+	}
+}
