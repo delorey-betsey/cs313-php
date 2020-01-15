@@ -37,8 +37,9 @@
 }
 button{
 	width: 100%;
-	padding: .5em 25% .5em 25%;
-	border: .75em solid #f1593a;
+	padding: .5em;
+    border: .75em solid #f1593a;
+    border-radius: 0.625em;
 	background-color: #ffc30d;
 	cursor: pointer;
 	font-size: 2em;
