@@ -36,3 +36,12 @@ button{
 	color: #571745;
 	}
 }
+#txtColor{
+	width: 5em;
+	padding: .25em;
+	border: .75em solid #f1593a;
+	background-color: #ffc30d;
+	cursor: pointer;
+	font-size: 3em;
+	color: #571745;
+	}
