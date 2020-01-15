@@ -24,10 +24,9 @@
 	font-size: 10em;
 }
 button{
-	width: 7.5em;
-	padding: 2.5em;
-	border: 1em;
-	border-color: purple;
+	width: 5em;
+	padding: .5em;
+	border: 1em solid purple;
 	background-color: yellow;
 	cursor: pointer;
 	font-size: 5em;
