@@ -4,26 +4,7 @@
 		<title>Betsey - My Work</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="click.js"></script>
-	</head>
-​
-	<body>
-		
-		<div id="div1" class="hover-bold">UNO</div>
-		<div id="div2" class="hover-bold">DOS</div>
-		<div id="div3" class="hover-bold">TRES</div>
-
-		
-		<div>
-			<label for="txtColor">Specify Color:</label>
-			<br /> 
-			<input type="text" id="txtColor" placeholder="#cccccc">
-		</div>
-		<br />
-		​<button onclick="changeColor()">Change color</button>
-		<br />
-		<button onclick="clickFunction()">Click Me</button>
-​
+		<!-- <script src="click.js"></script> -->
 		<script>
 			function clickFunction() {
 			alert("CLICKED!");
@@ -43,6 +24,25 @@
 				div.style.backgroundColor = color;		​
 			}
 		</script>
+	</head>
+​
+	<body>
+		
+		<div id="div1" class="hover-bold">UNO</div>
+		<div id="div2" class="hover-bold">DOS</div>
+		<div id="div3" class="hover-bold">TRES</div>
+
+		
+		<div>
+			<label for="txtColor">Specify Color:</label>
+			<br /> 
+			<input id="txtColor" type="text" placeholder="Enter hex color code.">
+		</div>
+		<br />
+		​<button onclick="changeColor()">Change color</button>
+		<button onclick="clickFunction()">Click Me</button>
+​
+		
 ​
 	</body>
 ​
