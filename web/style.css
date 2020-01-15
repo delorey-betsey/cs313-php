@@ -9,12 +9,17 @@
 	font-size: 0.7em;
 }
 ​
+#div1 {
+	background-color: red;
+	height: 10em;
+}
+
 #div2 {
-	background-color: #4DD0E1;
+	background-color: green;
 }
 ​
 #div3 {
-	background-color: #B2EBF2;
+	background-color: blue;
 }
 ​
 .hover-bold:hover {
