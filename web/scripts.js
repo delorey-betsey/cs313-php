@@ -1,4 +1,4 @@
-// ta02.js
+// scripts.js
 function clickMe() {
 	alert("Clicked!");
 }

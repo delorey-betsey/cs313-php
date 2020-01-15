@@ -8,11 +8,9 @@
 	padding-top: 2em;
 	text-align: center;
 }
-
 .div-later {
 	font-size: 0.7em;
 }
-
 #div2 {
 	background-color: #8f1940;
 	height: 2em;
@@ -21,7 +19,6 @@
 	padding-top: 2em;
 	text-align: center;
 }
-
 #div3 {
 	background-color: #c91f3d;
 	height: 2em;
@@ -30,10 +27,8 @@
 	padding-top: 2em;
 	text-align: center;
 }
-
 .hover-bold:hover {
 	font-weight: bold;
-	font-size: 4em;
 }
 button{
 	width: 100%;
