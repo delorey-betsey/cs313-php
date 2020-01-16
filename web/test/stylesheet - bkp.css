@@ -1,0 +1,205 @@
+
+div.homepage {
+    background-color: #363204;  
+}
+div.logo
+{
+    background-color: #D9AE00;
+    border:5px solid #363204;
+    float: left;
+    height: 185px;
+    margin: 0 auto;
+    min-width: 200px;
+    position: relative;
+    text-align: left;
+    width: 20%;
+}
+
+div.sub-logo
+{
+    background-color: #D9AE00;
+    border:5px solid #363204;
+    float: left;
+    height: 100px;
+    margin: 0 auto;
+    min-width: 200px;
+    position: relative;
+    text-align: left;
+    width: 20%;
+}
+div.banner {
+    background-color: #5F591C;   
+    border:5px solid #363204;
+    border-radius: 15px;    
+    color:#FFCD00;
+    float: none;
+    font-family: Bembo;
+    font-size:80px;
+    height:115px;
+    margin: 0 auto;
+    padding-top:20px;
+    text-align: center;
+}
+div.sub-banner {
+    background-color: #5F591C;   
+    border:5px solid #363204;
+    border-radius: 15px;    
+    color:#E1DBA8;
+    font-family: Bembo;
+    font-size:40px;
+    height:100px;
+    text-align: center;
+}
+div.sidebar
+{
+    background-color: #AAA364; 
+    border:5px solid #363204;
+    color:#363204;
+    float: left;
+    font-family: Arial;
+    font-size:16px;
+    height: 3000px;
+    margin: 0 auto;
+    min-width: 150px;
+    position: relative;
+    text-align: left;
+    width: 20%;
+}
+div.nav2images
+{ 
+    alignment-adjust: middle;
+    background-color: #AAA364;
+    color:#363204;
+    display:block;  
+    font-family: Arial;
+    font-size:20px;
+    height: 320px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle; 
+}
+div.nav1links
+{ 
+    background-color: #AAA364;
+    border:5px solid #363204;
+    color:#363204;
+    font-family: Arial;
+    font-size:20px;
+    height: 35px;
+    padding-top:10px;
+    text-align: center;
+     
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+div.question
+{
+    background-color: #D9AE00;
+    border:5px solid #363204;
+    color:#363204;
+    float: none;
+    font-family: Arial;
+    font-size:35px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align:middle;
+}
+div.info
+{
+    background-color: #E1DBA8; 
+    border:5px solid #363204;
+    color:#363204;
+    float: left;
+    font-family: Arial;
+    font-size:20px;
+    height: 2915px;
+    margin: 0 auto;
+    position: relative;
+    width: 78%;
+}
+div.infoleft
+{
+    background-color: #E1DBA8; 
+    border:5px solid #363204;
+    color:#363204;
+    float: left;
+    font-family: Arial;
+    font-size:20px;
+    height: 2525px;
+    margin: 0 auto;
+    position: relative;
+    width: 39%;
+}
+div.inforight
+{
+    background-color: #E1DBA8; 
+    border:5px solid #363204;
+    color:#363204;
+    float: left;
+    font-family: Arial;
+    font-size:20px;
+    height: 2525px;
+    margin: 0 auto;
+    position: relative;
+    width: 39%;
+}
+div.moviewrapper{
+    height: 350px;
+    margin: 0 auto;
+    width: 450px;
+}
+
+img {
+    float: left;
+}
+div.sub-topnav
+{ 
+    background-color: #AAA364;
+    border:5px solid #363204;
+    color:#FFCD00;
+    float: none;
+    font-family: Arial;
+    font-size:20px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+footer {
+    color:#5F591C;
+    font-family: Bembo;
+    font-size:16px;
+    margin-top: 2000px;
+    text-align: center;
+}
+div.siteplan {
+    background-color: #D7DDE7;   
+    color:Black;
+    float: left;
+    font-family: Bembo;
+    font-size:20px;
+    height:3000px;
+    text-align: left;
+    width: 79%;
+}
+div.teachingpresentation {
+    background-color: #D7DDE7;   
+    color:Black; 
+    float: left;
+    font-family: Bembo;
+    font-size:20px;
+    height:3000px;
+    text-align: left;
+    width: 79%;
+}
+.center {
+    margin: 0 auto; 
+    width: 320px; 
+}
+.table td {
+    border:5px solid #FFCD00;
+}
+
