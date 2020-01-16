@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">       
-    <link rel="stylesheet" href="/02bprove/stylesheet.css" media="screen">       
+        <link rel="stylesheet" href="/triathlon/stylesheet.css" media="screen">       
 <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  
     </head>
 
@@ -17,10 +17,10 @@
 <div class="container">
     
 <!-- COMMENT:  header     -->
-<?php include '02bprove/modules/responsive-header.php'; ?>
+<?php include 'modules/responsive-header.php'; ?>
 
 <!-- COMMENT:  nav     -->
-<?php include '02bprove/modules/responsive-nav.php'; ?>
+<?php include 'modules/responsive-nav.php'; ?>
 
 <div class="row">
 
@@ -54,8 +54,8 @@
         <p>The cost to enter is $100 and will benefit The Humane Society of San Francisco.</p>
     </div>
     <div>
-        <img src="02bprove/00homepage/sanquentinsq25.jpg" alt= "san quentin federal penitentiary"  style="border:5px solid #e0162b;border-radius:5px" />           
-        <img src="02bprove/00homepage/alcatraz1sq365.jpg" alt= "alcatraz island" style="border:5px solid #e0162b;border-radius:5px" />
+        <img src="00homepage/sanquentinsq25.jpg" alt= "san quentin federal penitentiary"  style="border:5px solid #e0162b;border-radius:5px" />           
+        <img src="00homepage/alcatraz1sq365.jpg" alt= "alcatraz island" style="border:5px solid #e0162b;border-radius:5px" />
     </div>
 </div> 
 </div></main>
@@ -63,7 +63,7 @@
     
 <!-- COMMENT:  footer     -->
 <footer>
- <?php include  '02bprove/modules/responsive-footer-nav.php'; ?>
+ <?php include  'modules/responsive-footer-nav.php'; ?>
 </footer>
 </div>
     
