@@ -1,3 +1,0 @@
-<div>
-    Construction Collaboratory
-</div>
