@@ -1,7 +1,10 @@
 /* ta02.css */
-
+.container {
+	display: flex; /* or inline-flex */
+  }
 .div-first {
 	background-color: #571745;
+	width: 30%;
 	height: 1em;
 	font-size: 2em;
 	color: white;
@@ -13,6 +16,7 @@
 }
 #div2 {
 	background-color: #8f1940;
+	width: 30%;
 	height: 1em;
 	font-size: 2em;
 	color: white;
@@ -21,17 +25,22 @@
 }
 #div3 {
 	background-color: #c91f3d;
+	width: 30%;
 	height: 1em;
 	font-size: 2em;
 	color: white;
 	padding: .5em;
 	text-align: center;
 }
+#div4 {
+	width: 100%;
+}
 .hover-bold:hover {
 	font-weight: bold;
 }
 button{
-    margin-left: 25%;
+	margin-left: 10%;
+	width: 25%;
 	padding: .5em;
     border: .5em solid #f1593a ;
     border-radius: 0.625em;
