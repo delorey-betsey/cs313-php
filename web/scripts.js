@@ -18,7 +18,7 @@ function div2chgColor() {
 	var textbox_input = "userColor";
 	var newColor = document.getElementById(textbox_input);
 
-	var div_id = "div1";
+	var div_id = "div2";
 	var div = document.getElementById(div_id);
 
 	// We should verify values here before we use them...
@@ -29,7 +29,7 @@ function div3chgColor() {
 	var textbox_input = "userColor";
 	var newColor = document.getElementById(textbox_input);
 
-	var div_id = "div1";
+	var div_id = "div3";
 	var div = document.getElementById(div_id);
 
 	// We should verify values here before we use them...
