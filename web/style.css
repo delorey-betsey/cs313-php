@@ -1,5 +1,5 @@
 /* ta02.css */
-.container {
+body {
 	display: flex; /* or inline-flex */
 	flex-wrap: wrap;
   }
@@ -40,7 +40,6 @@
 	font-weight: bold;
 }
 button{
-	margin-left: 10%;
 	width: 25%;
 	padding: .5em;
     border: .5em solid #f1593a ;
