@@ -29,8 +29,9 @@
  
     <div class="info"  >       
         <div class="innermargins">
-            <h2 style="text-align:left">Run Route--</h2>
-                <h3 style="text-align:left">Length and Conditions</h3>
+            <h2 style="text-align:left">Assignment:  Hello World!</h2>
+            <a href="https://peaceful-oasis-06205.herokuapp.com/01hello/hello.html">Visit my site.</a>
+                <!-- <h3 style="text-align:left">Length and Conditions</h3>
                 <p>A successful run in a triathlon begins—and ends—with a simple, straightforward training plan that focuses on quality mileage. Endurance athletes can put in less time if they follow a plan that avoids so-called junk mileage. Consider a three-day-a-week running program designed for triathletes. Be sure to modify any training schedule based on the race you're preparing for and your current fitness level.</P>
                 <p>Begin by building up your aerobic endurance. This doesn't mean running slow in every workout. Track sessions, which will build endurance, strength, speed, technique and aerobic foundation, should be completed throughout the year.</p>
                 <p> Good Luck! and Have Fun!</p>
@@ -42,9 +43,9 @@
                     <br> Average Rain (inches)-1
                 </p>
             <img src="01routes/triathlonrunsq365.jpg" alt="triathlon run">
-            <img src="01routes/runmapsq365.jpg" alt="triathlon run route">
+            <img src="01routes/runmapsq365.jpg" alt="triathlon run route"> -->
         </div>
-</div>
+    </div>
 </div></main>
 </div>
 
