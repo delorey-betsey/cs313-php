@@ -36,14 +36,12 @@
                 </ul>
             </li>
             
-            <!-- <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="blackfont">Land of the Free, Home of the Brave<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="02registration/registrationformindex.php">Registration Form</a></li>
-                    </ul>	
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="blackfont">BYU-I CS313 Web Enginnering II: Betsey Delorey<span class="caret"></span></a>
+
                 </li>          
-            </ul> -->
+            </ul>
             
         </ul> 
         <!-- /.navbar-collapse -->
