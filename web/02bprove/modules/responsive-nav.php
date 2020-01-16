@@ -21,7 +21,7 @@
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="week01.php">Week 01</a></li>
                     <li><a href="week02teach.php">Week 02 Teach</a></li>
-                    <li><a href="underconstruction.php">Under Construction</a></li>
+                    <li><a href="underconstruction.php">Week 02 Prove</a></li>
                 </ul>
             </li>
                      
