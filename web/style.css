@@ -5,7 +5,7 @@ body {
   }
 #div1 {
 	background-color: #571745;
-	width: 30%;
+	width: 25em;
 	height: 1em;
 	font-size: 2em;
 	color: white;
@@ -17,7 +17,7 @@ body {
 }
 #div2 {
 	background-color: #8f1940;
-	width: 30%;
+	width: 25em;
 	height: 1em;
 	font-size: 2em;
 	color: white;
@@ -26,7 +26,7 @@ body {
 }
 #div3 {
 	background-color: #c91f3d;
-	width: 30%;
+	width: 25em;
 	height: 1em;
 	font-size: 2em;
 	color: white;
@@ -40,7 +40,7 @@ body {
 	font-weight: bold;
 }
 button{
-	width: 25%;
+	width: 25em;
 	padding: .5em;
     border: .5em solid #f1593a ;
     border-radius: 0.625em;
