@@ -55,6 +55,7 @@ button{
     color: #571745;
 }
 p {
+	width: 25em;
 	text-align: center;
 	font-size: 1em;
 }
