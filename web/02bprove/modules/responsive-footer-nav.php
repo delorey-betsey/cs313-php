@@ -7,7 +7,7 @@
             <li><a href="04siteplan.php">Site Plan</a></li>		
         </ul>     
       <ul class="nav navbar-nav navbar-right">
-        <li><a>&copy; 2015 Betsey Delorey</a></li>
+        <li><a>&copy; 2020 Betsey Delorey</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
