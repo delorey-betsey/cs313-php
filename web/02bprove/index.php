@@ -34,7 +34,8 @@
         <!-- countdown counter below-->
             <div class="redfont" align="right" style="margin: 15px 0px 0px;">
                 
-                <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); text-align: right; color: rgb(0, 0, 0); font-weight: bold; font-size: 12px; background-color: rgb(255, 255, 255);">
+                <!-- <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); text-align: right; color: rgb(0, 0, 0); font-weight: bold; font-size: 12px; background-color: rgb(255, 255, 255);"> -->
+                <div    
                     <img src="00homepage/wethepeoplecolor.jpg" alt= "preamble"  style="border:5px solid #e0162b;border-radius:5px" />
                 </div>
               
