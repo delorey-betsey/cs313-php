@@ -1,6 +1,7 @@
 /* ta02.css */
 .container {
 	display: flex; /* or inline-flex */
+	flex-wrap: wrap;
   }
 .div-first {
 	background-color: #571745;
