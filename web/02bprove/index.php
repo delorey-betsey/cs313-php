@@ -32,11 +32,14 @@
             <div class="description">
                 
             <!-- countdown counter below-->
-                <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 16px;">
-                    <p>My passion is American history.</p>
+                <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
+                    <p>My passion is the great American dream.</p>
+                    <p>Justice and liberty for all.</p>
                 </div>
                 <div align="right" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+                <a href="https://museum.archives.gov/founding-documents">
                     <img src="00homepage/wethepeoplecolor.jpg" alt= "preamble"  style="border:5px solid #e0162b;border-radius:5px" />
+                </a>    
                 </div>
 
             </div>
