@@ -13,5 +13,5 @@ function changeColor() {
 	// We should verify values here before we use them...
 	var color = newColor.value;
 	div.style.backgroundColor = color;
-
+	<p>Hello Sunshine!</p>
 }
