@@ -29,8 +29,8 @@
  
     <div class="info"  >       
         <div class="innermargins">
-            <h2 style="text-align:left">Assignment:  Hello World!</h2>
-            <a href="https://peaceful-oasis-06205.herokuapp.com/01hello/hello.html">Visit my site.</a>
+            <h2 style="text-align:left">Assignment:  Three Divs HTML page.</h2>
+            <a href="https://peaceful-oasis-06205.herokuapp.com/02ateach/threedivs.html">Visit my site.</a>
         </div>
     </div>
 </div></main>
