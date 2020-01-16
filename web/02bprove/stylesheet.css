@@ -83,6 +83,9 @@ div.siteplan
     position: relative;
     width: 80%;
 }
+h4{
+    text-align: right;
+}
 .tabletr {
     border:5px solid #e0162b;
 }

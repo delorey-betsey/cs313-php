@@ -16,7 +16,7 @@
                     $("p").css("background-color", "yellow");
                 });
                 $("p").mouseout(function(){
-                    $("p").css("background-color", "lightgray");
+                    $("p").css("background-color", "white");
                 });
             });
         </script>
