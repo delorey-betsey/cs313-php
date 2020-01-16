@@ -1,10 +1,10 @@
 <script>
-$(document).ready(function(){
-  $("p").mouseover(function(){
-    $("p").css("background-color", "yellow");
+  $(document).ready(function(){
+      $("p").mouseover(function(){
+          $("p").css("background-color", "yellow");
+      });
+      $("p").mouseout(function(){
+          $("p").css("background-color", "white");
+      });
   });
-  $("p").mouseout(function(){
-    $("p").css("background-color", "lightgray");
-  });
-});
 </script>

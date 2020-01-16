@@ -7,8 +7,8 @@ div.container {
 div.banner {
     background-color: #0052a5;
     color:#FFFFFF;
-    font-family: Stencil;
-    font-size:45px;
+    font-family: Klint;
+    font-size:35px;
     height: 100%;
     padding-top:15px;
     text-align:left;
@@ -20,12 +20,12 @@ div.banner {
     font-size:25px;
     color:#e0162b;
 }
-.reversebannertagline {
+/* .reversebannertagline {
     background-color: #e0162b;
     font-family: Klint;
     font-size:30px;
     color:#FFFFFF;
-}
+} */
 div.info {
     background-color: #FFFFFF; 
     color:#000000;
@@ -36,7 +36,7 @@ div.info {
     position: relative;
     width: 90%;
 }
-div.infoinner {
+/* div.infoinner {
     background-color: #FFFFFF; 
     color:#000000;
     float: left;
@@ -45,7 +45,7 @@ div.infoinner {
     margin: 2% 0% 5% 5%;
     position: relative;
     width: 80%;
-}
+} */
 div.innermargins {
     background-color: #FFFFFF; 
     color:#000000;
@@ -72,7 +72,7 @@ div.description
     position: relative;
     width: 80%;
 }
-div.siteplan
+/* div.siteplan
 {
     background-color: #FFFFFF;    
     color:#0052a5;
@@ -82,13 +82,13 @@ div.siteplan
     margin: 2% 5% 5% 5%;
     position: relative;
     width: 80%;
-}
+} */
 h4{
     text-align: right;
 }
-.tabletr {
+/* .tabletr {
     border:5px solid #e0162b;
-}
+} */
 .redfont {
     color:#e0162b;
 }

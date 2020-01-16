@@ -1,6 +1,6 @@
 
 &nbsp;&nbsp; &nbsp;
- Land of the Free <br>&nbsp;&nbsp; &nbsp;- - - - - - Home of the Brave
+ Land of the Free<br>- - - - - - Home of the Brave
 
 
 
