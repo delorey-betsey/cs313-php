@@ -10,7 +10,7 @@ div.banner {
     font-family: Klint;
     font-size:35px;
     height: 100%;
-    padding-top:15px;
+    padding-top:25px;
     text-align:left;
     width:79%;
 }
@@ -85,6 +85,7 @@ div.description
 } */
 h4{
     text-align: right;
+    padding-top: 0.25em;
 }
 /* .tabletr {
     border:5px solid #e0162b;
