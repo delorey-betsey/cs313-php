@@ -36,3 +36,10 @@ function div3chgColor() {
 	var color = newColor.value;
 	div.style.backgroundColor = color;
 }
+{/* <script>
+	$(document).ready(function(){
+		$("button").click(function(){
+		// jQuery methods go here...
+		
+		});
+</script> */}
