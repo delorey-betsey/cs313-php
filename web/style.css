@@ -3,7 +3,7 @@
 	display: flex; /* or inline-flex */
 	flex-wrap: wrap;
   }
-.div-first {
+#div1 {
 	background-color: #571745;
 	width: 30%;
 	height: 1em;
