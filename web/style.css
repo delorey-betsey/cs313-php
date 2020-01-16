@@ -1,8 +1,10 @@
 /* ta02.css */
-body {
-	display: flex; /* or inline-flex */
+
+/* body {
+	display: flex;
 	flex-wrap: wrap;
-  }
+  } */
+
 #div1 {
 	background-color: #571745;
 	width: 100%;
