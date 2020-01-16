@@ -41,7 +41,7 @@ body {
 }
 button{
 	width: 25em;
-	padding: .5em;
+	text-align: center;
     border: .5em solid #f1593a ;
     border-radius: 0.625em;
 	background-color: #ffc30d;
