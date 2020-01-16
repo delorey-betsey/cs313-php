@@ -32,18 +32,17 @@
             <div class="description">
                 
         <!-- countdown counter below-->
-            <!-- <div class="redfont" align="right" style="margin: 15px 0px 0px;">
+            <div class="redfont" align="right" style="margin: 15px 0px 0px;">
                 <noscript>
-                <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); text-align: right; color: rgb(0, 0, 0); font-weight: bold; font-size: 12px; background-color: rgb(255, 255, 255);">
-                    <a href="http://mycountdown.org/tag.php?tag=triathlon" style="text-decoration: none; font-size: inherit; color: rgb(0, 0, 0);">Triathlon 
-                    </a>
-                </div>
+                    <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); text-align: right; color: rgb(0, 0, 0); font-weight: bold; font-size: 12px; background-color: rgb(255, 255, 255);">
+                        <img src="00homepage/wethepeoplecolor.jpg" alt= "preamble"  style="border:5px solid #e0162b;border-radius:5px" />
+                    </div>
                 </noscript>
-                <script type="text/javascript" src="http://mycountdown.org/countdown.php?cp2_Hex=ffffff&cp1_Hex=000000&img=1&hbg=&fwdt=250&lab=1&ocd=Race&text1=&text2=&group=My Countdown&countdown=Race&widget_number=3011&event_time=1432339200&timezone=America/Vancouver">
-                </script>
-                THIS WEBSITE IS A STUDENT PROJECT.  NOT A REAL RACE, SORRY )-:
-            </div> -->
-        <!-- countdown counter above -->
+                <!-- <script type="text/javascript" src="http://mycountdown.org/countdown.php?cp2_Hex=ffffff&cp1_Hex=000000&img=1&hbg=&fwdt=250&lab=1&ocd=Race&text1=&text2=&group=My Countdown&countdown=Race&widget_number=3011&event_time=1432339200&timezone=America/Vancouver">
+                </script> -->
+                My passion is American history.
+            </div>
+        <!-- countdown counter above
 
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); text-align: right; color: rgb(0, 0, 0); font-weight: bold; font-size: 12px; background-color: rgb(255, 255, 255);">
                     <img src="00homepage/wethepeoplecolor.jpg" alt= "preamble"  style="border:5px solid #e0162b;border-radius:5px" />
