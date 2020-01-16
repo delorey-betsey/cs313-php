@@ -1,0 +1,120 @@
+//dark green    #363204
+//med green    #AAA364
+//light green  #E1DBA8
+//dark blue    #304872
+//med blue     #788AA8
+//med light blue #A9B5CA
+//light blue   #D7DDE7
+//dark gold    #FFCD00
+
+div.homepage {
+    background-color: #363204;  
+}
+div.banner {
+    border:5px solid #363204;
+    border-radius: 15px;    
+    background-color: #5F591C;   
+    height:100px;
+    width: 100%;
+    text-align: center;
+    font-family: Trebuchet;
+    font-size:80px;
+    color:#FFCD00;
+}
+div.sub-banner {
+    border:5px solid #363204;
+    border-radius: 15px;    
+    background-color: #5F591C;   
+    height:100px;
+    width: 100%;
+    text-align: center;
+    font-family: Trebuchet;
+    font-size:40px;
+    color:#FFCD00;
+}
+img {
+    float: left;
+}
+div.body {
+    background-color: #D7DDE7;
+}
+div.sidebar
+{
+    border:5px solid #363204;
+    background-color: #AAA364; 
+    width: 20%;
+    float: left;
+    min-width: 150px;
+    height: 520px;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+}
+div.topnav
+{ 
+    border:5px solid #363204;
+    background-color: #AAA364;
+    float: top;
+    text-align: center;
+    height: 200px;
+    margin: 0 auto;
+}
+div.sub-topnav
+{ 
+    border:5px solid #363204;
+    background-color: #AAA364;
+    float: top;
+    text-align: center;
+    height: 125px;
+    margin: 0 auto;
+}
+div.question
+{
+    border:5px solid #363204;
+    background-color: #5F591C;
+    float: top;
+    text-align: center;
+    vertical-align:middle;
+    height: 50px;
+    margin: 0 auto;
+    font-family: Arial;
+    font-size:35px;
+    color:#FFCD00;
+}
+div.infoleft
+{
+    border:5px solid #363204;
+    background-color: #E1DBA8; 
+    width: 38%;
+    position: relative;
+    margin: 0 auto;
+    float: left;
+    height: 250px;
+}
+div.inforight
+{
+    border:5px solid #363204;
+    background-color: #E1DBA8; 
+    width: 39%;
+    position: relative;
+    margin: 0 auto;
+    float: left;
+    height: 250px;
+}
+div.info
+{
+    border:5px solid #363204;
+    background-color: #E1DBA8; 
+    width: 78%;
+    position: relative;
+    margin: 0 auto;
+    float: left;
+    height: 410px;
+}
+footer {
+    display:block;
+    text-align: center;
+    font-family: Trebuchet;
+    font-size:30px;
+    color:#5F591C;
+}
