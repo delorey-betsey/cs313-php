@@ -21,7 +21,7 @@
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="week01.php">Week 01</a></li>
                     <li><a href="week02teach.php">Week 02 Teach</a></li>
-                    <li><a href="01bikeroute.php">Week 03</a></li>
+                    <li><a href="week01prove.php">Week 03</a></li>
                 </ul>
             </li>
                      
@@ -32,7 +32,7 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Coming Soon<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="modules/underconstruction.php">Under Construction</a></li>
+                    <li><a href="underconstruction.php">Under Construction</a></li>
                 </ul>
             </li>
             

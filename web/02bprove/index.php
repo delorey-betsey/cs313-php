@@ -26,12 +26,11 @@
 
     <main><div>
 
-        <!-- COMMENT:  content     --> 
+        <!-- COMMENT:  content (my passion, image and link)    --> 
 
         <div class="info">
             <div class="description">
                 
-            <!-- countdown counter below-->
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>My passion is the great American dream.</p>
                     <p>Justice and liberty for all.</p>
