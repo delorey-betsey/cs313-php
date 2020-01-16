@@ -38,8 +38,8 @@
             
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="blackfont">BYU-I CS313 Web Enginnering II: Betsey Delorey<span class="caret"></span></a>
-
+                    <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="blackfont">BYU-I CS313 Web Enginnering II: Betsey Delorey<span class="caret"></span></a> -->
+                    <h4>BYU-I CS313 Web Enginnering II: Betsey Delorey</h4>
                 </li>          
             </ul>
             
