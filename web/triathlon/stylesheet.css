@@ -1,0 +1,140 @@
+#top-header {
+    height: 165px;
+}  
+div.container {
+    background-color: #0052a5;
+}
+div.banner {
+    background-color: #0052a5;
+    color:#FFFFFF;
+    font-family: Stencil;
+    font-size:45px;
+    height: 100%;
+    padding-top:15px;
+    text-align:left;
+    width:79%;
+}
+.bannertagline {
+    background-color: #FFFFFF;
+    font-family: Klint;
+    font-size:25px;
+    color:#e0162b;
+}
+.reversebannertagline {
+    background-color: #e0162b;
+    font-family: Klint;
+    font-size:30px;
+    color:#FFFFFF;
+}
+div.info {
+    background-color: #FFFFFF; 
+    color:#000000;
+    float: left;
+    font-family: Arial;
+    font-size:16px;
+    margin: 2% 0% 5% 5%;
+    position: relative;
+    width: 90%;
+}
+div.infoinner {
+    background-color: #FFFFFF; 
+    color:#000000;
+    float: left;
+    font-family: Arial;
+    font-size:16px;
+    margin: 2% 0% 5% 5%;
+    position: relative;
+    width: 80%;
+}
+div.innermargins {
+    background-color: #FFFFFF; 
+    color:#000000;
+    float: left;
+    font-family: Arial;
+    font-size:16px;
+    margin: 2% 5% 5% 5%;
+    position: relative;
+    width: 80%;
+}
+div.logo1 {
+    background-color:#e0162b;
+    height:100%;
+    width:21%
+}
+div.description
+{
+    background-color: #FFFFFF; 
+    color:#0052a5;
+    float: left;
+    font-family: Klint;
+    font-size:16px;
+    margin: 2% 5% 5% 5%;
+    position: relative;
+    width: 80%;
+}
+div.siteplan
+{
+    background-color: #FFFFFF;    
+    color:#0052a5;
+    float: left;
+    font-family: Klint;
+    font-size:16px;
+    margin: 2% 5% 5% 5%;
+    position: relative;
+    width: 80%;
+}
+.tabletr {
+    border:5px solid #e0162b;
+}
+.redfont {
+    color:#e0162b;
+}
+#blackfont {
+    color:#000000;
+    font-family: Stencil;
+    font-size:24px;
+}
+
+
+/* TABLET rules END*/
+/* This is the widescreen browser CSS rules*/
+@media screen and (max-device-width: 1024px) and (orientation: portrait), 
+       screen and (max-device-width: 1400px) and (orientation: landscape)
+{
+    .rotate90 {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+/* This is the tablet CSS rules*/
+@media screen and (max-device-width: 800px) and (orientation: portrait), 
+       screen and (max-device-width: 1280px) and (orientation: landscape)
+{
+    .rotate90 {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+/* This is the smartphone CSS rules*/
+@media screen and (max-device-width: 380px) and (orientation: landscape),
+       screen and (max-device-width: 480px) and (orientation: portrait)
+{
+    .rotate90 {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    div.banner {
+        font-size:16px;
+    }
+}
+
+
