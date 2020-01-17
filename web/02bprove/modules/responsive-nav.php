@@ -19,7 +19,7 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BYU-I CS313 Web Engineering II: Betsey Delorey<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="underconstruction.php">Under Construction</a></li>
+                    <li><a href="coolplaces.php">Cool Places to Visit</a></li>
                 </ul>
             </li>
             
@@ -37,7 +37,7 @@
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="week01.php">Week 01</a></li>
                     <li><a href="week02teach.php">Week 02 Teach</a></li>
-                    <li><a href="underconstruction.php">Week 02 Prove</a></li>
+                    <li><a href="week02prove.php">Week 02 Prove</a></li>
                 </ul>
             </li>                  
            
