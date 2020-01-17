@@ -50,9 +50,9 @@
                     <img src="00homepage/jamestown.jpg" alt= "jamestown"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
-            </div> 
+            <!-- </div>  -->
         <!-- YORKTOWN    -->
-            <div class="description">                
+            <!-- <div class="description">                 -->
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>Battle of Yorktown--Virginia</p>
                 </div>
