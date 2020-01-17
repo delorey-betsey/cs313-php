@@ -35,13 +35,20 @@
                     <li><a href="underconstruction.php">Under Construction</a></li>
                 </ul>
             </li>
+ 
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BYU-I CS313 Web Engineering II: Betsey Delorey<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="underconstruction.php">Under Construction</a></li>
+                </ul>
+            </li>
             
-            <ul class="nav navbar-nav navbar-right">
+            <!-- <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="blackfont">BYU-I CS313 Web Engineering II: Betsey Delorey<span class="caret"></span></a> -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="blackfont">BYU-I CS313 Web Engineering II: Betsey Delorey<span class="caret"></span></a>
                     <h4>BYU-I CS313 Web Engineering II: Betsey Delorey</h4>
                 </li>          
-            </ul>
+            </ul> -->
             
         </ul> 
         <!-- /.navbar-collapse -->
