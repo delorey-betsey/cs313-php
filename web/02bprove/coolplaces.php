@@ -11,16 +11,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  
         <script src="02bprove/scripts.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("p").mouseover(function(){
-                    $("p").css("background-color", "yellow");
-                });
-                $("p").mouseout(function(){
-                    $("p").css("background-color", "white");
-                });
-            });
-        </script>
+
     </head>
 
 <!-- COMMENT:   begin webpage  -->
@@ -36,12 +27,11 @@
 <div class="row">
 
     <main><div>
-
         <!-- Cool Places to Visit    --> 
-
         <div class="info">
+            <div class="description">  
         <!-- JAMESTOWN    -->    
-            <div class="description">                
+              
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>Jamestown Settlement--Virginia</p>
                 </div>
@@ -50,9 +40,9 @@
                     <img src="00homepage/jamestown.jpg" alt= "jamestown"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
-            <!-- </div>  -->
+
         <!-- YORKTOWN    -->
-            <!-- <div class="description">                 -->
+
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>Battle of Yorktown--Virginia</p>
                 </div>
@@ -61,9 +51,9 @@
                     <img src="00homepage/yorktown.jpg" alt= "yorktown"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
-            </div>
+ 
         <!-- WILLIAMSBURG    -->
-            <div class="description">                
+                
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>Colonial Williamsburg</p>
                 </div>
@@ -72,9 +62,9 @@
                     <img src="00homepage/williamsburg.jpg" alt= "colonial williamsburg"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
-            </div>
+             
         <!-- BOSTON    -->
-            <div class="description">                
+                
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>Boston Freedom Trail</p>
                 </div>
@@ -83,9 +73,9 @@
                     <img src="00homepage/Jamestown-colony-exterior.jpg" alt= "freedom trail"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
-            </div>
+          
         <!-- LEXINGTON & CONCORD    -->
-            <div class="description">                
+               
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>Lexington and Concord</p>
                     <p>"The Shot Heard 'Round the World"</p>
@@ -95,9 +85,9 @@
                     <img src="00homepage/lexington.jpg" alt= "lexington and concord"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
-            </div>
+ 
         <!-- PHILADELPHIA    -->
-            <div class="description">                
+                
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>Independence National Historic Park</p>
                     <p>Philadelphia</p>
@@ -107,9 +97,9 @@
                     <img src="00homepage/independencehall.jpg" alt= "independence hall"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
-            </div>
+ 
         <!-- WASHINGTON DC    -->
-            <div class="description">                
+                
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>Washington D.C.</p>
                 </div>
@@ -118,9 +108,9 @@
                     <img src="00homepage/whitehouse.jpg" alt= "white house"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
-            </div>
+ 
         <!-- NEW YORK    -->
-            <div class="description">                
+                   
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>New York Statue of Liberty</p>
                 </div>
@@ -129,9 +119,9 @@
                     <img src="00homepage/liberty.jpg" alt= "statue of liberty"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
+
             </div>
         </div> 
-
     </div></main>
 
 </div>
