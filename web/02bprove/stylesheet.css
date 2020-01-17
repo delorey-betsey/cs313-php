@@ -3,6 +3,7 @@
 }  
 div.container {
     background-color: #0052a5;
+    min-width: 480px;
 }
 div.banner {
     background-color: #0052a5;
