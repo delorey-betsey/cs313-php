@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Run Route</title>
+        <title>Personal Homepage</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<!-- Latest compiled and minified CSS -->
+ 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">       
         <link rel="stylesheet" href="/02bprove/stylesheet.css" media="screen">       
-<!-- Latest compiled and minified JavaScript -->
+ 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  
     </head>
@@ -25,12 +25,12 @@
 <div class="row">
  
 <main><div>        
-<!-- COMMENT:  content   -->
+<!-- Personal Homepage   -->
  
     <div class="info"  >       
         <div class="innermargins">
-            <h2 style="text-align:left">Assignment:  Hello World!</h2>
-            <a href="https://peaceful-oasis-06205.herokuapp.com/01hello/hello.html">Visit my site.</a>
+            <h2 style="text-align:left">Assignment:  Personal Homepage</h2>
+            <a href="https://peaceful-oasis-06205.herokuapp.com/02bprove/index.php">Visit my site.</a>
         </div>
     </div>
 </div></main>

@@ -3,10 +3,10 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="footer-nav">
-        <ul class="nav navbar-nav">
+        <!-- <ul class="nav navbar-nav">
             <li><a href="04siteplan.php">Site Plan</a></li>		
-        </ul>     
-      <ul class="nav navbar-nav navbar-right">
+        </ul>      -->
+      <ul class="nav navbar-nav navbar-left">
         <li><a>&copy; 2020 Betsey Delorey</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->

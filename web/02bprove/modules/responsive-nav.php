@@ -11,11 +11,13 @@
       </button>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Menu bar options -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         
         <ul class="nav navbar-nav">
-           
+
+            <!-- Assignments Drop Down-->
+
              <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Assignments<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -25,7 +27,7 @@
                 </ul>
             </li>
                      
-            <!-- <li><a href="02registration.php" >Assignments</a></li>
+           <!-- Coming Soon Drop Down-->
             
             <li><a href="03contact.php" >Coming Soon</a></li> -->
                         
@@ -35,7 +37,9 @@
                     <li><a href="underconstruction.php">Under Construction</a></li>
                 </ul>
             </li>
- 
+
+            <!-- Betsey Delorey Drop Down-->
+
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BYU-I CS313 Web Engineering II: Betsey Delorey<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -43,17 +47,9 @@
                 </ul>
             </li>
             
-            <!-- <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="blackfont">BYU-I CS313 Web Engineering II: Betsey Delorey<span class="caret"></span></a>
-                    <h4>BYU-I CS313 Web Engineering II: Betsey Delorey</h4>
-                </li>          
-            </ul> -->
-            
         </ul> 
         <!-- /.navbar-collapse -->
-    </div>
-    
+    </div>  
 
     </div>
         <!-- /.container-fluid -->
