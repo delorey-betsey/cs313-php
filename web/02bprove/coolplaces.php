@@ -39,7 +39,7 @@
                 <a href="https://www.historyisfun.org/jamestown-settlement/">
                     <img src="images/jamestown.jpg" alt= "jamestown"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
-                </div>
+                </div><br>
 
         <!-- YORKTOWN    -->
 
@@ -50,7 +50,7 @@
                 <a href="https://www.nps.gov/york/index.htm">
                     <img src="images/yorktown.jpg" alt= "yorktown"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
-                </div>
+                </div><br>
  
         <!-- WILLIAMSBURG    -->
                 
@@ -61,7 +61,7 @@
                 <a href="https://www.colonialwilliamsburg.com/">
                     <img src="images/williamsburg.jpg" alt= "colonial williamsburg"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
-                </div>
+                </div><br>
              
         <!-- BOSTON    -->
                 
@@ -72,7 +72,7 @@
                 <a href="https://www.thefreedomtrail.org/">
                     <img src="images/freedomtrail.jpg" alt= "freedom trail"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
-                </div>
+                </div><br>
           
         <!-- LEXINGTON & CONCORD    -->
                
@@ -84,7 +84,7 @@
                 <a href="https://www.nps.gov/mima/index.htm">
                     <img src="images/lexington.jpg" alt= "lexington and concord"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
-                </div>
+                </div><br>
  
         <!-- PHILADELPHIA    -->
                 
@@ -96,7 +96,7 @@
                 <a href="https://www.nps.gov/inde/index.htm">
                     <img src="images/independencehall.jpg" alt= "independence hall"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
-                </div>
+                </div><br>
  
         <!-- WASHINGTON DC    -->
                 
@@ -107,7 +107,7 @@
                 <a href="https://washington.org/find-dc-listings/tours-sightseeing">
                     <img src="images/whitehouse.jpg" alt= "white house"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
-                </div>
+                </div><br>
  
         <!-- NEW YORK    -->
                    
@@ -118,7 +118,7 @@
                 <a href="https://www.nps.gov/stli/index.htm">
                     <img src="images/liberty.jpg" alt= "statue of liberty"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
-                </div>
+                </div><br>
 
             </div>
         </div> 
