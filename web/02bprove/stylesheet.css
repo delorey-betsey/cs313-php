@@ -59,7 +59,9 @@ div.innermargins {
 div.logo1 {
     background-color:#e0162b;
     height:100%;
-    width:100%;
+    width:21%;
+}
+div.logo1.img {
     margin-top: .25em;
     margin-bottom: .25em;
 }
