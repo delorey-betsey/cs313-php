@@ -45,11 +45,12 @@
                     <p>My passion is the great American dream--</p>
                     <p>* *  Liberty and Justice for All  * *</p>
                 </div>
-                <div align="right" style="padding-left:20px; padding-bottom: 20px;border:1px solid rgb(204, 204, 204); color:rgb(0, 0, 0); background-color:rgb(255, 255, 255);">
+                <div align="left" style="padding-left:20px; padding-bottom:20px;">
                 <a href="https://museum.archives.gov/founding-documents">
                     <img src="00homepage/wethepeoplecolor.jpg" alt= "preamble"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
+                
             </div> 
         </div> 
 
