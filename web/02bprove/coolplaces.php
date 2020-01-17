@@ -47,7 +47,7 @@
                     <p>Battle of Yorktown--Virginia</p>
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
-                <a href="https://www.nps.gov/york/index.htm yorktown">
+                <a href="https://www.nps.gov/york/index.htm">
                     <img src="images/yorktown.jpg" alt= "yorktown"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
