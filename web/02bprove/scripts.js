@@ -1,4 +1,4 @@
-<script>
+{/* <script>
   $(document).ready(function(){
       $("p").mouseover(function(){
           $("p").css("background-color", "yellow");
@@ -7,4 +7,4 @@
           $("p").css("background-color", "white");
       });
   });
-</script>
+</script> */}

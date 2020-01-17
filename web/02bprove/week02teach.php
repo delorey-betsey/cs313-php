@@ -22,17 +22,17 @@
 <!-- COMMENT:  navigation     -->
 <?php include 'modules/responsive-nav.php'; ?>
 
-<div class="row">
- 
-<main><div>        
-<!-- Three Divs HTML   -->
- 
+<div class="row"> 
+<main><div>   
+
+<!-- Three Divs HTML   --> 
     <div class="info"  >       
         <div class="innermargins">
             <h2 style="text-align:left">Assignment:  Three Divs HTML Page</h2>
             <a href="https://peaceful-oasis-06205.herokuapp.com/02ateach/threedivs.html">Visit my site.</a>
         </div>
     </div>
+    
 </div></main>
 </div>
 

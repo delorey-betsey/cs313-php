@@ -1,3 +1,5 @@
+/* css stylesheet */
+
 #top-header {
     height: 165px;
 }  
@@ -21,12 +23,6 @@ div.banner {
     font-size:25px;
     color:#e0162b;
 }
-/* .reversebannertagline {
-    background-color: #e0162b;
-    font-family: Klint;
-    font-size:30px;
-    color:#FFFFFF;
-} */
 div.info {
     background-color: #FFFFFF; 
     color:#000000;
@@ -38,16 +34,6 @@ div.info {
     width: 90%;
     border-radius: 5px;
 }
-/* div.infoinner {
-    background-color: #FFFFFF; 
-    color:#000000;
-    float: left;
-    font-family: Arial;
-    font-size:16px;
-    margin: 2% 0% 5% 5%;
-    position: relative;
-    width: 80%;
-} */
 div.innermargins {
     background-color: #FFFFFF; 
     color:#000000;
@@ -63,12 +49,6 @@ div.logo1 {
     height:100%;
     width:21%;
 }
-/* img.logo1 {
-    padding-left: 10%;
-    padding-top:5%;
-    height:91%;
-    width:91%;
-} */ */
 div.description
 {
     background-color: #FFFFFF; 
@@ -80,25 +60,11 @@ div.description
     position: relative;
     width: 80%;
 }
-/* div.siteplan
-{
-    background-color: #FFFFFF;    
-    color:#0052a5;
-    float: left;
-    font-family: Klint;
-    font-size:16px;
-    margin: 2% 5% 5% 5%;
-    position: relative;
-    width: 80%;
-} */
 h4{
     text-align: right;
     padding-top: 0.25em;
     font-size: 14px;
 }
-/* .tabletr {
-    border:5px solid #e0162b;
-} */
 .redfont {
     color:#e0162b;
     padding-left: 20px;
@@ -108,9 +74,8 @@ h4{
     font-family: Stencil;
     font-size:24px;
 }
-
-
 /* TABLET rules END*/
+
 /* This is the widescreen browser CSS rules*/
 @media screen and (max-device-width: 1024px) and (orientation: portrait), 
        screen and (max-device-width: 1400px) and (orientation: landscape)

@@ -22,17 +22,17 @@
 <!-- COMMENT:  navigation     -->
 <?php include 'modules/responsive-nav.php'; ?>
 
-<div class="row">
- 
-<main><div>        
-<!-- Hello World   -->
- 
+<div class="row"> 
+<main><div>     
+
+<!-- Hello World   --> 
     <div class="info"  >       
         <div class="innermargins">
             <h2 style="text-align:left">Assignment:  Hello World!</h2>
             <a href="https://peaceful-oasis-06205.herokuapp.com/01hello/hello.html">Visit my site.</a>
         </div>
     </div>
+
 </div></main>
 </div>
 

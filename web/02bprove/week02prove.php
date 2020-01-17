@@ -22,9 +22,9 @@
 <!-- COMMENT:  navigation     -->
 <?php include 'modules/responsive-nav.php'; ?>
 
-<div class="row">
- 
-<main><div>        
+<div class="row"> 
+<main><div>  
+
 <!-- Personal Homepage   -->
  
     <div class="info"  >       
@@ -33,12 +33,13 @@
             <a href="https://peaceful-oasis-06205.herokuapp.com/02bprove/index.php">Visit my site.</a>
         </div>
     </div>
+
 </div></main>
 </div>
 
 <!-- COMMENT:  footer     -->
 <footer>
- <?php include 'modules/responsive-footer-nav.php'; ?>
+    <?php include 'modules/responsive-footer-nav.php'; ?>
 </footer>
 
 </div>
