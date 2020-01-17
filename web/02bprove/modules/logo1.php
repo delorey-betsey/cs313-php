@@ -1,7 +1,7 @@
-<div>
+<div id="logoimg">
     <a href="index.php">    
     <img src="00homepage/flag.jpg"
-         alt= "american flag and eagle" 
-         style="height:91%;width:91%;padding-left:10%;padding-top:5%;">>
+         alt= "american flag and eagle" >
+         <!-- style="height:91%;width:91%;padding-left:10%;padding-top:5%;"> -->
     </a>       
 </div>
