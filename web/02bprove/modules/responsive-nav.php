@@ -15,7 +15,7 @@
         
         <ul class="nav navbar-nav">
 
-            <!-- Betsey Delorey Drop Down-->
+            <!-- Betsey Delorey Drop Down -->
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BYU-I CS313 Web Engineering II: Betsey Delorey<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -23,9 +23,7 @@
                 </ul>
             </li>
             
-            <!-- Coming Soon Drop Down-->
-            <li><a href="03contact.php" >Coming Soon</a></li> -->
-            
+            <!-- Coming Soon Drop Down -->            
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Coming Soon<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -33,7 +31,7 @@
                 </ul>
             </li>
 
-            <!-- Assignments Drop Down-->
+            <!-- Assignments Drop Down -->
              <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Assignments<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">

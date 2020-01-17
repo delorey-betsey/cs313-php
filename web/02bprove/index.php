@@ -27,21 +27,20 @@
 <body>
 <div class="container">
     
-    <!-- COMMENT:  header     -->
-    <?php include 'modules/responsive-header.php'; ?>
+<!-- COMMENT:  header     -->
+<?php include 'modules/responsive-header.php'; ?>
 
-    <!-- COMMENT:  nav     -->
-    <?php include 'modules/responsive-nav.php'; ?>
+<!-- COMMENT:  nav     -->
+<?php include 'modules/responsive-nav.php'; ?>
 
-    <div class="row">
+<div class="row">
 
     <main><div>
 
-        <!-- COMMENT:  content (my passion, image and link)    --> 
+        <!-- My passion, image and link.    --> 
 
         <div class="info">
-            <div class="description">
-                
+            <div class="description">                
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
                     <p>My passion is the great American dream--</p>
                     <p>* *  Liberty and Justice for All  * *</p>
@@ -51,20 +50,18 @@
                     <img src="00homepage/wethepeoplecolor.jpg" alt= "preamble"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
-
-            </div>
- 
+            </div> 
         </div> 
 
     </div></main>
 
-    </div>
-        
-    <!-- COMMENT:  footer     -->
-        <footer>
-            <?php include  'modules/responsive-footer-nav.php'; ?>
-        </footer>
-    </div>
+</div>
+    
+<!-- COMMENT:  footer     -->
+    <footer>
+        <?php include  'modules/responsive-footer-nav.php'; ?>
+    </footer>
+</div>
     
 </div>
 </body>
