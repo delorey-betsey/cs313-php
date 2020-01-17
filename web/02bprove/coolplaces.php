@@ -77,8 +77,9 @@
         <!-- LEXINGTON & CONCORD    -->
                
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
-                    <p>Lexington and Concord</p>
-                    <p>"The Shot Heard 'Round the World"</p>
+                    <p>Lexington and Concord<br>
+                       "The Shot Heard 'Round the World"
+                    </p>
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://www.nps.gov/mima/index.htm">
@@ -89,8 +90,7 @@
         <!-- PHILADELPHIA    -->
                 
                 <div class="redfont" align="left" style="margin: 15px 0px 0px;font-weight: bold; font-size: 18px;">
-                    <p>Independence National Historic Park</p>
-                    <p>Philadelphia</p>
+                    <p>Philadelphia Independence Hall</p>
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://www.nps.gov/inde/index.htm">
