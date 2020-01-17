@@ -47,7 +47,7 @@
                 </div>
                 <div align="left" style="padding-left:20px; padding-bottom:20px;">
                 <a href="https://museum.archives.gov/founding-documents">
-                    <img src="00homepage/wethepeoplecolor.jpg" alt= "preamble"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/wethepeoplecolor.jpg" alt= "preamble"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
                 

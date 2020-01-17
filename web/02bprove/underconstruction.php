@@ -36,7 +36,7 @@
                 </div>
                 <div align="right" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://museum.archives.gov/founding-documents">
-                    <img src="00homepage/comingsoon.jpg" alt= "under construction"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/comingsoon.jpg" alt= "under construction"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
 
@@ -46,7 +46,7 @@
  
 <!-- <div>
     <a href="https://museum.archives.gov/founding-documents">
-        <img src="00homepage/comingsoon.jpg" alt= "under construction"  style="border:5px solid #e0162b;border-radius:5px" />
+        <img src="images/comingsoon.jpg" alt= "under construction"  style="border:5px solid #e0162b;border-radius:5px" />
     </a>        
 </div> -->
 

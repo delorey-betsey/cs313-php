@@ -37,7 +37,7 @@
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://www.historyisfun.org/jamestown-settlement/">
-                    <img src="00homepage/jamestown.jpg" alt= "jamestown"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/jamestown.jpg" alt= "jamestown"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
 
@@ -48,7 +48,7 @@
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://www.nps.gov/york/index.htm yorktown">
-                    <img src="00homepage/yorktown.jpg" alt= "yorktown"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/yorktown.jpg" alt= "yorktown"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
  
@@ -59,7 +59,7 @@
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://www.colonialwilliamsburg.com/">
-                    <img src="00homepage/williamsburg.jpg" alt= "colonial williamsburg"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/williamsburg.jpg" alt= "colonial williamsburg"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
              
@@ -70,7 +70,7 @@
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://www.thefreedomtrail.org/">
-                    <img src="00homepage/Jamestown-colony-exterior.jpg" alt= "freedom trail"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/freedomtrail.jpg" alt= "freedom trail"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
           
@@ -82,7 +82,7 @@
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://www.nps.gov/mima/index.htm">
-                    <img src="00homepage/lexington.jpg" alt= "lexington and concord"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/lexington.jpg" alt= "lexington and concord"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
  
@@ -94,7 +94,7 @@
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://www.nps.gov/inde/index.htm">
-                    <img src="00homepage/independencehall.jpg" alt= "independence hall"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/independencehall.jpg" alt= "independence hall"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
  
@@ -105,7 +105,7 @@
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://washington.org/find-dc-listings/tours-sightseeing">
-                    <img src="00homepage/whitehouse.jpg" alt= "white house"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/whitehouse.jpg" alt= "white house"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
  
@@ -116,7 +116,7 @@
                 </div>
                 <div align="left" style="width: 140px; border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
                 <a href="https://www.nps.gov/stli/index.htm">
-                    <img src="00homepage/liberty.jpg" alt= "statue of liberty"  style="border:5px solid #e0162b;border-radius:5px" />
+                    <img src="images/liberty.jpg" alt= "statue of liberty"  style="border:5px solid #e0162b;border-radius:5px" />
                 </a>    
                 </div>
 
