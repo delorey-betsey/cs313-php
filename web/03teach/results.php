@@ -15,12 +15,12 @@ $continents = $_POST['continents'];
 
 	<body>
         <!-- format return results -->
-        <h2>Welcome user:       <?php echo "<p> $username;</p>"   ?> </h2>
-        <h3>Email:              <?php echo $email;      ?> <A HREF="mailto:<?php echo $email;?>">Click Here To Email Me</A></h3>
+        <h2>Welcome user:       <?php echo $username;   ?> </h2>
+        <p>Email:              <?php echo $email;      ?> <A HREF="mailto:<?php echo $email;?>">Click Here To Email Me</A></p>
         
-        <h3>Comments:           <?php echo $comments;   ?> </h3>
-        <h3>Major:              <?php echo $major;      ?> </h3>
-        <h3>Continents visited: </h3> 
+        <p>Comments:           <?php echo $comments;   ?> </p>
+        <p>Major:              <?php echo $major;      ?> </p>
+        <p>Continents visited: </p> 
 
         <?php
                 if(empty($continents)) 
