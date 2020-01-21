@@ -9,23 +9,26 @@
     </head>
 
 <body>
-<!-- TEMPLATE  --> 
-    
-<!-- COMMENT:  flexbox header     -->   
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/common/header.php'; ?>
+    <!-- TEMPLATE  --> 
+        
+    <!-- COMMENT:  flexbox header     -->   
+    <?php include 'common/header.php'; ?>
 
 
-<!-- COMMENT:  flexbox nav     -->  
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/common/nav.php'; ?>
+    <!-- COMMENT:  flexbox nav     -->  
+    <?php include 'common/nav.php'; ?>
 
 
-<!-- COMMENT:  flexbox main     -->  
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/common/main.php'; ?>
+    <!-- COMMENT:  flexbox main     -->  
+    <?php include 'common/main.php'; ?>
 
 
-<!-- COMMENT:  flexbox footer     --> 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/common/footer.php'; ?>
+    <!-- COMMENT:  flexbox footer     --> 
+    <?php include 'common/footer.php'; ?>
 
+
+</body>
+</html>
 
 </body>
 </html>
