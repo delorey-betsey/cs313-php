@@ -10,7 +10,6 @@ $continents = $_POST['continents'];
 <html>
 	<head>
 		<title>Betsey Delorey - 03 Teach RESULTS</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
         </head>
 
 	<body>
