@@ -28,9 +28,11 @@
 
             Username: <input type="text" name="username"> 
             <br><br>
+
             Email: <input type="text" name="email"> 
             <br><br>
-            major:
+
+            Major:
             <input type="radio" name="major" <?php if (isset($major) && $major=="cs") echo "checked";? value="cs">
                 Computer Science
                 <br>
@@ -42,17 +44,19 @@
                 <br>
             <input type="radio" name="major" <?php if (isset($major) && $major=="ce") echo "checked";? value="ce">
                 Computer Engineering
-                <br>
+            <br><br>
+
             Comments: <br><textarea name="comments" rows="5" cols="40"></textarea>
             <br><br>
-            <input type="checkbox" name="continents" value="na">North America<br>
-            <input type="checkbox" name="continents"    value="sa">South America<br>
-            <input type="checkbox" name="continents"    value="eur">Europe<br>
-            <input type="checkbox" name="continents"    value="asia">Asia<br>
-            <input type="checkbox" name="continents"    value="aus">Australia<br>
-            <input type="checkbox" name="continents"    value="afr">Africa<br>
-            <input type="checkbox" name="continents"    value="ant">Antarctica<br>
+            <input type="checkbox" name="continents[]"    value="na">North America<br>
+            <input type="checkbox" name="continents[]"    value="sa">South America<br>
+            <input type="checkbox" name="continents[]"    value="eur">Europe<br>
+            <input type="checkbox" name="continents[]"    value="asia">Asia<br>
+            <input type="checkbox" name="continents[]"    value="aus">Australia<br>
+            <input type="checkbox" name="continents[]"    value="afr">Africa<br>
+            <input type="checkbox" name="continents[]"    value="ant">Antarctica<br>
             <br><br>
+
             <input type="submit">
 
         </form>
