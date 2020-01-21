@@ -20,7 +20,7 @@ $continents = $_POST['continents'];
         <A HREF="mailto:<?php echo $email;?>">Click Here To Email Me</A>
         <h1>Comments:           <?php echo $comments;   ?> </h1>
         <h1>Major:              <?php echo $major;      ?> </h1>
-        <h1>Continents visited: <?php echo $continents; ?> </h1> -->
+        <h1>Continents visited: <?php echo $continents; ?> </h1> 
 
         <?php
                 if(empty($continents)) 
