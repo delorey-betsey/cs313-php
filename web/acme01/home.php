@@ -4,13 +4,12 @@
         <title>ACME HOME BD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/acme/css/style.css" media="screen">
+        <link rel="stylesheet" href="css/style.css" media="screen">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
 
 <body>
     <!-- TEMPLATE  --> 
-    hello?
         
     <!-- COMMENT:  flexbox header     -->   
     <?php include 'common/header.php'; ?>
