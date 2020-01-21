@@ -14,8 +14,9 @@ $major = $_POST['major'];
 
 	<body>
         <!-- format return results -->
-        <h1>Welcome user:   <?php echo $username; ?> </h1>
-        <h1>Email:          <?php echo $email; ?> </h1>
-        <h1>Comments:       <?php echo $comments; ?> </h1>
+        <h1>Welcome user:       <?php echo $username; ?> </h1>
+        <h1>Email:              <?php echo $email; ?> </h1>
+        <h1>Comments:           <?php echo $comments; ?> </h1>
+        <h1>Major:              <?php echo $major; ?> </h1>
 	</body>
 </html>
