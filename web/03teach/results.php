@@ -11,16 +11,16 @@ $continents = $_POST['continents'];
 	<head>
 		<title>Betsey Delorey - 03 Teach RESULTS</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+        </head>
 
 	<body>
         <!-- format return results -->
-        <h2>Welcome user:       <?php echo $username;   ?> </h2>
-        <p>Email:              <?php echo $email;      ?> <A HREF="mailto:<?php echo $email;?>">Click Here To Email Me</A></p>
-        
+        <h2>Welcome user:      <?php echo $username;   ?> </h2>
+        <p>Email:              <?php echo $email;      ?> <A HREF="mailto:<?php echo $email;?>">Mailto:</A></p>        
         <p>Comments:           <?php echo $comments;   ?> </p>
         <p>Major:              <?php echo $major;      ?> </p>
-        <p>Continents visited: </p> 
+        <br>
+        Continents visited: 
 
         <?php
                 if(empty($continents)) 
