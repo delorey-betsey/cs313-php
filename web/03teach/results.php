@@ -1,5 +1,7 @@
 <?php
 $username = $_POST['username'];
+$email = $_POST['email'];
+$comments = $_POST['comments'];
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +13,8 @@ $username = $_POST['username'];
 
 	<body>
         <!-- format return results -->
-        <h1>Welcome user: <?php echo $username; ?> </h1>
+        <h1>Welcome user:   <?php echo $username; ?> </h1>
+        <h1>Email:          <?php echo $email; ?> </h1>
+        <h1>Comments:       <?php echo $comments; ?> </h1>
 	</body>
 </html>

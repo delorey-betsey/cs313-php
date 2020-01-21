@@ -6,11 +6,36 @@
     </head>
 
 	<body>
-        <!-- name, email, major, comments -->
+        <!-- name (text), 
+            email (text), 
+            major (radio button): 
+                    Computer Science
+                    Web Design and Development
+                    Computer Information Technology
+                    Computer Engineering) 
+            comments (text area) 
+            continents visited (checkbox list):
+                    North America
+                    South America
+                    Europe
+                    Asia
+                    Australia
+                    Africa
+                    Antarctica
+        -->
 
         <form method="post" action="results.php">
-            Username: <input type="text" name="username"><br>
+
+            Username: <input type="text" name="username"> 
             <input type="submit">
+            <br><br>
+            Email: <input type="text" name="email"> 
+            <input type="submit">
+            <br><br>
+            Comments: <textarea name="comments" rows="5" cols="40"></textarea>
+            <br><br>
+
+
 
         </form>
 	</body>
