@@ -1,22 +1,22 @@
 <nav>
     <!-- COMMENT:  top navigation links    -->
     <div class="navlinks" >
-     <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/homelink.php'; ?>
+     <?php include 'modules/homelink.php'; ?>
     </div>
     <div class="navlinks" >
-     <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/cannon.php'; ?>
+     <?php include 'modules/cannon.php'; ?>
     </div>
     <div class="navlinks" >
-     <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/explosive.php'; ?>
+     <?php include 'modules/explosive.php'; ?>
     </div>
     <div class="navlinks" >
-     <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/misc.php'; ?>
+     <?php include 'modules/misc.php'; ?>
     </div>
     <div class="navlinks" >
-     <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/rocket.php'; ?>
+     <?php include 'modules/rocket.php'; ?>
     </div>
     <div class="navlinks" >
-     <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/trap.php'; ?>
+     <?php include 'modules/trap.php'; ?>
     </div>
 </nav>
 

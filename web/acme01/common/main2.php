@@ -2,7 +2,7 @@
     <div>
         <!-- FIRST DIV--COMMENT:  main1     -->
         <div class="main1" >
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/title.php'; ?>
+            <?php include 'modules/title.php'; ?>
         </div>
         
         <!-- SECOND DIV--COMMENT:  main2     -->
@@ -10,7 +10,7 @@
             
             <!-- COMMENT:  feature     -->
             <div class="feature" >
-                <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/text.php'; ?>
+                <?php include 'modules/text.php'; ?>
             </div>
                        
 
@@ -22,12 +22,12 @@
             
             <!-- COMMENT:  recipes     -->
             <div class="recipes" >
-                <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/recipes.php'; ?>
+                <?php include 'modules/recipes.php'; ?>
             </div>
                        
             <!--COMMENT: text-->     
             <div class="reviews" >
-                <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/modules/reviews.php'; ?>
+                <?php include 'modules/reviews.php'; ?>
             </div>
             
         </div>
