@@ -7,7 +7,7 @@
 
 	<body>
         <!-- name (text), 
-            email (text), 
+            email (text), mailto:
             major (radio button): 
                     Computer Science
                     Web Design and Development
@@ -30,6 +30,25 @@
             <br><br>
             Email: <input type="text" name="email"> 
             <br><br>
+            major:
+            <input type="radio" name="major"
+
+            <?php if (isset($major) && $major=="cs") echo "checked";?>
+            value="cs">Computer Science
+            <input type="radio" name="major"
+
+            <?php if (isset($major) && $major=="wdd") echo "checked";?>
+            value="wdd">Web Design and Development
+            <input type="radio" name="major"
+
+            <?php if (isset($major) && $major=="cit") echo "checked";?>
+            value="cit">Computer Information Technology
+            <input type="radio" name="major"
+
+            <?php if (isset($major) && $major=="ce") echo "checked";?>
+            value="ce">Computer Engineering
+            <input type="radio" name="major"
+            
             Comments: <textarea name="comments" rows="5" cols="40"></textarea>
             <br><br>
 

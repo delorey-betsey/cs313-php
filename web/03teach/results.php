@@ -2,6 +2,7 @@
 $username = $_POST['username'];
 $email = $_POST['email'];
 $comments = $_POST['comments'];
+$major = $_POST['major'];
 ?>
 
 <!DOCTYPE html>
