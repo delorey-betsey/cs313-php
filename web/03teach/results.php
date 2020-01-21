@@ -2,7 +2,6 @@
 $username = $_POST['username'];
 ?>
 
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,9 +11,6 @@ $username = $_POST['username'];
 
 	<body>
         <!-- format return results -->
-
-        <h1>Welcome user: <?php echo $username; ?></h1>
-
-        </form>
+        <h1>Welcome user: <?php echo $username; ?> </h1>
 	</body>
 </html>
