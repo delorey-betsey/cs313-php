@@ -19,7 +19,7 @@ $continents = $_POST['continents'];
         <p>Email:              <?php echo $email;      ?> <A HREF="mailto:<?php echo $email;?>">Mailto:</A></p>        
         <p>Comments:           <?php echo $comments;   ?> </p>
         <p>Major:              <?php echo $major;      ?> </p>
-        <br>
+     
         Continents visited: 
 
         <?php
