@@ -1,0 +1,35 @@
+1. Insert new client into clients table. 
+
+	INSERT INTO `clients`
+	( `clientFirstname`, `clientLastname`, `clientEmail`, `clientPassword`, `comments`) 
+	VALUES 
+	('Tony','Stark','tony@starkent.com','Iam1ronM@n','I am the real Ironman')
+
+2.  Update field on client record on clients table.
+
+	UPDATE `clients` 
+	SET clientLevel=3 
+	WHERE clientId = 1;
+
+3. Replace a word in three different fields on the inventory table with a different word.
+
+	UPDATE acme.inventory
+	SET    invName = replace(invName, 'Nylon', 'Climbing'),
+		   invDescription = replace(invDescription, 'nylon', 'climbing'),
+		   invStyle = replace(invStyle, 'Nylon', 'Climbing')
+	WHERE  invId = 15;
+
+4. Inner join the inventory and categories table to produce a result set showing inventory items in the "Misc" category. 
+
+	SELECT inventory.invName,categories.categoryName
+	FROM inventory 
+	INNER JOIN categories ON inventory.categoryId = categories.categoryId
+	WHERE categories.categoryName = 'Misc';
+
+5. Delete a record from the inventory table using a WHERE clause for invId of "7".
+
+	DELETE FROM `inventory` WHERE invId = 7
+
+
+
+
