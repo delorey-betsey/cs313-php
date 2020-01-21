@@ -22,23 +22,20 @@ $continents = $_POST['continents'];
         <!-- <h1>Continents visited: <?php echo $continents; ?> </h1> -->
 
         <?php
-        if(empty($continents)) 
-            {
-                echo <br>
+                if(empty($continents)) 
+                {
                 echo("You didn't select any continents.");
-                echo <br>
-            } 
-        else 
-        {
+                } 
+                else 
+                {
                 $N = count($continents);
 
                 echo("You selected $N continents(s): ");
                 for($i=0; $i < $N; $i++)
                 {
-                   echo <br>
-                   echo($continents[$i] . " ");
+                echo($continents[$i] . " ");
                 }
-        }
+                }
         ?>
 	</body>
 </html>
