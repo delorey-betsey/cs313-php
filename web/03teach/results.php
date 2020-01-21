@@ -17,10 +17,10 @@ $continents = $_POST['continents'];
         <!-- format return results -->
         <h1>Welcome user:       <?php echo $username;   ?> </h1>
         <h1>Email:              <?php echo $email;      ?> </h1>
-        <A HREF="mailto:<?php echo $email; ?>">Click Here To Email Me</A>
+        <A HREF="mailto:<?php echo $email;?>">Click Here To Email Me</A>
         <h1>Comments:           <?php echo $comments;   ?> </h1>
         <h1>Major:              <?php echo $major;      ?> </h1>
-        <h1>Continents visited: <?php echo $continents; ?> </h1> 
+        <h1>Continents visited: <?php echo $continents; ?> </h1> -->
 
         <?php
                 if(empty($continents)) 
@@ -32,9 +32,10 @@ $continents = $_POST['continents'];
                 $N = count($continents);
 
                 echo("You selected $N continents(s): ");
+                echo "<br />";
                 for($i=0; $i < $N; $i++)
                 {
-                echo '<br>'
+                echo "<br />";
                 echo($continents[$i] . " ");
                 }
                 }
