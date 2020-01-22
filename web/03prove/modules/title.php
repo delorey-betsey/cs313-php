@@ -1,3 +1,3 @@
-Welcome to ARfS!  ART for Sale
+ART for Sale
 
 
