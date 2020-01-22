@@ -1,15 +1,7 @@
 <nav>
     <!-- COMMENT:  top navigation links    -->
 
-
-    <div class="navlinks" >      
-    </div>
-    <div class="navlinks" >      
-    </div>
-    <div class="navlinks" >      
-    </div>
-
-        <!-- COMMENT:  tools     -->
+    <!-- COMMENT:  tools     -->
 
     <div class="navlinks" >
         <?php include 'modules/browse.php'; ?>
