@@ -1,3 +1,3 @@
-<img id="logo" src="images/site/logo.gif" width="100%" alt= "ACME"  />           
+<img id="logo" src="arfslogo.gif" width="100%" alt= "ACME"  />           
 
 
