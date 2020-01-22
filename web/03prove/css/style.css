@@ -163,13 +163,15 @@ a:active {color: red; background-color:#ffffff;}
 }
 .recipes a:link {text-decoration:underline;padding:.25em 0 1.25em 0;}
 .grouping {
-    margin:100px;
     background-color: #ffffff;
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:space-around;
     align-items:center;
+}
+.art {
+    margin:25px;
 }
 .bbq {
   width: 25%;
