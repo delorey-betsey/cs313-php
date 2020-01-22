@@ -1,6 +1,7 @@
 <!--      Recipe Text-->
-<h3> </h3>  
-
+<br>
+<p>All proceeds benefit Dane County Humane Society.</p>  
+<br><br>
 <div class="grouping">
     
     <div class="bbq">
