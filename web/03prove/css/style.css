@@ -42,20 +42,17 @@ header {
     width:100%;
     height:100%;
 }
-.cart {
+.tools {
     display:flex;
     justify-content: flex-end;
     align-items:center; 
     font-size:1.75em;
     color:#000000;
  }
-#cart {
+#tools {
     height:20%;
     width:20%;
-    padding-right:.5em;
-}
-#mycart {
-    padding-right:.5em;
+    padding-left: 50px;
 }
 nav {
     display:flex;
