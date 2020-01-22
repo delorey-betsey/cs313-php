@@ -9,8 +9,8 @@
     <div class="navlinks" >
      <?php include 'modules/cats.php'; ?>
     </div>
-    <div class="navlinks" >
+    
         Welcome to ARfS!
-    </div>  
+ 
 </nav>
 
