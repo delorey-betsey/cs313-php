@@ -20,7 +20,10 @@
 
 
     <!-- COMMENT:  flexbox main     -->  
-    <?php include 'common/main3.php'; ?>
+    <?php include 'common/main3checkout.php'; ?>
+
+        <!-- COMMENT:  flexbox nav     -->  
+        <?php include 'common/nav.php'; ?>
 
 
     <!-- COMMENT:  flexbox footer     --> 

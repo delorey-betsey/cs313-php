@@ -4,13 +4,13 @@
     <!-- COMMENT:  tools     -->
 
     <div class="navlinks" >
-        <?php include 'modules/browse.php'; ?>
+        <?php include 'browse.php'; ?>
     </div>
     <div class="navlinks" >
-        <?php include 'modules/cart.php'; ?>
+        <?php include 'cart.php'; ?>
     </div>
     <div class="navlinks" >
-        <?php include 'modules/checkout.php'; ?>
+        <?php include 'checkout.php'; ?>
     </div>
         
  
