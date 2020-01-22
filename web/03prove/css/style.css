@@ -63,6 +63,8 @@ nav {
     background-color: #c74246;
     font-size:16px;
     font-weight: bold;
+    border-top: 0.313em solid #000000;
+    border-bottom: 0.313em solid #000000;
 }
 .navlinks {
     width:100px;
@@ -234,5 +236,4 @@ footer {
     background-color: #ffffff;
     padding-top: .4em;
     padding-bottom: .4em;
-    border-top: 0.313em solid #000000;
 }
