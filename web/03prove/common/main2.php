@@ -5,8 +5,8 @@
         <div class="main3" >
             
             <!-- COMMENT:  recipes     -->
-            <div class="recipes" >
-                <?php include 'modules/recipes.php'; ?>
+            <div class="inventory" >
+                <?php include 'modules/inventory.php'; ?>
             </div>
 
             
