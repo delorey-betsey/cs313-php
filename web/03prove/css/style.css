@@ -163,6 +163,8 @@ a:active {color: red; background-color:#ffffff;}
 }
 .recipes a:link {text-decoration:underline;padding:.25em 0 1.25em 0;}
 .grouping {
+    height: 300px;
+    width: 300px;
     background-color: #ffffff;
     display:flex;
     flex-direction:row;
