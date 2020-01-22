@@ -64,7 +64,7 @@ nav {
     align-items: center;
     width:100%; 
     min-height:3.125em;
-    background-color: #faa83e;
+    background-color: #c74246;
     font-size:95%;
     font-weight: bold;
 }
@@ -172,6 +172,10 @@ a:active {color: red; background-color:#ffffff;}
 }
 .art {
     margin:50px;
+}
+#welcome {
+    font-family: 'Dosis', sans-serif;
+    font-size: 100%;
 }
 .bbq {
   width: 25%;

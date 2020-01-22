@@ -7,7 +7,7 @@
         
         <!-- SECOND DIV--COMMENT:  main2     -->
         <div class="main2" >  
-            <?php include 'modules/recipes.php'; ?>                    
+            <?php include 'modules/inventory.php'; ?>                    
         </div>
       
     </div>

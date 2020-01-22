@@ -14,7 +14,11 @@
     </div>
     <div class="navlinks" >      
     </div>
-        Welcome to ARfS!
+    <div class="navlinks" >      
+    </div>
+    <div id="welcome" >Welcome to ARfS!      
+    </div>
+        
  
 </nav>
 
