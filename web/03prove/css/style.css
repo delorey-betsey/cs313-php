@@ -42,14 +42,14 @@ header {
     width:100%;
     height:100%;
 }
-.tools {
+.cart {
     display:flex;
     justify-content: flex-end;
     align-items:center; 
     font-size:1.75em;
     color:#000000;
  }
-#tools {
+#cart {
     height:20%;
     width:20%;
     padding-right:.5em;

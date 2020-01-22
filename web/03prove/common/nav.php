@@ -18,8 +18,15 @@
     </div>
 
         <!-- COMMENT:  tools     -->
-    <div class="tools" >
-        <?php include 'modules/tools.php'; ?>
+
+    <div class="cart" >
+        <?php include 'modules/browse.php'; ?>
+    </div>
+    <div class="cart" >
+        <?php include 'modules/cart.php'; ?>
+    </div>
+    <div class="cart" >
+        <?php include 'modules/checkout.php'; ?>
     </div>
         
  
