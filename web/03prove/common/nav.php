@@ -4,19 +4,10 @@
      <?php include 'modules/homelink.php'; ?>
     </div>
     <div class="navlinks" >
-     <?php include 'modules/cannon.php'; ?>
+     <?php include 'modules/dogs.php'; ?>
     </div>
     <div class="navlinks" >
-     <?php include 'modules/explosive.php'; ?>
-    </div>
-    <div class="navlinks" >
-     <?php include 'modules/misc.php'; ?>
-    </div>
-    <div class="navlinks" >
-     <?php include 'modules/rocket.php'; ?>
-    </div>
-    <div class="navlinks" >
-     <?php include 'modules/trap.php'; ?>
+     <?php include 'modules/cats.php'; ?>
     </div>
 </nav>
 
