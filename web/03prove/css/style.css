@@ -65,7 +65,7 @@ nav {
     width:100%; 
     min-height:3.125em;
     background-color: #c74246;
-    font-size:95%;
+    font-size:16px;
     font-weight: bold;
 }
 .navlinks {
@@ -85,7 +85,7 @@ a:active {color: red; background-color:#ffffff;}
 
 .navlinks a {
   text-decoration: none;
-  font-size: 85%;  
+  font-size:16px;  
   color:#ffffff;
 }
 .navlinks a:link {color: #ffffff;}
@@ -175,7 +175,8 @@ a:active {color: red; background-color:#ffffff;}
 }
 #welcome {
     font-family: 'Dosis', sans-serif;
-    font-size: 100%;
+    font-size: 20px;
+    color: #ffffff;
 }
 .bbq {
   width: 25%;
