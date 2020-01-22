@@ -11,13 +11,13 @@
 
         <!-- COMMENT:  tools     -->
 
-    <div class="cart" >
+    <div class="navlinks" >
         <?php include 'modules/browse.php'; ?>
     </div>
-    <div class="cart" >
+    <div class="navlinks" >
         <?php include 'modules/cart.php'; ?>
     </div>
-    <div class="cart" >
+    <div class="navlinks" >
         <?php include 'modules/checkout.php'; ?>
     </div>
         
