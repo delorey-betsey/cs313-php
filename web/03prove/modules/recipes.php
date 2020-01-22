@@ -1,30 +1,33 @@
 <!--      Recipe Text-->
-<h3>Featured Recipes</h3>  
+<h3>Art for Sale</h3>  
 
 <div class="grouping">
     
     <div class="bbq">
-        <img id="imgbbq" src="images/recipes/bbqsand.jpg"  alt= "ACME"  /> 
+        <img id="imgbbq" src="images/dog1.jpg"  alt= "dog1"  /> 
     </div>
-    <a id="bbq" href="#" title="BBQ Recipe" >Pulled Roadrunner BBQ</a>
+    <a id="bbq" href="#" title="dog1" >Item 1</a>
 </div>
+
 <div class="grouping">
     <div class="potpie">    
-        <img id="imgpotpie" src="images/recipes/potpie.jpg"  alt= "ACME"  /> 
+        <img id="imgpotpie" src="images/dog2.jpg"  alt= "dog2"  /> 
     </div>
-    <a id="potpie" href="#" title="Pot Pie Recipe" >Roadrunner Pot Pie</a> 
+    <a id="potpie" href="#" title="dog2" >Item 2</a> 
  </div>
+
 <div class="grouping">
     <div class="soup">    
-        <img id="imgsoup" src="images/recipes/soup.jpg"  alt= "ACME"  /> 
+        <img id="imgsoup" src="images/cat1.jpg"  alt= "cat1"  /> 
     </div>
-    <a id="soup" href="#" title="Soup Recipe" >Roadrunner Soup</a>  
+    <a id="soup" href="#" title="cat1" >Item 3</a>  
 </div>
+
 <div class="grouping">    
     <div class="taco">     
-        <img id="imgtaco" src="images/recipes/taco.jpg"  alt= "ACME"  /> 
+        <img id="imgtaco" src="images/cat3.jpg"  alt= "cat3"  /> 
     </div>
-    <a id="taco" href="#" title="Taco Recipe" >Roadrunner Tacos</a>   
+    <a id="taco" href="#" title="cat3" >Item 4</a>   
  </div>   
    
 </div>
