@@ -20,7 +20,7 @@
 
 
     <!-- COMMENT:  flexbox main     -->  
-    <?php include 'common/main1.php'; ?>
+    <?php include 'common/main3.php'; ?>
 
 
     <!-- COMMENT:  flexbox footer     --> 

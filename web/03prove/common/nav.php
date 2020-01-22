@@ -16,7 +16,10 @@
     </div>
     <div class="navlinks" >      
     </div>
-    <div id="welcome" >Welcome to ARfS!      
+
+        <!-- COMMENT:  tools     -->
+    <div class="tools" >
+        <?php include 'modules/tools.php'; ?>
     </div>
         
  
