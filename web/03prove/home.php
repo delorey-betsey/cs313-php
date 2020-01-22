@@ -22,6 +22,9 @@
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main1.php'; ?>
 
+        <!-- COMMENT:  flexbox nav     -->  
+        <?php include 'common/navbottom.php'; ?>
+
 
     <!-- COMMENT:  flexbox footer     --> 
     <?php include 'common/footer.php'; ?>
