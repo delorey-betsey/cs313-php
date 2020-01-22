@@ -6,7 +6,8 @@
         </div>
         
         <!-- SECOND DIV--COMMENT:  main2     -->
-        <div class="main2" >                      
+        <div class="main2" >  
+            <?php include 'modules/recipes.php'; ?>                    
         </div>
       
     </div>
