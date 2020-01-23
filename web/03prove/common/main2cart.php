@@ -1,22 +1,31 @@
 <?php
-$username = $_POST['username'];
-$email = $_POST['email'];
-$comments = $_POST['comments'];
-$major = $_POST['major'];
-$continents = $_POST['continents'];
+    $items = $_POST['items'];
 ?>
 
 <form method="post" action="cartpage.php">
 
     <br><br>
 
-    <input type="checkbox" name="items[]"    value="item1">Item 1<br>
-    <input type="checkbox" name="items[]"    value="item2">Item 2<br>
-    <input type="checkbox" name="items[]"    value="item3">Item 3<br>
-    <input type="checkbox" name="items[]"    value="item4">Item 4<br>
+    Items in cart: 
 
-    <br><br>
+        <?php
+                if(empty($items)) 
+                {
+                echo("You didn't select any continents.");
+                } 
+                else 
+                {
+                $N = count($items);
 
-    <input type="submit">
+                echo("You selected $N items(s): ");
+                echo "<br />";
+                for($i=0; $i < $N; $i++)
+                {
+                echo "<br />";
+                echo($items[$i] . " ");
+                }
+                }
+        ?>
+	</body>
 
 </form>
