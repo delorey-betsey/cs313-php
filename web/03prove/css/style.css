@@ -34,9 +34,11 @@ header {
     width:100%;
     background-color: #ffffff;
     }
-    img {
-        border: 0.313em solid green;
-    }
+img {    
+}
+.item {
+    font-size: 20px;
+}
 .logo {
     min-width:7em;
     padding:1.25em;
@@ -66,8 +68,8 @@ nav {
     background-color: #c74246;
     font-size:16px;
     font-weight: bold;
-    border-top: 0.313em solid brown;
-    border-bottom: 0.313em solid orange;
+    border-top: 0.313em solid black;
+    border-bottom: 0.313em solid black;
 }
 .navlinks {
     width:100px;
@@ -135,7 +137,7 @@ a:active {color: red; background-color:#ffffff;}
     flex-wrap: wrap;
     justify-content:space-around;
     align-items:center;
-    border: 0.313em solid blue;
+    /* border: 0.313em solid blue; */
 }
 .art {
     margin:50px;
