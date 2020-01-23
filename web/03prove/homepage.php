@@ -11,19 +11,18 @@
 <body>
     <!-- TEMPLATE  --> 
         
-    <!-- COMMENT:  flexbox header     -->   
+    <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
-
-    <!-- COMMENT:  flexbox nav     -->  
     <?php include 'common/nav.php'; ?>
+
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main1home.php'; ?>
 
-    <!-- COMMENT:  flexbox nav     -->  
-    <?php include 'common/nav.php'; ?>
 
-    <!-- COMMENT:  flexbox footer     --> 
+
+    <!-- COMMENT:  flexbox bottom nav and footer  -->  
+    <?php include 'common/nav.php'; ?>
     <?php include 'common/footer.php'; ?>
 
 
