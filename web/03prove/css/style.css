@@ -135,6 +135,10 @@ a:active {color: red; background-color:#ffffff;}
 }
 .art {
     margin:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 #welcome {
     color: #c74246;
