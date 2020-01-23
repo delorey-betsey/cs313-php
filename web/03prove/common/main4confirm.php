@@ -5,8 +5,12 @@ $city   = $_POST['city'];
 $state  = $_POST['state'];
 $zip    = $_POST['zip'];
 ?>
-
-<body>
+<main>
+    <div>
+        <!-- FIRST DIV--COMMENT:  main1     -->
+        <div class="main1" >
+            <?php include 'modules/title.php'; ?>            
+        </div>
         <!-- format return results -->
         <h2>Ship to:</h2>
         <p>Number:    <?php echo $number;       ?></p> 
@@ -14,5 +18,7 @@ $zip    = $_POST['zip'];
         <p>City:      <?php echo $city;         ?></p>
         <p>State:     <?php echo $state;        ?></p>        
         <p>Zip:       <?php echo $zip;          ?></p>
-     
-</body>
+          
+    </div>
+</main>
+

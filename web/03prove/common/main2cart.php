@@ -5,13 +5,7 @@
             <?php include 'modules/title.php'; ?>            
         </div>
 
-        <img src="images/comingsoon.jpg" alt="coming soon"> 
-
-        <!-- SECOND DIV--COMMENT:  main2     -->
-        <div class="main2" >  
-            <?php include 'modules/inventory.php'; ?>                    
-        </div>
-      
+        <img src="images/comingsoon.jpg" alt="coming soon">     
     </div>
 </main>
 

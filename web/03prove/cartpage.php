@@ -22,8 +22,8 @@
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main2cart.php'; ?>
 
-        <!-- COMMENT:  flexbox nav     -->  
-        <?php include 'common/nav.php'; ?>
+    <!-- COMMENT:  flexbox nav     -->  
+    <?php include 'common/nav.php'; ?>
 
 
     <!-- COMMENT:  flexbox footer     --> 
