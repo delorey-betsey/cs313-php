@@ -3,13 +3,13 @@
     <!-- COMMENT:  tools     -->
 
     <div class="navlinks" >
-        <?php include 'modules/browsemodule.php'; ?>
+        <?php include 'modules/browselink.php'; ?>
     </div>
     <div class="navlinks" >
-        <?php include 'modules/cartmodule.php'; ?>
+        <?php include 'modules/cartlink.php'; ?>
     </div>
     <div class="navlinks" >
-        <?php include 'modules/checkoutmodule.php'; ?>
+        <?php include 'modules/checkoutlink.php'; ?>
     </div>        
  
 </nav>
