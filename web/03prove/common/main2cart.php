@@ -5,7 +5,7 @@
             <?php include 'modules/title.php'; ?>            
         </div>
 
-        <img src="images/underconstruction.jpg" alt="under construction"> 
+        <img src="images/comingsoon.jpg" alt="coming soon"> 
 
         <!-- SECOND DIV--COMMENT:  main2     -->
         <div class="main2" >  
