@@ -1,1 +1,0 @@
-ACME, All rights reserved.
