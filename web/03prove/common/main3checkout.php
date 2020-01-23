@@ -1,7 +1,7 @@
 <main>
     <div> 
     <div class="main1" >
-            <?php include 'modules/title.php'; ?>
+            <?php include 'modules/titlecheckout.php'; ?>
         </div>
         
         <h3> Please enter Ship To info:

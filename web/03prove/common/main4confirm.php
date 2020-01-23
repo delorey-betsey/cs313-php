@@ -9,7 +9,7 @@ $zip    = $_POST['zip'];
     <div>
         <!-- FIRST DIV--COMMENT:  main1     -->
         <div class="main1" >
-            <?php include 'modules/title.php'; ?>            
+            <?php include 'modules/titleconfirm.php'; ?>            
         </div>
         <!-- format return results -->
         <h2>Ship to:</h2>
