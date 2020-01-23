@@ -5,12 +5,14 @@ $city   = $_POST['city'];
 $state  = $_POST['state'];
 $zip    = $_POST['zip'];
 ?>
+
 <main>
     <div>
-        <!-- FIRST DIV--COMMENT:  main1     -->
+        <!-- FIRST DIV--COMMENT:  Confirmation     -->
         <div class="main1" >
             <?php include 'modules/titleconfirm.php'; ?>            
         </div>
+
         <!-- format return results -->
         <h2>Ship to:</h2>
         <p>Number:    <?php echo $number;       ?></p> 

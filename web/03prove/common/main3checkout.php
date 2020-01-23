@@ -1,7 +1,8 @@
 <main>
-    <div> 
-    <div class="main1" >
-            <?php include 'modules/titlecheckout.php'; ?>
+    <div>
+        <!-- FIRST DIV--COMMENT:  Confirmation     -->
+        <div class="main1" >
+            <?php include 'modules/titlecheckout.php'; ?>            
         </div>
         
         <h3> Ship To info: </h3>
