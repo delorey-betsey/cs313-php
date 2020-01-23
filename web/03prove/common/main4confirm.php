@@ -1,15 +1,18 @@
-<main>
-    <div>
-        <!-- FIRST DIV--COMMENT:  main1     -->
-        <div class="main1" >
-            <?php include 'modules/title.php'; ?>
-        </div>
-        
-        <!-- SECOND DIV--COMMENT:  main2     -->
-        <div class="main2" >  
-            <?php include 'modules/inventory.php'; ?>                    
-        </div>
-      
-    </div>
-</main>
+<?php
+$number = $_POST['number'];
+$street = $_POST['street'];
+$city   = $_POST['city'];
+$state  = $_POST['state'];
+$zip    = $_POST['zip'];
+?>
 
+<body>
+        <!-- format return results -->
+        <h2>Ship to:</h2>
+        <p>Number:    <?php echo $number;?></p> 
+        <p>Street:    <?php echo $street;?></p>       
+        <p>City:      <?php echo $city;?></p>
+        <p>State:     <?php echo $state;?></p>        
+        <p>Zip:       <?php echo $zip;?></p>
+     
+</body>

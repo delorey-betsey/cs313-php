@@ -1,17 +1,25 @@
 <main>
-    <div>
-        <!-- FIRST DIV--COMMENT:  main1     -->
-        <div class="main1" >
-            <?php include 'modules/title.php'; ?>
-        </div>
-        
-        <img src="images/dogstick.jpg" alt="dog stick">
+    <div>       
+        <form method="post" action="main4confirm.php">
 
-        <!-- SECOND DIV--COMMENT:  main2     -->
-        <div class="main2" >  
-            <?php include 'modules/inventory.php'; ?>                    
-        </div>
-      
+            Number: <input type="text" name="number"> 
+            <br><br>
+
+            Street: <input type="text" name="street"> 
+            <br><br>
+            
+            City: <input type="text" name="city"> 
+            <br><br>
+
+            State: <input type="text" name="state"> 
+            <br><br>
+
+            Zip: <input type="text" name="zip"> 
+            <br><br>
+
+            <input type="submit">
+
+        </form>   
     </div>
 </main>
 
