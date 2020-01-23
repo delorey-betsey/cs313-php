@@ -7,7 +7,7 @@
         <h3> Please enter Ship To info:
         <br><br>
     
-        <form method="post" action="main4confirm.php">
+        <form method="post" action="confirmationpage.php">
         
             Number: <input type="text" name="number"> 
             <br><br>
