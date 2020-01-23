@@ -1,2 +1,2 @@
     <!-- <img id="cart" src="images/checkout-button.jpg"  alt= "checkout"  />  -->
-    <a  href="#" title="Checkout" >Checkout</a>
+    <a  href="<?php echo 'checkoutpage.php'; ?>" title="Checkout" >Checkout</a>
