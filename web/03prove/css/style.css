@@ -35,7 +35,7 @@ header {
     background-color: #ffffff;
     }
     img {
-        border: 10px solid green;
+        border: 0.313em solid green;
     }
 .logo {
     min-width:7em;
@@ -135,11 +135,11 @@ a:active {color: red; background-color:#ffffff;}
     flex-wrap: wrap;
     justify-content:space-around;
     align-items:center;
-    border: 10px solid blue;
+    border: 0.313em solid blue;
 }
 .art {
     margin:50px;
-    border: 10px solid red;
+    border: 0.313em solid red;
     display:flex;
     flex-direction:column;
     justify-content:center;
