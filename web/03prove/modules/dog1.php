@@ -1,2 +1,3 @@
- 
-<img   src="../03prove/images/full/dog1.jpg"  alt= "dog1"         
+<div> 
+    <img   src="images/full/dog1.jpg"  alt= "dog1"  />       
+</div>
