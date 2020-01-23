@@ -9,10 +9,10 @@ $zip    = $_POST['zip'];
 <body>
         <!-- format return results -->
         <h2>Ship to:</h2>
-        <p>Number:    <?php echo $number;?></p> 
-        <p>Street:    <?php echo $street;?></p>       
-        <p>City:      <?php echo $city;?></p>
-        <p>State:     <?php echo $state;?></p>        
-        <p>Zip:       <?php echo $zip;?></p>
+        <p>Number:    <?php echo $number;       ?></p> 
+        <p>Street:    <?php echo $street;       ?></p>       
+        <p>City:      <?php echo $city;         ?></p>
+        <p>State:     <?php echo $state;        ?></p>        
+        <p>Zip:       <?php echo $zip;          ?></p>
      
 </body>
