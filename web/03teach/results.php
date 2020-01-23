@@ -15,7 +15,8 @@ $continents = $_POST['continents'];
 	<body>
         <!-- format return results -->
         <h2>Welcome user:      <?php echo $username;   ?> </h2>
-        <p>Email:              <?php echo $email;      ?> <A HREF="mailto:<?php echo $email;?>">Mailto:</A></p>        
+        <p>Email:              <?php echo $email;      ?> <A HREF="mailto:<?php echo $email;?>">Mailto:</A></p> 
+        <p>Email:              <?php echo                '<a href="mailto:'.$email.'">'.$email.'</a>';?></p>       
         <p>Comments:           <?php echo $comments;   ?> </p>
         <p>Major:              <?php echo $major;      ?> </p>
      
