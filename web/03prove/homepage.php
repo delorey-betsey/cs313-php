@@ -14,17 +14,14 @@
     <!-- COMMENT:  flexbox header     -->   
     <?php include 'common/header.php'; ?>
 
-
     <!-- COMMENT:  flexbox nav     -->  
     <?php include 'common/nav.php'; ?>
-
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main1home.php'; ?>
 
-        <!-- COMMENT:  flexbox nav     -->  
-        <?php include 'common/nav.php'; ?>
-
+    <!-- COMMENT:  flexbox nav     -->  
+    <?php include 'common/nav.php'; ?>
 
     <!-- COMMENT:  flexbox footer     --> 
     <?php include 'common/footer.php'; ?>

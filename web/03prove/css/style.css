@@ -101,31 +101,6 @@ a:active {color: red; background-color:#ffffff;}
     position: relative;
     text-align: left;
 }
-.feature {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background: url("images/site/rocketfeature.jpg");
-  z-index: 0; 
-  width:100%;  
-}
-.text {
-    color:#de2226;
-    text-align:left;
-    font-size:85%;
-    position: absolute;
-    width: 12.5em;
-    height: 6.25em;
-    top: 40%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-  }
-.text ul {
-    list-style:none;
-}
-.text a {    
-    background:transparent;
-}
 #actionbtn {
     width:75%;
     height:75%;
@@ -136,16 +111,6 @@ a:active {color: red; background-color:#ffffff;}
     font-size:1em;
     padding:.5em 0 .5em 1em;
     background-color: #ffffff;
-}
-.reviews ul{
-   padding-left: 1em;
-}
-.reviews h3 {
-    position:relative;
-    top:0;
-    left:0;
-    width:100%;    
-    padding:.5em 0 .5em 0;
 }
 .inventory {
     display:flex;
@@ -174,61 +139,7 @@ a:active {color: red; background-color:#ffffff;}
 #welcome {
     color: #c74246;
 }
-.bbq {
-  width: 25%;
-  min-width:9.375em;
-  z-index: 0;
-  border: 0.125em solid #25468f;
-  border-radius: 0.5em;
-  background-color: #e5e5e5;
-}
-#imgbbq {
-    display:flex;
-    flex-direction:column;
-    margin:auto;
-}
-.potpie {
-  width: 25%;  
-  min-width:9.375em;
-  text-align: center;
-  z-index: 0;
-  border: 0.125em solid #25468f;
-  border-radius: 0.5em;
-  background-color: #e5e5e5;
-}
-#imgpotpie {
-    display:flex;
-    flex-direction:column;
-    margin:auto;
-}
-.soup {
-  width: 25%;  
-  min-width:9.375em;
-  text-align: center;
-  z-index: 0;
-  border: 0.125em solid #25468f;
-  border-radius: 0.5em;
-  background-color: #e5e5e5;
-}
-#imgsoup {
-    display:flex;
-    flex-direction:column;
-    margin:auto;
-}
-.taco {
-  width: 25%;  
-  min-width:9.375em;
-  text-align: center;
-  z-index: 0;
-  border: 0.125em solid #25468f;
-  border-radius: 0.5em;
-  background-color: #e5e5e5;
-}
-#imgtaco {
-    display:flex;
-    flex-direction:column;
-    margin:auto;
-}
+
 footer {
     font-size:.75em;
     width:100%;
