@@ -9,7 +9,7 @@
     </head>
 
 <body>
-    <!-- TEMPLATE  --> 
+ 
         
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
@@ -29,5 +29,3 @@
 </body>
 </html>
 
-</body>
-</html>

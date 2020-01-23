@@ -1,8 +1,11 @@
 <main>
     <div> 
+    <div class="main1" >
+            <?php include 'modules/title.php'; ?>
+        </div>
         
-    <h3> Please enter Ship To info:
-    <br><br>
+        <h3> Please enter Ship To info:
+        <br><br>
     
         <form method="post" action="main4confirm.php">
         

@@ -17,7 +17,7 @@
 
     <!-- COMMENT:  flexbox main     -->  
     <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form -->
-    <?php include 'common/main3checkout.php.php'; ?>
+    <?php include 'common/main3checkout.php'; ?>
 
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  
