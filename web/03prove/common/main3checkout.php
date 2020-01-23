@@ -4,7 +4,7 @@
             <?php include 'modules/titlecheckout.php'; ?>
         </div>
         
-        <h3> Please enter Ship To info:
+        <h3> Ship To info: </h3>
         <br><br>
     
         <form method="post" action="confirmationpage.php">
