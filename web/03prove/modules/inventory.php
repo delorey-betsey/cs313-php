@@ -5,7 +5,7 @@
 <div class="grouping">
     
     <div class="art">
-        <div><a  class="item" href="<img src=images/full/dog1/>" title="dog1" >Item 1</a></div>
+        <div><a  class="item" href="<img src=images/full/dog1.jpg>" title="dog1" >Item 1</a></div>
         <div><img   src="images/dog1.jpg"  alt= "dog1"  /> </div>            
         <div><a href="#"><img id="actionbtn" alt="Add to cart button" src="images/addbutton.jpg"></a></div>
     </div>
