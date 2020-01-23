@@ -132,6 +132,7 @@ a:active {color: red; background-color:#ffffff;}
     flex-wrap: wrap;
     justify-content:space-around;
     align-items:center;
+    border: 5px solid blue;
 }
 .art {
     margin:50px;
