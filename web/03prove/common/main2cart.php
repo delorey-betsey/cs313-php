@@ -1,5 +1,7 @@
-<?php echo $_SESSION['username'];?>
-
+<?php
+    $items = $_POST['items'];
+    setcookie($cookie_items, $items, time() + (86400 * 30), "/"); // 86400 = 1 day    
+?>
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  Cart     -->
@@ -7,8 +9,6 @@
             <?php include 'modules/titlecart.php'; ?>            
         </div>
 
-        <?php echo $var;?>
-        
         <form method="post" action="cartpage.php">
             <br><br>
             Items in cart: 
@@ -36,5 +36,5 @@
                 ?>
         </form>
         <br><br><br>
-    </div>    
+    </div>
 </main>

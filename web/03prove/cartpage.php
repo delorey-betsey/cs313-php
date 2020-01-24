@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,16 +7,17 @@
         <link rel="stylesheet" href="css/style.css" media="screen">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
-<body> 
 
-       
+<body> 
+        
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
-   
+
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main2cart.php'; ?>
+
 
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  

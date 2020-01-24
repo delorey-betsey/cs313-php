@@ -42,5 +42,7 @@
 
     </div>
 </form>
+<!-- 86400 = 1 day -->
+<?php> setcookie($cookie_items, $items, time() + (86400 * 30), "/");  ?> 
 
   

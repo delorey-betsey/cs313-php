@@ -8,18 +8,17 @@
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
 
-<body> 
+<body>
+ 
         
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
-    <?php $_SESSION['username'] = 'betsey';
-            echo $_SESSION['username']; 
-    ?>
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main1home.php'; ?>
+
 
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  
