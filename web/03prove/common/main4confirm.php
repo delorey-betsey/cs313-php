@@ -20,9 +20,8 @@ $zip    = $_POST['zip'];
         <p>City:      <?php echo $city;         ?></p>
         <p>State:     <?php echo $state;        ?></p>        
         <p>Zip:       <?php echo $zip;          ?></p>
-          
-
-
+        <br><br><br>
+    
     </div>
 </main>
 
