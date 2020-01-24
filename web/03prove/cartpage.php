@@ -16,6 +16,10 @@
 
 
     <!-- COMMENT:  flexbox main     -->  
+
+    
+    <?php echo $_SESSION['username']; ?>
+    
     <?php include 'common/main2cart.php'; ?>
 
 

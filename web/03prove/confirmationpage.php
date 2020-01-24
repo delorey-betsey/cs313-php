@@ -20,6 +20,10 @@
 
 
     <!-- COMMENT:  flexbox main     -->  
+
+    
+    <?php echo $_SESSION['username']; ?>
+    
     <?php include 'common/main4confirm.php'; ?>
 
         <!-- COMMENT:  flexbox nav     -->  
