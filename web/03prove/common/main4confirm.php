@@ -1,17 +1,12 @@
 <?php
+    $items = $_SESSION['items'];
+
     $number = $_POST['number'];
     $street = $_POST['street'];
     $city   = $_POST['city'];
     $state  = $_POST['state'];
     $zip    = $_POST['zip'];
 
-    setcookie($cookie_number, $number, time() + (86400 * 30), "/"); // 86400 = 1 day
-    setcookie($cookie_street, $street, time() + (86400 * 30), "/"); // 86400 = 1 day
-    setcookie($cookie_city,   $city,   time() + (86400 * 30), "/"); // 86400 = 1 day
-    setcookie($cookie_state,  $state,  time() + (86400 * 30), "/"); // 86400 = 1 day
-    setcookie($cookie_zip,    $zip,    time() + (86400 * 30), "/"); // 86400 = 1 day
-
-    $items = $_POST['cookie_items'];
 ?>
 
 <main>
@@ -30,7 +25,7 @@
         <br><br><br>    
     </div>
     <br><br>
-        Items in cart: 
+        <h2>Items in cart:</h2> 
             <?php
                 if(empty($items)) 
                     {
@@ -47,7 +42,6 @@
                         {
                         echo "<br />";
                         echo($items[$i] . " ");
-                        setcookie('selections_array[$i]', 'value' , time()+3600);
                         echo "<br />";
                         echo "<br />";
                         }
