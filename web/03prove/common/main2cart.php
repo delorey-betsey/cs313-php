@@ -27,6 +27,7 @@
                             {
                             echo "<br />";
                             echo($items[$i] . " ");
+                            setcookie('selections_array[$i]', '$i' , time()+3600);
                             echo "<br />";
                             echo "<br />";
                             }
