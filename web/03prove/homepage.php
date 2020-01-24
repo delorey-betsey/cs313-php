@@ -1,3 +1,8 @@
+<?php
+    session_start();     
+    $_SESSION['username'] = 'betsey';
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
