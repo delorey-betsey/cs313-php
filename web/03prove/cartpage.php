@@ -1,7 +1,4 @@
-<?php
-    $var = $_SESSION['username'];  
-    echo $var;   
-?>
+
 <!DOCTYPE html>
 <html>
     <head>
