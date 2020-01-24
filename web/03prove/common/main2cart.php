@@ -13,22 +13,24 @@
             Items in cart: 
                 <?php
                     if(empty($items)) 
-                    {
-                    echo("You didn't select any items.");
-                    echo "<br />";
-                    } 
+                        {
+                        echo("You didn't select any items.");
+                        echo "<br />";
+                        echo "<br />";
+                        } 
                     else 
-                    {
-                    $N = count($items);
-
-                    echo("You selected $N items(s): ");
-                    echo "<br />";
-                    for($i=0; $i < $N; $i++)
-                    {
-                    echo "<br />";
-                    echo($items[$i] . " ");
-                    }
-                    }
+                        {
+                        $N = count($items);
+                        echo("You selected $N items(s): ");
+                        echo "<br />";
+                        for($i=0; $i < $N; $i++)
+                            {
+                            echo "<br />";
+                            echo($items[$i] . " ");
+                            echo "<br />";
+                            echo "<br />";
+                            }
+                        }
                 ?>
         </form>
     </div>
