@@ -10,7 +10,8 @@
             <div><a  class="item" href="../03prove/modules/dog1.php" title="dog1" >Item 1 - $10</a></div>
             <div><img   src="images/dog1.jpg"  alt= "dog1"  /> </div>  
             <!-- <div><a href="#"><img id="actionbtn" alt="Add to cart button" src="images/addbutton.jpg"></a></div> -->       
-            <input type="checkbox" name="items[]"    value="item1">Item 1<br>
+            <input type="checkbox" id="item1" name="items[]" value="item1"><br>
+            <label for="item1">Item 1</label>
         </div>
         <br><br>
 
@@ -18,7 +19,8 @@
             <div><a class="item" href="../03prove/modules/dog2.php" title="dog2" >Item 2 - $20</a> </div>
             <div><img  src="images/dog2.jpg"  alt= "dog2"  /> </div>  
             <!-- <div><a href="#"><img id="actionbtn" alt="Add to cart button" src="images/addbutton.jpg"></a></div> -->
-            <input type="checkbox" name="items[]"    value="item2">Item 2<br>
+            <input type="checkbox" id="item2" name="items[]" value="item2"><br>
+            <label for="item2">Item 2</label>
         </div>
         <br><br>
 
@@ -26,7 +28,8 @@
             <div><a class="item"  href="../03prove/modules/cat1.php" title="cat1" >Item 3 - $30</a></div>
             <div><img  src="images/cat1.jpg"  alt= "cat1"  /> </div>            
             <!-- <div><a href="#"><img id="actionbtn" alt="Add to cart button" src="images/addbutton.jpg"></a></div> -->
-            <input type="checkbox" name="items[]"    value="item3">Item 3<br>
+            <input type="checkbox" id="item3" name="items[]" value="item3"><br>
+            <label for="item3">Item 3</label>
         </div>       
         <br><br>
 
@@ -34,7 +37,8 @@
             <div><a class="item"  href="../03prove/modules/cat2.php" title="cat2" >Item 4 - $40</a></div>
             <div><img  src="images/cat3.jpg"  alt= "cat3"  /> </div> 
             <!-- <div><a href="#"><img id="actionbtn" alt="Add to cart button" src="images/addbutton.jpg"></a></div> -->
-            <input type="checkbox" name="items[]"    value="item4">Item 4<br>
+            <input type="checkbox" id="item4" name="items[]" value="item4"><br>
+            <label for="item4">Item 4</label>
         </div>
         <br><br>  
 

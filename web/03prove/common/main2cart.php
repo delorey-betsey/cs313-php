@@ -1,6 +1,6 @@
 <?php
     $items = $_POST['items'];
-    $_SESSION['items'] = $items;   
+    $_SESSION['items'] = $_POST['items'];   
 ?>
 <main>
     <div>
