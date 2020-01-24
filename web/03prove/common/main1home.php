@@ -1,11 +1,14 @@
+<?php
+    session_start();     
+?>
+<?php echo $_SESSION['username'];?>
+
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  main title     -->
         <div class="main1" >
             <?php include 'modules/title.php'; ?>
         </div>        
-
-    <?php echo $SESSION['username'];?>
         
         <!-- SECOND DIV--COMMENT:  main inventory     -->
         <div class="main2" >  

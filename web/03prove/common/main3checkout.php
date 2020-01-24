@@ -1,3 +1,8 @@
+<?php
+    session_start();     
+?>
+<?php echo $_SESSION['username'];?>
+
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  Confirmation     -->

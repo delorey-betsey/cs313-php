@@ -1,6 +1,8 @@
 <?php
-    $items = $_SESSION['selections'];  
+    session_start();     
 ?>
+<?php echo $_SESSION['username'];?>
+
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  Cart     -->

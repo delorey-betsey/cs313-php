@@ -1,4 +1,9 @@
 <?php
+    session_start();     
+?>
+<?php echo $_SESSION['username'];?>
+
+<?php
     $number = $_POST['number'];
     $street = $_POST['street'];
     $city   = $_POST['city'];
