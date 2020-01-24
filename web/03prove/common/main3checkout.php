@@ -1,4 +1,7 @@
 <main>
+
+<?php echo $_SESSION['username']; ?>
+
     <div>
         <!-- FIRST DIV--COMMENT:  Confirmation     -->
         <div class="main1" >

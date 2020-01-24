@@ -4,6 +4,10 @@
 ?>
 <main>
     <div>
+
+    <?php echo $_SESSION['username']; ?>
+
+    
         <!-- FIRST DIV--COMMENT:  Cart     -->
         <div class="main1" >
             <?php include 'modules/titlecart.php'; ?>            
