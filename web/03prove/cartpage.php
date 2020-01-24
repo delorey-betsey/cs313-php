@@ -2,7 +2,15 @@
     $var = $_SESSION['username'];  
     echo $var;   
 ?>
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARFs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
+    </head>
 <body> 
 
        
@@ -20,3 +28,4 @@
     <?php include 'common/footer.php'; ?>
 
 </body>
+</html>
