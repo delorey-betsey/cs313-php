@@ -3,14 +3,16 @@
 
 <p>All proceeds benefit Dane County Humane Society.</p>  
 
-<form method="post" action="cartpage.php">
+<form method="post" action="homepage.php">
     <div class="grouping">
 
         <div class="art">
             <div><a  class="item" href="../03prove/modules/dog1.php" title="dog1" >Item 1 - $10</a></div>
             <div><img   src="images/dog1.jpg"  alt= "dog1"  /> </div>  
             <!-- <div><a href="#"><img id="actionbtn" alt="Add to cart button" src="images/addbutton.jpg"></a></div> -->       
-            <input type="checkbox" name="items[]"    value="item1">Item 1<br>
+            <div><input type="radio" name="item"  
+                <?php if (isset($item))  echo "checked";?> value="Item 1">Item 1
+            </div>
         </div>
         <br><br>
 
@@ -37,11 +39,12 @@
             <input type="checkbox" name="items[]"    value="item4">Item 4<br>
         </div>
         <br><br>  
+
         <input type="submit" > 
 
     </div>
 </form>
 
-
+setcookie($cookie_items, $items, time() + (86400 * 30), "/"); // 86400 = 1 day 
 
   
