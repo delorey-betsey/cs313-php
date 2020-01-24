@@ -1,6 +1,5 @@
 <?php
-    $items = $_POST['items'];
-    setcookie($cookie_items, $items, time() + (86400 * 30), "/"); // 86400 = 1 day    
+    $items = $_SESSION['selections'];  
 ?>
 <main>
     <div>
