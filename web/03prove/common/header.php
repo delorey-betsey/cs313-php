@@ -1,7 +1,6 @@
 <?php
     session_start();     
     $_SESSION['username'] = 'betsey';
-    echo $_SESSION['username'];
 ?>
  
 <header>   
