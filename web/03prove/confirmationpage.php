@@ -8,8 +8,10 @@
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
 
-<body>
-echo $SESSION['username']; 
+<body> 
+<?php 
+    echo $SESSION['username'];
+?> 
         
     <!-- COMMENT:  flexbox header     -->   
     <?php include 'common/header.php'; ?>
