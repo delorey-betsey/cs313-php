@@ -14,7 +14,7 @@
                 <?php
                     if(empty($items)) 
                     {
-                    echo("You didn't select any continents.");
+                    echo("You didn't select any items.");
                     } 
                     else 
                     {
