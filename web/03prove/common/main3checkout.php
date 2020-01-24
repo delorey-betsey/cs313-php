@@ -4,7 +4,9 @@
         <div class="main1" >
             <?php include 'modules/titlecheckout.php'; ?>            
         </div>
-        
+
+        <?php echo $SESSION['username'];?>
+                
         <h3> Ship To info: </h3>
         <br><br>
     

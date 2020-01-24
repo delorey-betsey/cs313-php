@@ -9,6 +9,8 @@
             <?php include 'modules/titlecart.php'; ?>            
         </div>
 
+        <?php echo $SESSION['username'];?>
+        
         <form method="post" action="cartpage.php">
             <br><br>
             Items in cart: 
