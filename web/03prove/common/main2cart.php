@@ -9,6 +9,9 @@
             <?php include 'modules/titlecart.php'; ?>            
         </div>
 
+        <a  href="<?php echo 'homepage.php'; ?>" title="Browse" >Browse</a>
+        <a  href="<?php echo 'checkoutpage.php'; ?>" title="Checkout" >Checkout</a>
+
         <form method="post" action="cartpage.php">
             <br><br>
             Items in cart: 
