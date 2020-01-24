@@ -1,5 +1,6 @@
 <?php
-    session_start();     
+    $var = $_SESSION['username'];  
+    echo $var;   
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +18,6 @@
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
-
-    <?php echo $_SESSION['username'];?>
     
 
     <!-- COMMENT:  flexbox main     -->  
