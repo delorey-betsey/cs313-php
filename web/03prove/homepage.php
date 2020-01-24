@@ -9,7 +9,7 @@
     </head>
 
 <body>
- 
+ echo $SESSION['username'];
         
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
