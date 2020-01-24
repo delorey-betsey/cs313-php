@@ -10,7 +10,7 @@
 
 <body> 
 <?php 
-    echo $SESSION['username'];
+    echo $_SESSION['username'];
 ?> 
         
     <!-- COMMENT:  flexbox header     -->   

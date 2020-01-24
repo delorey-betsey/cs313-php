@@ -9,7 +9,10 @@
     </head>
 
 <body> 
-        
+<?php 
+    echo $_SESSION['username'];
+?>
+       
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
@@ -17,7 +20,6 @@
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main2cart.php'; ?>
-
 
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  

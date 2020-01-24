@@ -1,8 +1,3 @@
-<?php
-    session_start();
-    $_SESSION['username'] = 'betsey';
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +10,8 @@
 
 <body> 
 <?php 
-    echo $SESSION['username'];
+    $_SESSION['username'] = 'betsey';
+    echo $_SESSION['username'];
 ?>
         
     <!-- COMMENT:  flexbox header and nav    -->   
