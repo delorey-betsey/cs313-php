@@ -1,7 +1,7 @@
 <?php
-    session_start();     
+    session_start(); 
+    $var = $_SESSION['username'];    
 ?>
-<?php echo $_SESSION['username'];?>
 
 <main>
     <div>
@@ -10,7 +10,7 @@
             <?php include 'modules/titlecart.php'; ?>            
         </div>
 
-        <?php echo $SESSION['username'];?>
+        <?php echo $var;?>
         
         <form method="post" action="cartpage.php">
             <br><br>

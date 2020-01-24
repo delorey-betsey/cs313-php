@@ -1,5 +1,6 @@
 <?php
-    session_start();     
+    session_start(); 
+    $var = $_SESSION['username'];    
 ?>
 
 
@@ -20,8 +21,7 @@
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
     
-    <?php echo $_SESSION['username'];?>
-    
+    <?php echo $var;?>    
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main2cart.php'; ?>
