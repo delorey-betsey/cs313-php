@@ -40,4 +40,9 @@
         </form>
         <br><br><br>
     </div>
+
+    <?php 
+    $items = $_POST['items'];
+    $_SESSION['selections'] =  $items ?> 
+    
 </main>

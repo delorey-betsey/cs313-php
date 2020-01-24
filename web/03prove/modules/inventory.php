@@ -43,8 +43,6 @@
     </div>
 </form>
 
-<?php 
-    $items = $_POST['items'];
-    $_SESSION['selections'] =  $items ?> 
+
 
   
