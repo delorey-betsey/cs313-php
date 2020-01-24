@@ -3,16 +3,6 @@
     echo $var;   
 ?>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>ARFs</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/style.css" media="screen">
-        <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
-    </head>
-
 <body> 
 
     <!-- COMMENT:  flexbox header and nav    -->   
@@ -30,7 +20,3 @@
 
 
 </body>
-</html>
-
-</body>
-</html>
