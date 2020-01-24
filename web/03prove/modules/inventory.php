@@ -10,9 +10,7 @@
             <div><a  class="item" href="../03prove/modules/dog1.php" title="dog1" >Item 1 - $10</a></div>
             <div><img   src="images/dog1.jpg"  alt= "dog1"  /> </div>  
             <!-- <div><a href="#"><img id="actionbtn" alt="Add to cart button" src="images/addbutton.jpg"></a></div> -->       
-            <div><input type="radio" name="item"  
-                <?php if (isset($item))  echo "checked";?> value="Item 1">Item 1
-            </div>
+            <input type="checkbox" name="items[]"    value="item1">Item 1<br>
         </div>
         <br><br>
 
