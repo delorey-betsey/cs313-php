@@ -1,6 +1,3 @@
-<?php
-    session_start();     
-?>
 <?php echo $_SESSION['username'];?>
 
 <?php
@@ -25,8 +22,6 @@
         <div class="main1" >
             <?php include 'modules/titleconfirm.php'; ?>            
         </div>
-        
-    <?php echo $SESSION['username'];?>
         
         <!-- format return results -->
         <h2>Ship to:</h2>

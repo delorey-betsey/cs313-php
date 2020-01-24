@@ -1,7 +1,4 @@
-<?php
-    session_start(); 
-    $var = $_SESSION['username'];    
-?>
+<?php echo $_SESSION['username'];?>
 
 <main>
     <div>
