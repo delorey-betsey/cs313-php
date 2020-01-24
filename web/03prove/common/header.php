@@ -1,3 +1,9 @@
+<php
+    session_start;
+?>
+
+<?php $_SESSION['username'] = 'betsey';?>
+
 <header>   
     <!-- COMMENT:  logo     -->
     <div class="logo" >

@@ -16,7 +16,10 @@
     <?php include 'common/nav.php'; ?>
 
 
-    <!-- COMMENT:  flexbox main     -->  
+    <!-- COMMENT:  flexbox main     -->
+
+    <?php echo $_SESSION['username']; ?>
+    
     <?php include 'common/main1home.php'; ?>
 
 
