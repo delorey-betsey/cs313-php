@@ -3,7 +3,7 @@
 
 <p>All proceeds benefit Dane County Humane Society.</p>  
 
-<form method="post" action="homepage.php">
+<form method="post" action="cartpage.php">
     <div class="grouping">
 
         <div class="art">
