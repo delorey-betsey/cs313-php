@@ -9,26 +9,20 @@
     </head>
 
 <body> 
-<?php 
-    echo $_SESSION['username'];
-?> 
-        
-    <!-- COMMENT:  flexbox header     -->   
+
+    <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
-
-
-    <!-- COMMENT:  flexbox nav     -->  
     <?php include 'common/nav.php'; ?>
 
+    <?php echo $_SESSION['username'];?>
+    
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main4confirm.php'; ?>
 
-        <!-- COMMENT:  flexbox nav     -->  
-        <?php include 'common/nav.php'; ?>
 
-
-    <!-- COMMENT:  flexbox footer     --> 
+    <!-- COMMENT:  flexbox bottom nav and footer  -->  
+    <?php include 'common/nav.php'; ?>
     <?php include 'common/footer.php'; ?>
 
 

@@ -9,13 +9,13 @@
     </head>
 
 <body> 
-<?php 
-    echo $_SESSION['username'];
-?>
+
        
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
+    
+    <?php echo $_SESSION['username'];?>
     
 
     <!-- COMMENT:  flexbox main     -->  

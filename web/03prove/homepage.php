@@ -9,19 +9,17 @@
     </head>
 
 <body> 
-<?php 
-    $_SESSION['username'] = 'betsey';
-    echo $_SESSION['username'];
-?>
         
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
 
+    <?php echo $_SESSION['username'];?>
+
+
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main1home.php'; ?>
-
 
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  
