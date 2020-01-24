@@ -15,7 +15,7 @@
                     if(empty($items)) 
                     {
                     echo("You didn't select any items.");
-                    <br><br><br>
+                    echo "<br />";
                     } 
                     else 
                     {
