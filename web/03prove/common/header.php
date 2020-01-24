@@ -1,7 +1,8 @@
 <?php
     session_start();
+    $_SESSION['username'] = 'betsey';
 ?>
-$_SESSION['username'] = 'betsey';
+
 
 <header>   
     <!-- COMMENT:  logo     -->
