@@ -1,13 +1,8 @@
 <?php
 session_start();
 $username = $_SESSION["username"];
-if(isset($_POST['items'])) {
-    $items = $_POST['items'];
-    $_SESSION["items"] = $items;
-    } else {
-    if(isset($_SESSION['items'])) {
-        $items = $_SESSION['items'];
-        }
+$items = $_POST['items'];
+$_SESSION["items"] = $items;
 ?>
 
 echo here username:
