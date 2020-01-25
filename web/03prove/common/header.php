@@ -20,6 +20,7 @@ vardump here items:
 <br>
 vardump here session items:
 <?php var_dump($_SESSION['items']);?>
+<br>
 vardump here session selection1:
 <?php var_dump($_SESSION['selection1']);?>
 

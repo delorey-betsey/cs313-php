@@ -22,6 +22,7 @@ vardump here items:
 <br>
 vardump here session items:
 <?php var_dump($_SESSION['items']);?>
+<br>
 vardump here session selection1:
 <?php var_dump($_SESSION['selection1']);?>
 
@@ -44,7 +45,7 @@ vardump here session selection1:
                 {
                 echo($items[$i] . "");
                 echo ":  Added to Cart";
-                $_SESSION["$selection1"] = $items[$i];
+                $_SESSION["$selection[$i]"] = $items[$i];
                 echo "<br />";
                 }
         echo "<br />";
