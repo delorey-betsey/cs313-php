@@ -1,6 +1,7 @@
 <php
     session_start;
 ?>
+
 <?php $_SESSION['username'] = 'betsey';?>
 
 <!DOCTYPE html>
