@@ -1,5 +1,14 @@
 <?php
 $username = $_SESSION["username"];
+if(isset($_POST["items"])){
+    $items = $_POST['items'];
+    $_SESSION["items"] = $items;
+    } else {
+        echo("You didn't select any items.");
+        echo "<br />";
+        echo "<br />";
+        } 
+    }
 ?>
 
 echo here username:
