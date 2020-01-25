@@ -73,7 +73,11 @@ vardump here session selection1:
                         }
                     }
             ?>
-</div>
+    </div>
+<?php
+// destroy the session
+session_destroy();
+?>
 </main>
 
 
