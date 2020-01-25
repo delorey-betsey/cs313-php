@@ -146,7 +146,7 @@ a:active {color: red; background-color:#ffffff;}
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:baseline;
+    align-items:stretch;
 }
 #welcome {
     color: #c74246;
