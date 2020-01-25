@@ -12,7 +12,7 @@
         <div class="main1" >
             <?php include 'modules/titlecart.php'; ?>            
         </div>
-
+        <?php echo $_SESSION['username']; ?>
 
         <form method="post" action="cartpage.php">
             <br><br>

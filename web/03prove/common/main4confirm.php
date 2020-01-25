@@ -16,6 +16,8 @@
         <div class="main1" >
             <?php include 'modules/titleconfirm.php'; ?>            
         </div>
+        <?php echo $_SESSION['username']; ?>
+
         <!-- format return results -->
         <h2>Ship to:</h2>
         <p>Number:    <?php echo $number;       ?></p> 
