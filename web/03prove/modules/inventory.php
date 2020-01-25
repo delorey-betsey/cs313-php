@@ -38,8 +38,7 @@
             <div><img  src="images/cat3.jpg"  alt= "cat3"  /> </div>
             <label for="item4">Item 4 - $40</label>
         </div>
-        <br><br>  
-            
+              
         <!-- <input type="submit" >  -->
         <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
 
