@@ -83,11 +83,6 @@ a:active {color: red; background-color:#ffffff;}
     position: relative;
     text-align: left;
 }
-#actionbtn {
-    width:75%;
-    height:75%;
-    padding-top:0.625em;
-}
 .main3 {
     font-family: 'Dosis', sans-serif;
     font-size:1em;
@@ -107,6 +102,7 @@ a:active {color: red; background-color:#ffffff;}
     padding:.5em 0 .75em 0;
 }
 .inventory a:link {text-decoration:underline;padding:.25em 0 1.25em 0;}
+
 .grouping {
     background-color: #ffffff;
     display:flex;
