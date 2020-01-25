@@ -14,7 +14,7 @@ $items = $_SESSION["items"];
     if(empty($items)) 
         {
         echo "<br />";
-        echo("You didn't select any items.");
+        echo("Please select items by checkboxes.");
         echo "<br />";
         echo "<br />";
         } 
@@ -38,7 +38,7 @@ $items = $_SESSION["items"];
 <form method="post" action="">
 
     <div class="addtocart">
-        <div>ART for Sale</div>
+        <div></div>
         <div >          
             <!-- <input type="submit" >  -->
             <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
