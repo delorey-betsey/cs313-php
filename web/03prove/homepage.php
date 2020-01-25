@@ -23,11 +23,8 @@
 
 
     <!-- COMMENT:  flexbox main     -->
-
-    <?php echo $_SESSION['username']; ?>
     
     <?php include 'common/main1home.php'; ?>
-
 
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  
