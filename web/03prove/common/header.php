@@ -1,4 +1,6 @@
-
+<php
+    session_start;
+?>
  <header>   
     <!-- COMMENT:  logo     -->
     <div class="logo" >
