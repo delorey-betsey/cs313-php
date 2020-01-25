@@ -12,6 +12,7 @@
         <div class="main1" >
             <?php include 'modules/titlecart.php'; ?>            
         </div>
+        echo here
 
         <!-- FIRST DIV--COMMENT:  Cart Contents    -->
         <form method="post" action="cartpage.php">
