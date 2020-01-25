@@ -13,6 +13,9 @@
             <?php include 'modules/titlecart.php'; ?>            
         </div>
         echo here
+        <?php echo $_SESSION['username']; 
+              echo $_SESSION['items'];
+              ?>
 
         <!-- FIRST DIV--COMMENT:  Cart Contents    -->
         <form method="post" action="cartpage.php">
