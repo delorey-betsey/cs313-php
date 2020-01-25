@@ -36,11 +36,16 @@ $items = $_SESSION["items"];
 
  <!-- only do form if POST items is not set  -->
 <form method="post" action="">
-    <div >          
-        <!-- <input type="submit" >  -->
-        <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
-        <br><br>
+
+    <div class="addtocart">
+        <div>ART for Sale</div>
+        <div >          
+            <!-- <input type="submit" >  -->
+            <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
+            <br><br>
+        </div>
     </div>
+
     <div class="grouping">
 
         <div class="art">

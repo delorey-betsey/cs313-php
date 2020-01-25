@@ -30,6 +30,14 @@ header {
     width:100%;
     background-color: #ffffff;
     }
+.addtocart {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+    background-color: #ffffff;
+    }
 .item {
     font-size: 20px;
 }
@@ -45,8 +53,8 @@ nav {
     min-height:3.125em;
     background-color: #c74246;
     font-size:20px;
-    border-top: 0.313em solid black;
-    border-bottom: 0.313em solid black;
+    border-top: 0.15em solid black;
+    border-bottom: 0.15em solid black;
 }
 .navlinks {
     width:100px;
