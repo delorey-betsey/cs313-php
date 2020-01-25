@@ -1,4 +1,8 @@
-<header>   
+<?php
+    session_start(); 
+?>
+ 
+ <header>   
     <!-- COMMENT:  logo     -->
     <div class="logo" >
         <?php include 'modules/logo.php'; ?>
