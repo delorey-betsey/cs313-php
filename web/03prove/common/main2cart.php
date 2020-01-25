@@ -12,9 +12,10 @@
         <div class="main1" >
             <?php include 'modules/titlecart.php'; ?>            
         </div>
-        echo here
+        echo here: $items
         <?php echo $_SESSION['username']; 
               echo $_SESSION['items'];
+              echo $items;
               ?>
 
         <!-- FIRST DIV--COMMENT:  Cart Contents    -->
