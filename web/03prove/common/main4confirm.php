@@ -31,7 +31,7 @@ $items = $_SESSION["items"];
     
     </div>
     <br>
-        <h2>Items in cart:</h2>
+        <h2>Sale Completed:  THANK YOU ! </h2>
         <br> 
             <?php
                 if(empty($items)) 
@@ -43,14 +43,12 @@ $items = $_SESSION["items"];
                 else 
                     {
                     $N = count($items);
-                    echo("$N items(s):    THANK YOU ! ");
+                    echo("$N items(s) Purchased: ");
                     echo "<br />";
                     for($i=0; $i < $N; $i++)
                         {
                         echo "<br />";
                         echo($items[$i] . " ");
-                        echo "<br />";
-                        echo "<br />";
                         }
                     }
             ?>
