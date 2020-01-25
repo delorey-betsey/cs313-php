@@ -1,6 +1,6 @@
 <?php
 session_start();
-$items = $_POST['items'];
+$items = $_SESSION["items"];
 $username = $_SESSION["username"];
 $number = $_POST['number'];
 $street = $_POST['street'];
@@ -33,6 +33,7 @@ vardump here session items:
         </div>
         <!-- format return results -->
         <h2>Ship to:</h2>
+        <p>Name:      <?php echo $username;     ?></p>
         <p>Number:    <?php echo $number;       ?></p> 
         <p>Street:    <?php echo $street;       ?></p>       
         <p>City:      <?php echo $city;         ?></p>
@@ -45,20 +46,19 @@ vardump here session items:
             <?php
                 if(empty($items)) 
                     {
-                    echo("You didn't select any items.");
+                    echo("There are no items in your cart.");
                     echo "<br />";
                     echo "<br />";
                     } 
                 else 
                     {
                     $N = count($items);
-                    echo("You selected $N items(s): ");
+                    echo("Sale complete: $N items(s): THANK YOU! ");
                     echo "<br />";
                     for($i=0; $i < $N; $i++)
                         {
                         echo "<br />";
                         echo($items[$i] . " ");
-                        setcookie('selections_array[$i]', 'value' , time()+3600);
                         echo "<br />";
                         echo "<br />";
                         }

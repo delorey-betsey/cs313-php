@@ -1,6 +1,6 @@
 <?php
 session_start();
-$items = $_POST['items'];
+$items = $_SESSION["items"];
 $username = $_SESSION["username"];
 ?>
 
