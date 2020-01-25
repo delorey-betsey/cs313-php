@@ -20,7 +20,6 @@ vardump here session items:
 <?php var_dump($_SESSION['items']);?>
 
 
-
 <!DOCTYPE html>
 <html>
     <head>
