@@ -1,1 +1,1 @@
-<img   src="images/arfslogo.jpg"  alt= "logo dog"  />   
+<img  src="images/arfslogo.jpg"  alt= "logodog"  /> 
