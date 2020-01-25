@@ -2,7 +2,7 @@
 <php
     session_start();
 ?>
-
+<?php echo $_SESSION['username']; ?>
 <!DOCTYPE html>
 <html>
     <head>
