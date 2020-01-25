@@ -43,8 +43,8 @@
         <br><br>  
 
         <!-- <input type="submit" >  -->
-        <input type="submit" value="" style="background-image: url('images/addbutton.jpg');">
-        <img src='images/addbutton.jpg'>
+        <input type="submit" value="" style="background-image: <img src='images/addbutton.jpg'>;">
+        
 
     </div>
 </form>
