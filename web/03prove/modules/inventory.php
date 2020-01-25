@@ -19,7 +19,7 @@ vardump here session items:
 
 <!--  inventory <div></div>  -->
 
-<form method="post" action="cartpage.php">
+<form method="post" action="">
 
     <div >          
         <!-- <input type="submit" >  -->
