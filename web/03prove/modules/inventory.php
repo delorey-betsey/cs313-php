@@ -11,6 +11,9 @@ echo here session username:
 vardump here session username:
 <?php var_dump($_SESSION['username']); ?>
 <br>
+vardump here post items:
+<?php var_dump($_POST['items']);?>
+<br>
 vardump here items:
 <?php var_dump($items);?>
 <br>
