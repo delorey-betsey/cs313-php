@@ -1,16 +1,25 @@
-<php session_start();?>
+<?php
+session_start();
+$username = "betsey";
+$_SESSION["username"] = $username;
+?>
 
-<?php $_SESSION['username'] = 'betsey';?>
+echo here username:
+<?php echo $username; ?>
 <br>
-
-echo here: 1
+echo here session username:
+<?php echo $_SESSION['username']; ?>
+<br>
+vardump here session username:
 <?php var_dump($_SESSION['username']); ?>
 <br>
-echo here: 2
-<?php var_dump($_SESSION['items']);?>
-<br>
-echo here: 3
+vardump here items:
 <?php var_dump($items);?>
+<br>
+vardump here session items:
+<?php var_dump($_SESSION['items']);?>
+
+
 
 <!DOCTYPE html>
 <html>

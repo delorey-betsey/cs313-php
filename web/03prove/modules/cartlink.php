@@ -1,2 +1,12 @@
-    <!-- <img id="cart" src="images/cart.png"  alt= "cart"  />  -->
-    <a  href="<?php echo 'cartpage.php'; ?>" title="cart" >My Cart</a>
+<?php
+    session_start();
+    $username = $_SESSION['username'];
+
+    $items = $_POST["items"];
+    $_SESSION["items"] = $items;  
+    
+    $new_page = "cartpage.php";
+    header("Location: $new_page");
+    die();
+
+?>
