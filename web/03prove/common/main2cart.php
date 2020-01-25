@@ -7,14 +7,12 @@
 
     <?php echo $_SESSION['username']; ?>
 
-    
+
         <!-- FIRST DIV--COMMENT:  Cart     -->
         <div class="main1" >
             <?php include 'modules/titlecart.php'; ?>            
         </div>
 
-        <a  href="<?php echo 'homepage.php'; ?>" title="Browse" >Browse</a>
-        <a  href="<?php echo 'checkoutpage.php'; ?>" title="Checkout" >Checkout</a>
 
         <form method="post" action="cartpage.php">
             <br><br>
