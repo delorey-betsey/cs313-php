@@ -50,7 +50,6 @@ vardump here session items:
                             {
                             echo "<br />";
                             echo($items[$i] . " ");
-                            setcookie('selections_array[$i]', 'value' , time()+3600);
                             echo "<br />";
                             echo "<br />";
                             }

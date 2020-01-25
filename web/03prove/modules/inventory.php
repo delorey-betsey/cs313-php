@@ -22,26 +22,32 @@ vardump here items:
 <br>
 vardump here session items:
 <?php var_dump($_SESSION['items']);?>
+vardump here session selection1:
+<?php var_dump($_SESSION['selection1']);?>
 
 <!--  inventory <div></div>  -->
 <br>
 <?php
     if(empty($items)) 
         {
+        echo "<br />";
         echo("You didn't select any items.");
         echo "<br />";
         echo "<br />";
         } 
     else {
+        echo "<br />";
         $N = count($items);
         echo("You selected $N items(s): ");
         echo "<br />";
         for($i=0; $i < $N; $i++)
                 {
                 echo($items[$i] . "");
-                echo "Added to Cart";
+                echo ":  Added to Cart";
+                $_SESSION["$selection1"] = $items[$i];
                 echo "<br />";
                 }
+        echo "<br />";
         }
 ?>
 
