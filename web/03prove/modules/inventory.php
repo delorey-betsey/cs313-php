@@ -3,9 +3,6 @@
 
 <form method="post" action="cartpage.php">
     <div class="grouping">
-    
-        <!-- <input type="submit" >  -->
-        <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>
 
         <div class="art">
             <div><a  class="item" href="../03prove/modules/dog1.php" title="dog1" >Item 1</a></div>       
@@ -41,7 +38,10 @@
             <div><img  src="images/cat3.jpg"  alt= "cat3"  /> </div>
             <label for="item4">Item 4 - $40</label>
         </div>
-        <br><br>        
+        <br><br>  
+            
+        <!-- <input type="submit" >  -->
+        <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
 
     </div>
 </form>
