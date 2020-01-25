@@ -1,1 +1,1 @@
-<img  id="logo" src="images/arfslogo.jpg" width="100%" alt= "logo dog"  />   
+<img   src="images/arfslogo.jpg"  alt= "logo dog"  />   
