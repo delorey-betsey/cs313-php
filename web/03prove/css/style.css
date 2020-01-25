@@ -136,7 +136,7 @@ a:active {color: red; background-color:#ffffff;}
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:space-around;
-    align-items:center;
+    align-items:baseline;
     /* border: 0.313em solid blue; */
 }
 .art {
@@ -159,4 +159,9 @@ footer {
     background-color: #ffffff;
     padding-top: .4em;
     padding-bottom: .4em;
+}
+.largerCheckbox
+{
+width: 30px;
+height: 30px;
 }
