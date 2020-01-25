@@ -2,6 +2,12 @@
 <!--  inventory <div></div>  -->
 
 <form method="post" action="cartpage.php">
+    
+    <div class="grouping">          
+        <!-- <input type="submit" >  -->
+        <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
+        <br><br>
+    </div>
     <div class="grouping">
 
         <div class="art">
@@ -39,11 +45,7 @@
             <label for="item4">Item 4 - $40</label>
         </div>
     </div>    
-    <div class="grouping">          
-        <!-- <input type="submit" >  -->
-        <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
-        <br><br>
-    </div>
+
 </form>
 
 
