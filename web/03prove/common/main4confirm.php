@@ -28,10 +28,11 @@ $items = $_SESSION["items"];
         <p>City:      <?php echo $city;         ?></p>
         <p>State:     <?php echo $state;        ?></p>        
         <p>Zip:       <?php echo $zip;          ?></p>
-        <br><br><br>    
+    
     </div>
-    <br><br>
-        Items in cart: 
+    <br>
+        <h2>Items in cart:</h2>
+        <br> 
             <?php
                 if(empty($items)) 
                     {
@@ -42,7 +43,7 @@ $items = $_SESSION["items"];
                 else 
                     {
                     $N = count($items);
-                    echo("Sale complete: $N items(s): THANK YOU! ");
+                    echo("$N items(s):    THANK YOU ! ");
                     echo "<br />";
                     for($i=0; $i < $N; $i++)
                         {
