@@ -1,30 +1,11 @@
 <?php
 session_start();
-$username = $_SESSION["username"];
 if(!isset($_SESSION['items'])){
     $items = $_POST['items'];
     $_SESSION["items"] = $items;
     }
 $items = $_SESSION["items"];
 ?>
-
-echo here username:
-<?php echo $username; ?>
-<br>
-echo here session username:
-<?php echo $_SESSION['username']; ?>
-<br>
-vardump here session username:
-<?php var_dump($_SESSION['username']); ?>
-<br>
-vardump here items:
-<?php var_dump($items);?>
-<br>
-vardump here session items:
-<?php var_dump($_SESSION['items']);?>
-<br>
-vardump here session selection1:
-<?php var_dump($_SESSION['selection1']);?>
 
 <main>
     <div>
@@ -54,9 +35,11 @@ vardump here session selection1:
             <br><br>
 
             <input type="submit">
-            <br><br><br><br>
-            
-        </form>   
+            <div >          
+        <!-- <input type="submit" >  -->
+        <button type="submit" name="submitbutton" value="submitbutton"><img src="images/submitbutton.jpg" alt="submitbutton"></button>      
+        </form>
+        <br><br>
     </div>
 </main>
 
