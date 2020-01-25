@@ -1,18 +1,3 @@
-
-<php session_start();?>
-
-echo username
-<?php echo $_SESSION['username']; ?>
-<br>
-echo here: 1
-<?php var_dump($_SESSION['username']); ?>
-<br>
-echo here: 2
-<?php var_dump($_SESSION['items']);?>
-<br>
-echo here: 3
-<?php var_dump($items);?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,10 +20,6 @@ echo here: 3
 
 
     <!-- COMMENT:  flexbox main     -->  
-
-    username:
-    <?php var_dump($_SESSION['username']);?>
-    
     <?php include 'common/main4confirm.php'; ?>
 
         <!-- COMMENT:  flexbox nav     -->  

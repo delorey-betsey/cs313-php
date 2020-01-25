@@ -1,19 +1,3 @@
-
-<php session_start();?>
-
-<br>
-echo username
-<?php echo $_SESSION['username']; ?>
-<br>
-echo here: 1
-<?php var_dump($_SESSION['username']); ?>
-<br>
-echo here: 2
-<?php var_dump($_SESSION['items']);?>
-<br>
-echo here: 3
-<?php var_dump($items);?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -33,10 +17,6 @@ echo here: 3
 
     <!-- COMMENT:  flexbox main     -->  
     <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form -->
-
-    
-    <?php echo $_SESSION['username']; ?>
-    
     <?php include 'common/main3checkout.php'; ?>
 
 

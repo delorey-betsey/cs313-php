@@ -1,31 +1,3 @@
-
-<?php
-    session_start();
-    $username = $_SESSION['username'];
-
-    $items = $_POST["items"];
-    $_SESSION["items"] = $items;  
-
-?>
-
-
-echo here username:
-<?php echo $username; ?>
-<br>
-echo here session username:
-<?php echo $_SESSION['username']; ?>
-<br>
-vardump here session username:
-<?php var_dump($_SESSION['username']); ?>
-<br>
-vardump here items:
-<?php var_dump($items);?>
-<br>
-vardump here session items:
-<?php var_dump($_SESSION['items']);?>
-
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -42,8 +14,10 @@ vardump here session items:
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
-    <!-- COMMENT:  flexbox main     -->      
+
+    <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main2cart.php'; ?>
+
 
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  
