@@ -1,4 +1,19 @@
 
+<php session_start();?>
+echo username
+<?php $_SESSION['username'] = 'betsey';?>
+<br>
+<?php echo $_SESSION['username']; ?>
+<br>
+echo here: 1
+<?php var_dump($_SESSION['username']); ?>
+<br>
+echo here: 2
+<?php var_dump($_SESSION['items']);?>
+<br>
+echo here: 3
+<?php var_dump($items);?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,6 +32,7 @@
 
     <!-- COMMENT:  flexbox main     -->      
     <?php include 'common/main2cart.php'; ?>
+
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  
     <?php include 'common/nav.php'; ?>

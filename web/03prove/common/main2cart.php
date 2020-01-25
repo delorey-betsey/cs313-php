@@ -4,7 +4,18 @@
     $items = $_POST['items'];
     $_SESSION['items'] = $_POST['items'];   
 ?>
-<?php echo $_SESSION['username']; ?>
+echo here: post items
+<?php var_dump($_POST['items']);?> 
+<br>
+echo here: 1
+<?php var_dump($_SESSION['username']); ?>
+<br>
+echo here: 2
+<?php var_dump($_SESSION['items']);?>
+<br>
+echo here: 3
+<?php var_dump($items);?>
+<br>
 
 <main>
     <div>
@@ -12,12 +23,6 @@
         <div class="main1" >
             <?php include 'modules/titlecart.php'; ?>            
         </div>
-        echo here: 1
-        <?php var_dump($_SESSION['username']); ?>
-        echo here: 2
-        <?php var_dump($_SESSION['items']);?>
-        echo here: 3
-        <?php var_dump($items);?>
 
         <!-- FIRST DIV--COMMENT:  Cart Contents    -->
         <form method="post" action="cartpage.php">

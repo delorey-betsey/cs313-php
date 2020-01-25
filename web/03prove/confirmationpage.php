@@ -1,7 +1,19 @@
 
-<php
-    session_start();
-?>
+<php session_start();?>
+
+<?php $_SESSION['username'] = 'betsey';?>
+
+echo username
+<?php echo $_SESSION['username']; ?>
+<br>
+echo here: 1
+<?php var_dump($_SESSION['username']); ?>
+<br>
+echo here: 2
+<?php var_dump($_SESSION['items']);?>
+<br>
+echo here: 3
+<?php var_dump($items);?>
 
 <!DOCTYPE html>
 <html>
@@ -26,8 +38,8 @@
 
     <!-- COMMENT:  flexbox main     -->  
 
-    
-    <?php echo $_SESSION['username']; ?>
+    username:
+    <?php var_dump($_SESSION['username']);?>
     
     <?php include 'common/main4confirm.php'; ?>
 
