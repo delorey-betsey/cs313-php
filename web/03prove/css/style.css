@@ -136,7 +136,7 @@ a:active {color: red; background-color:#ffffff;}
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:space-around;
-    align-items:center;
+    align-items:baseline;
     /* border: 0.313em solid blue; */
 }
 .art {
@@ -146,7 +146,7 @@ a:active {color: red; background-color:#ffffff;}
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:stretch;
+    align-items:center;
 }
 #welcome {
     color: #c74246;
