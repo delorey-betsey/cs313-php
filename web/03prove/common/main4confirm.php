@@ -1,3 +1,5 @@
+<php session_start();?>
+
 <?php
     $items = $_SESSION['items'];
 
@@ -9,13 +11,12 @@
 ?>
 
 <main>
-<?php echo $_SESSION['username']; ?>
-
     <div>
         <!-- FIRST DIV--COMMENT:  Confirmation     -->
         <div class="main1" >
             <?php include 'modules/titleconfirm.php'; ?>            
         </div>
+
         <?php echo $_SESSION['username']; ?>
 
         <!-- format return results -->
@@ -28,28 +29,28 @@
         <br><br><br>    
     </div>
     <br><br>
-        <h2>Items in cart:</h2> 
-            <?php
-                if(empty($items)) 
+    <h2>Items in cart:</h2> 
+        <?php
+            if(empty($items)) 
+                {
+                echo("You didn't select any items.");
+                echo "<br />";
+                echo "<br />";
+                } 
+            else 
+                {
+                $N = count($items);
+                echo("You selected $N items(s): ");
+                echo "<br />";
+                for($i=0; $i < $N; $i++)
                     {
-                    echo("You didn't select any items.");
+                    echo "<br />";
+                    echo($items[$i] . " ");
                     echo "<br />";
                     echo "<br />";
-                    } 
-                else 
-                    {
-                    $N = count($items);
-                    echo("You selected $N items(s): ");
-                    echo "<br />";
-                    for($i=0; $i < $N; $i++)
-                        {
-                        echo "<br />";
-                        echo($items[$i] . " ");
-                        echo "<br />";
-                        echo "<br />";
-                        }
                     }
-            ?>
+                }
+        ?>
 </div>
 </main>
 

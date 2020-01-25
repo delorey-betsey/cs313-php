@@ -1,6 +1,4 @@
-<php
-    session_start();
-?>
+<php session_start();?>
 
 <?php $_SESSION['username'] = 'betsey';?>
 
@@ -14,24 +12,17 @@
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
 
-<body>
-
-        
+<body>        
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
-
-    <!-- COMMENT:  flexbox main     -->
-    
+    <!-- COMMENT:  flexbox main     -->    
     <?php include 'common/main1home.php'; ?>
-
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  
     <?php include 'common/nav.php'; ?>
     <?php include 'common/footer.php'; ?>
-
-
 </body>
 </html>
 

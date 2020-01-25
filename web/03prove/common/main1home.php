@@ -1,3 +1,5 @@
+<php session_start();?>
+
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  main title     -->

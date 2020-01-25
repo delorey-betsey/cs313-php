@@ -1,7 +1,6 @@
 <nav>
     <!-- COMMENT:  top navigation links    -->
     <!-- COMMENT:  tools     -->
-
     <div class="navlinks" >
         <?php include 'modules/browselink.php'; ?>
     </div>
@@ -10,7 +9,6 @@
     </div>
     <div class="navlinks" >
         <?php include 'modules/checkoutlink.php'; ?>
-    </div>        
- 
+    </div>      
 </nav>
 
