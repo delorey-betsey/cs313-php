@@ -1,7 +1,5 @@
 
-<php
-    session_start();
-?>
+
 
 <!DOCTYPE html>
 <html>
@@ -19,7 +17,7 @@
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
-    <?php echo $_SESSION['username']; ?>
+
 
     <!-- COMMENT:  flexbox main     -->  
     
