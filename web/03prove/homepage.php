@@ -1,7 +1,5 @@
 <?php
 session_start();
-$username = "betsey";
-$_SESSION["username"] = $username;
 ?>
 
 echo here username:
