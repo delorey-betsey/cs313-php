@@ -1,12 +1,5 @@
 <php session_start();?>
 
-<?php $_SESSION['username'] = 'betsey';?>
-<br>
-<?php echo $_SESSION['username']; ?>
-<br>
-echo username
-<?php echo $_SESSION['username']; ?>
-<br>
 echo here: 1
 <?php var_dump($_SESSION['username']); ?>
 <br>

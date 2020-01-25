@@ -9,13 +9,7 @@
     $state  = $_POST['state'];
     $zip    = $_POST['zip'];
 ?>
-<?php $_SESSION['username'] = 'betsey';?>
-<br>
-<?php echo $_SESSION['username']; ?>
-<br>
-echo username
-<?php echo $_SESSION['username']; ?>
-<br>
+
 echo here: 1
 <?php var_dump($_SESSION['username']); ?>
 <br>
@@ -24,6 +18,8 @@ echo here: 2
 <br>
 echo here: 3
 <?php var_dump($items);?>
+
+
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  Confirmation     -->
