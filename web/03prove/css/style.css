@@ -16,11 +16,7 @@
   padding: 0; }
 html {
     height: 100vh;
-    background-image: url("/acme/images/site/background.jpg");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;  
-    min-width:25.750em;                     /*412px IPhone 8Plus and Nexus5X*/
+    min-width:25.750em;                 
 }
 body {
     padding:.75em;
