@@ -17,35 +17,34 @@ $items = $_SESSION["items"];
 <div class="addtocart">
     <div></div>
     <div >          
-        <!-- <input type="submit" >  -->
-        <button type="submit" name="submitbutton" value="subbutton"><img src="images/submitbutton.jpg" alt="submitbutton"></button>      
-        <br><br>
     </div>
 </div>
         
-    <h3> Ship To info: </h3>
-    <br><br>
-
-    <form method="post" action="confirmationpage.php">
+        <h3> Ship To info: </h3>
+        <br><br>
     
-        Number: <input type="text" name="number"> 
-        <br><br>
-
-        Street: <input type="text" name="street"> 
-        <br><br>
+        <form method="post" action="confirmationpage.php">
         
-        City: <input type="text" name="city"> 
-        <br><br>
+            Number: <input type="text" name="number"> 
+            <br><br>
 
-        State: <input type="text" name="state"> 
-        <br><br>
+            Street: <input type="text" name="street"> 
+            <br><br>
+            
+            City: <input type="text" name="city"> 
+            <br><br>
 
-        Zip: <input type="text" name="zip"> 
-        <br><br>
+            State: <input type="text" name="state"> 
+            <br><br>
 
-        <div >          
-    </form>
-    <br><br>
+            Zip: <input type="text" name="zip"> 
+            <br><br>
+
+            <div >          
+        <!-- <input type="submit" >  -->
+        <button type="submit" name="submitbutton" value="submitbutton"><img src="images/submitbutton.jpg" alt="submitbutton"></button>      
+        </form>
+        <br><br>
     </div>
 </main>
 
