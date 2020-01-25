@@ -2,8 +2,10 @@
 session_start();
 $username = "betsey";
 $_SESSION["username"] = $username;
-$items = $_POST['items'];
-$_SESSION["items"] = $items;
+if(!isset($_SESSION['items'])){
+    $items = $_POST['items'];
+    $_SESSION["items"] = $items;
+    }
 ?>
 
 echo here username:

@@ -1,6 +1,5 @@
 <?php
 session_start();
-$items = $_SESSION["items"];
 $username = $_SESSION["username"];
 $number = $_POST['number'];
 $street = $_POST['street'];
@@ -9,7 +8,10 @@ $state  = $_POST['state'];
 $zip    = $_POST['zip'];
 $username = $_SESSION["username"];
 $items = $_POST['items'];
-$_SESSION["items"] = $items; 
+if(!isset($_SESSION['items'])){
+    $items = $_POST['items'];
+    $_SESSION["items"] = $items;
+    }
 ?>
 
 echo here username:
