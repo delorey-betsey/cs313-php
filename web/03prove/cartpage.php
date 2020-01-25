@@ -2,7 +2,7 @@
 <php
     session_start();
 ?>
-<?php echo $_SESSION['username']; ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,11 +19,9 @@
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
+    <?php echo $_SESSION['username']; ?>
 
     <!-- COMMENT:  flexbox main     -->  
-
-    
-    <?php echo $_SESSION['username']; ?>
     
     <?php include 'common/main2cart.php'; ?>
 
