@@ -1,12 +1,11 @@
+<php session_start();?>
 
- <header>   
+<header>   
     <!-- COMMENT:  logo     -->
     <div class="logo" >
         <?php include 'modules/logo.php'; ?>
-    </div>
-    
+    </div>    
     <div class="main1" id="welcome" >Welcome to ARfS!      
-    </div>
-    
+    </div>    
 </header>
 
