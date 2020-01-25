@@ -1,18 +1,29 @@
 <?php
-    $number = $_POST['number'];
-    $street = $_POST['street'];
-    $city   = $_POST['city'];
-    $state  = $_POST['state'];
-    $zip    = $_POST['zip'];
-
-    setcookie($cookie_number, $number, time() + (86400 * 30), "/"); // 86400 = 1 day
-    setcookie($cookie_street, $street, time() + (86400 * 30), "/"); // 86400 = 1 day
-    setcookie($cookie_city,   $city,   time() + (86400 * 30), "/"); // 86400 = 1 day
-    setcookie($cookie_state,  $state,  time() + (86400 * 30), "/"); // 86400 = 1 day
-    setcookie($cookie_zip,    $zip,    time() + (86400 * 30), "/"); // 86400 = 1 day
-
-    $items = $_POST['cookie_items'];
+session_start();
+$items = $_POST['items'];
+$username = $_SESSION["username"];
+$number = $_POST['number'];
+$street = $_POST['street'];
+$city   = $_POST['city'];
+$state  = $_POST['state'];
+$zip    = $_POST['zip'];
 ?>
+
+echo here username:
+<?php echo $username; ?>
+<br>
+echo here session username:
+<?php echo $_SESSION['username']; ?>
+<br>
+vardump here session username:
+<?php var_dump($_SESSION['username']); ?>
+<br>
+vardump here items:
+<?php var_dump($items);?>
+<br>
+vardump here session items:
+<?php var_dump($_SESSION['items']);?>
+
 
 <main>
     <div>
