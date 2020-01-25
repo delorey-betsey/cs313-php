@@ -1,7 +1,6 @@
 
 <php session_start();?>
 
-<?php $_SESSION['username'] = 'betsey';?>
 <br>
 echo username
 <?php echo $_SESSION['username']; ?>
@@ -11,8 +10,8 @@ echo here: 1
 <br>
 echo here: 2
 <?php var_dump($_SESSION['items']);?>
-<br>echo here: 3
-
+<br>
+echo here: 3
 <?php var_dump($items);?>
 
 <!DOCTYPE html>
