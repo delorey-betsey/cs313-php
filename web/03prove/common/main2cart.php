@@ -4,15 +4,16 @@
     $items = $_POST['items'];
     $_SESSION['items'] = $_POST['items'];   
 ?>
+<?php echo $_SESSION['username']; ?>
+
 <main>
     <div>
-        <!-- FIRST DIV--COMMENT:  Cart     -->
+        <!-- FIRST DIV--COMMENT:  My Cart title     -->
         <div class="main1" >
             <?php include 'modules/titlecart.php'; ?>            
         </div>
 
-<?php echo $_SESSION['username']; ?>
-
+        <!-- FIRST DIV--COMMENT:  Cart Contents    -->
         <form method="post" action="cartpage.php">
             <br><br>
             Items in cart: 

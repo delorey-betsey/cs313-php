@@ -1,8 +1,4 @@
 
-<php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,13 +15,8 @@
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
-
-
-    <!-- COMMENT:  flexbox main     -->  
-    
+    <!-- COMMENT:  flexbox main     -->      
     <?php include 'common/main2cart.php'; ?>
-
-
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  
     <?php include 'common/nav.php'; ?>
