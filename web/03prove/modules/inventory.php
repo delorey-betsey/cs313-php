@@ -1,5 +1,9 @@
 <?php
 $username = $_SESSION["username"];
+if(isset($_POST['items'])) {
+    $items = $_POST['items'];
+    $_SESSION["items"] = $items;
+    }
 ?>
 
 echo here username:
@@ -22,8 +26,23 @@ vardump here session items:
 
 <!--  inventory <div></div>  -->
 
-<form method="post" action="">
+<?php
+    if(empty($items)) 
+        {
+        echo("You didn't select any items.");
+        echo "<br />";
+        echo "<br />";
+        } 
+    else 
+        {
+        $N = count($items);
+        echo("You selected $N items(s): ");
+        echo "<br />";
+        }
+?>
 
+ <!-- only do form if POST items is not set  -->
+<form method="post" action="">
     <div >          
         <!-- <input type="submit" >  -->
         <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
@@ -66,7 +85,6 @@ vardump here session items:
             <label for="item4">Item 4 - $40</label>
         </div>
     </div>    
-
 </form>
 
 
