@@ -13,33 +13,39 @@ $items = $_SESSION["items"];
         <div class="main1" >
             <?php include 'modules/titlecheckout.php'; ?>            
         </div>
-        
-        <h3> Ship To info: </h3>
-        <br><br>
-    
-        <form method="post" action="confirmationpage.php">
-        
-            Number: <input type="text" name="number"> 
-            <br><br>
 
-            Street: <input type="text" name="street"> 
-            <br><br>
-            
-            City: <input type="text" name="city"> 
-            <br><br>
-
-            State: <input type="text" name="state"> 
-            <br><br>
-
-            Zip: <input type="text" name="zip"> 
-            <br><br>
-
-            <input type="submit">
-            <div >          
+<div class="addtocart">
+    <div></div>
+    <div >          
         <!-- <input type="submit" >  -->
-        <button type="submit" name="submitbutton" value="submitbutton"><img src="images/submitbutton.jpg" alt="submitbutton"></button>      
-        </form>
+        <button type="submit" name="submitbutton" value="subbutton"><img src="images/submitbutton.jpg" alt="submitbutton"></button>      
         <br><br>
+    </div>
+</div>
+        
+    <h3> Ship To info: </h3>
+    <br><br>
+
+    <form method="post" action="confirmationpage.php">
+    
+        Number: <input type="text" name="number"> 
+        <br><br>
+
+        Street: <input type="text" name="street"> 
+        <br><br>
+        
+        City: <input type="text" name="city"> 
+        <br><br>
+
+        State: <input type="text" name="state"> 
+        <br><br>
+
+        Zip: <input type="text" name="zip"> 
+        <br><br>
+
+        <div >          
+    </form>
+    <br><br>
     </div>
 </main>
 
