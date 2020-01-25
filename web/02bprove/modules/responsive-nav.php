@@ -38,6 +38,7 @@
                     <li><a href="week01.php">Week 01</a></li>
                     <li><a href="week02teach.php">Week 02 Teach</a></li>
                     <li><a href="week02prove.php">Week 02 Prove</a></li>
+                    <li><a href="week03prove.php">Week 03 Prove</a></li>
                 </ul>
             </li>                  
            
