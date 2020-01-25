@@ -5,7 +5,6 @@ $items = $_POST['items'];
 $_SESSION["items"] = $items;
 ?>
 
-
 echo here username:
 <?php echo $username; ?>
 <br>
@@ -25,7 +24,7 @@ vardump here session items:
 <?php var_dump($_SESSION['items']);?>
 
 <!--  inventory <div></div>  -->
-
+<br>
 <?php
     if(empty($items)) 
         {
@@ -33,11 +32,16 @@ vardump here session items:
         echo "<br />";
         echo "<br />";
         } 
-    else 
-        {
+    else {
         $N = count($items);
         echo("You selected $N items(s): ");
         echo "<br />";
+        for($i=0; $i < $N; $i++)
+                {
+                echo($items[$i] . "");
+                echo "Added to Cart";
+                echo "<br />";
+                }
         }
 ?>
 
