@@ -14,7 +14,7 @@
     </head>
 
 <body>
-<img id="logo" src="images/arfslogo.jpg" width="100%" alt= "ACME"  />
+
         
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
