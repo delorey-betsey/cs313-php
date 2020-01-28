@@ -1,1 +1,1 @@
-ART for Sale  -betsey
+ART for Sale
