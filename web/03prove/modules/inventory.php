@@ -9,17 +9,15 @@ $items = $_SESSION["items"];
 ?>
 
 <!--  inventory <div></div>  -->
-<br>
 <?php
     if(empty($items)) 
         {
         echo("All proceeds benefit Dane County Humane Society.");
-        echo "<br />";
+        echo "<br>";
         echo("Please select items by checkboxes.");
         } 
     else {
-        echo "<br />";
-        $N = count($items);
+                $N = count($items);
         echo("You selected $N items(s): ");
         echo "<br />";
         for($i=0; $i < $N; $i++)
