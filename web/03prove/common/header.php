@@ -11,7 +11,7 @@ if(!isset($_SESSION['items'])){
     <div class="logo" >
         <?php include 'modules/logo.php'; ?>
     </div>
-    betsey
+   
     <div class="main1" id="welcome" >Welcome to ARfS!      
     </div>
 </header>
