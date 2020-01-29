@@ -13,10 +13,9 @@ $items = $_SESSION["items"];
 <?php
     if(empty($items)) 
         {
+        echo("All proceeds benefit Dane County Humane Society.");
         echo "<br />";
         echo("Please select items by checkboxes.");
-        echo "<br />";
-        echo "<br />";
         } 
     else {
         echo "<br />";
