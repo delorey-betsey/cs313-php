@@ -19,7 +19,7 @@ $db = get_db();
 	<div>
 		<h1>Scripture Resources</h1>
 
-		<?php
+		<!-- <?php
 
 			// Prepare the statement
 
@@ -40,7 +40,7 @@ $db = get_db();
 
 				echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
 			}
-		?>
+		?> -->
 	</div>
 </body>
 </html>
