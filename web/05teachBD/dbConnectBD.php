@@ -11,6 +11,7 @@
 
 function get_db() {
 	$db = NULL;
+	echo "1:**" $db;
 
 	try {
 		// default Heroku Postgres configuration URL
@@ -45,7 +46,7 @@ function get_db() {
 
 		// Create the PDO connection
 		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
+		echo "2**:" $db;
 		// this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
 		$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	}
@@ -55,6 +56,6 @@ function get_db() {
 		echo "Error connecting to DB. Details: $ex";
 		die();
 	}
-	
+	echo "3**:" $db;
 	return $db;
 }
