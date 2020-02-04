@@ -1,12 +1,4 @@
-<?php
-/**********************************************************
-* File: viewScriptures.php
-* Author: Br. Burton
-***********************************************************/
-require "dbConnect.php";
-$db = get_db();
 
-?>
 
 <!DOCTYPE html>
 <html>
