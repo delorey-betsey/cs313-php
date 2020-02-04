@@ -21,7 +21,7 @@ function get_db() {
 			// and a database called "scripture_ta"
 			//$dbUrl = "postgres://ta_user:ta_pass@localhost:5432/scripture_ta";
 			
-			$dbUrl = "postgres://tbieyvuwirilzt:dd0252f6eb7f88463e79c928cb4cefc2471a13e570e734723f9fca707871382f@ec2-107-22-239-155.compute-1.amazonaws.com:5432/d2o56jht4v6bq8";
+			//$dbUrl = "postgres://tbieyvuwirilzt:dd0252f6eb7f88463e79c928cb4cefc2471a13e570e734723f9fca707871382f@ec2-107-22-239-155.compute-1.amazonaws.com:5432/d2o56jht4v6bq8";
 			
 			// NOTE: It is not great to put this sensitive information right
 			// here in a file that gets committed to version control. It's not
