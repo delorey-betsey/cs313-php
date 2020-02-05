@@ -9,7 +9,6 @@ $stmt->execute();
 $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 VAR_DUMP($scriptures);
 ?>
-?>
 
 <!DOCTYPE html>
 <html>
