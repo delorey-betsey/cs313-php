@@ -1,8 +1,9 @@
 <?php
 $scripture_id = htmlspecialchars($_GET['scripture_id']);
 echo $scripture_id;
-SELECT CURRENT_TIMESTAMP;
-echo CURRENT_TIMESTAMP;
+require "dbConnect.php";
+$db = get_db();
+
 ?>
 
 <!DOCTYPE html>
