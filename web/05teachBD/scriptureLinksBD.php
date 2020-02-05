@@ -25,7 +25,7 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				$chapter 	= $scripture['chapter'];
 				$verse 		= $scripture['verse'];
 				$content 	= $scripture['content'];
-				echo "<li><strong>$book $chapter:$verse</strong> - \"$content\"<li>";
+				echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
 			}
 			?>
 		</ul>
