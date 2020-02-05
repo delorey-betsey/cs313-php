@@ -1,7 +1,4 @@
 <?php
-if (!isset($_GET['scripture_id']))
-{ die("Error, id not specified...");
-}
 $scripture_id = htmlspecialchars($_GET['scripture_id']);
 require "dbConnect.php";
 $db = get_db();
@@ -11,7 +8,6 @@ $stmt = $db->prepare($query);
 $stmt->execute();
 $scripture = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -19,7 +15,6 @@ $scripture = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	</head>
 <body>
 	<?php
-	$scripture_id 	= $scripture['id'];
 	$book 			= $scripture['book'];
 	$chapter 		= $scripture['chapter'];
 	$verse 			= $scripture['verse'];
