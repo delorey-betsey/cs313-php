@@ -15,7 +15,7 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
 	<div>
-		<h1>Scripture Resources BETSEY</h1>
+		<h1>Scripture Resources</h1>
 		<ul>
 			<?php
 			// Go through each result
