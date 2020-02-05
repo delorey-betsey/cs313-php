@@ -1,7 +1,7 @@
 <?php
 require "dbConnectBD.php";
 $db = get_db();
-//SELECT book, chapter, verse, content FROM scriptureBD;
+//SELECT id, book, chapter, verse, content FROM scriptureBD;
 $query = 'SELECT id, book, chapter, verse, content FROM scriptureBD';
 $stmt = $db->prepare($query);
 $stmt->execute();
@@ -26,7 +26,8 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				$chapter 		= $scripture['chapter'];
 				$verse 			= $scripture['verse'];
 				$content 		= $scripture['content'];
-				echo "<li><a href='scriptureLinks.php?id=$scripture_id'><strong>$book $chapter:$verse</strong></a> "<li>";
+				// echo "<li><a href='scriptureLinks.php?id=$scripture_id'><strong>$book $chapter:$verse</strong></a> "<li>";
+				echo "<li><strong>$book $chapter:$verse</strong> - \"$content\"<li>";
 			}
 			?>
 		</ul>
