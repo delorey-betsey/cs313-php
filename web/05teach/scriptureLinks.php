@@ -1,8 +1,8 @@
 <?php
-if (!isset($_GET['id']))
+if (!isset($_GET['scripture_id']))
 { die("Error, id not specified...");
 }
-$id = htmlspecialchars($GET['id']);
+$scripture_id = htmlspecialchars($GET['scripture_id']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,11 +12,8 @@ $id = htmlspecialchars($GET['id']);
 
 <body>
 
- <h1>Scripture Content for scripture id <?php echo $id ?></h1>
-	<p>adsf</p>
-	<p>adsf</p>
-	<p>adsf</p>
-	<p>adsf</p>
+ <h1>Scripture Content for Scripture ID <?php echo $scripture_id ?></h1>
+
 
 </body>
 </html>
