@@ -15,19 +15,18 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	</head>
 <body> 
 	<h1>Scripture Text</h1>
+	
+		<ul>
 		<?php
+		foreach ($scriptures as $scripture)
+			{
 				$book 			= $scripture['book'];
 				$chapter 		= $scripture['chapter'];
 				$verse 			= $scripture['verse'];
+				$content 		= $scripture['content'];
 				echo "<h3>$book $chapter:$verse</h3>";
-		?>
-		<ul>
-		<?php
-			foreach ($scriptures as $scripture)
-				{
-					$content = $scripture['content'];
-					echo "<li><p>$content</p></li>";
-				}
+				echo "<li><p>$content</p></li>";
+			}
 		?>
 		</ul>
 </body>
