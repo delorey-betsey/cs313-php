@@ -26,7 +26,7 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				$chapter 		= $scripture['chapter'];
 				$verse 			= $scripture['verse'];
 				$content 		= $scripture['content'];
-				echo "<li><p><a href='scriptureLinks.php?scripture_id=$scripture_id'><strong>$book $chapter:$verse</strong></a><p></li>";
+				echo "<li><h3><a href='scriptureLinks.php?scripture_id=$scripture_id'>$book $chapter:$verse</a><h3></li>";
 			}
 			?>
 		</ul>
