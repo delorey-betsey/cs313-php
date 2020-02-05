@@ -11,19 +11,21 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Scripture Link to Content</title>
+		<title>Scripture Content</title>
 	</head>
 <body> 
-	<?php
-	foreach ($scriptures as $scripture)
-		{
-			$book 			= $scripture['book'];
-			$chapter 		= $scripture['chapter'];
-			$verse 			= $scripture['verse'];
-			$content 		= $scripture['content'];
-						echo "<h3>Scripture Content for: $book $chapter:$verse</h3>";
-			echo "<p>$content</p>";
-		}
-	?>
+	<h1>Scripture Text</h1>
+
+		<?php
+		foreach ($scriptures as $scripture)
+			{
+				$book 			= $scripture['book'];
+				$chapter 		= $scripture['chapter'];
+				$verse 			= $scripture['verse'];
+				$content 		= $scripture['content'];
+				echo "<h3>$book $chapter:$verse</h3>";
+				echo "<p>$content</p>";
+			}
+		?>
 </body>
 </html>
