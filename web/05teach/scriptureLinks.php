@@ -16,7 +16,7 @@ VAR_DUMP($scriptures);
 		<title>Scripture Link to Content</title>
 	</head>
 <body>
-
+START HERE
 	<?php
 	foreach ($scriptures as $scripture)
 		{
