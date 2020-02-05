@@ -1,1 +1,1 @@
-    <a  href="<?php echo 'artistspage.php'; ?>" title="artists" >Browse</a>
+    <a  href="<?php echo 'artistspage.php'; ?>" title="artists" >Artists</a>

@@ -1,1 +1,1 @@
-    <a  href="<?php echo 'catspage.php'; ?>" title="cats" >Browse</a>
+    <a  href="<?php echo 'catspage.php'; ?>" title="cats" >Cats</a>
