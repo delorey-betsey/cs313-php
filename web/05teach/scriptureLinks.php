@@ -15,8 +15,7 @@ VAR_DUMP($scriptures);
 	<head>
 		<title>Scripture Link to Content</title>
 	</head>
-<body>
-START HERE
+<body> 
 	<?php
 	foreach ($scriptures as $scripture)
 		{
@@ -29,9 +28,10 @@ START HERE
 			echo $chapter;
 			echo $verse;
 			echo $content;
+			echo "<h1>Scripture Content for:</h1>";
+			echo "<h1><strong>$book $chapter:$verse</strong>?></h1>";
+			echo "<p><?php echo $content?></p>";
 		}
 	?>
-
-
 </body>
 </html>
