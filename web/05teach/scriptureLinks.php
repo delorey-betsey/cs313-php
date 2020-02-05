@@ -7,7 +7,6 @@ $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptureBD WHER
 $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
 $stmt->execute();
 $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
-VAR_DUMP($scriptures);
 ?>
 
 <!DOCTYPE html>
