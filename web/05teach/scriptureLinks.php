@@ -1,13 +1,17 @@
 <?php
 $scripture_id = htmlspecialchars($_GET['scripture_id']);
+
 require "dbConnect.php";
 $db = get_db();
-//SELECT book, chapter, verse, content FROM scriptureBD;
-$query = 'SELECT book, chapter, verse, content FROM scriptureBD WHERE id = $scripture_id';
-$stmt = $db->prepare($query);
+
+//SELECT book, chapter, verse, content FROM scriptureBD by id;
+ 
+$stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptureBD WHERE id = :id');
+$stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
 $stmt->execute();
 $scripture = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
