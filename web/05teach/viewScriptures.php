@@ -16,7 +16,7 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
 	<div>
 		<h1>Scripture Resources</h1>
-		<ul>
+		
 			<?php
 			// Go through each result
 			foreach ($scriptures as $scripture)
@@ -27,10 +27,10 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				$verse 			= $scripture['verse'];
 				$content 		= $scripture['content'];
 				// echo "<li><a href='scriptureLinks.php?id=$scripture_id'><strong>$book $chapter:$verse</strong></a> "<li>";
-				echo "<li><a href='scriptureLinks.php?scripture_id=$scripture_id'><strong>$book $chapter:$verse</strong></a><li>";
+				echo "<p><a href='scriptureLinks.php?scripture_id=$scripture_id'><strong>$book $chapter:$verse</strong></a><p>";
 			}
 			?>
-		</ul>
+	
 	</div>
 </body>
 </html>
