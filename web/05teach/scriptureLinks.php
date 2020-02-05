@@ -18,5 +18,18 @@ VAR_DUMP($scriptures);
 	</head>
 <body>
 
+	<?php
+		$book 			= $scripture['book'];
+		$chapter 		= $scripture['chapter'];
+		$verse 			= $scripture['verse'];
+		$content 		= $scripture['content'];
+		
+		echo $book;
+		echo $chapter;
+		echo $verse;
+		echo $content;
+	?>
+
+
 </body>
 </html>
