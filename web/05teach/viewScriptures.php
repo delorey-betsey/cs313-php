@@ -21,11 +21,12 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			// Go through each result
 			foreach ($scriptures as $scripture)
 			{
+				$id 		= $scripture['id'];
 				$book 		= $scripture['book'];
 				$chapter 	= $scripture['chapter'];
 				$verse 		= $scripture['verse'];
 				$content 	= $scripture['content'];
-				echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
+				echo "<li><a href='scriptureLinks.php?id=$id'><strong>$book $chapter:$verse</strong></a> "<li>";
 			}
 			?>
 		</ul>
