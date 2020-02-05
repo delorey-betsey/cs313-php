@@ -18,15 +18,18 @@ VAR_DUMP($scriptures);
 <body>
 
 	<?php
-		$book 			= $scripture['book'];
-		$chapter 		= $scripture['chapter'];
-		$verse 			= $scripture['verse'];
-		$content 		= $scripture['content'];
-		
-		echo $book;
-		echo $chapter;
-		echo $verse;
-		echo $content;
+	foreach ($scriptures as $scripture)
+		{
+			$book 			= $scripture['book'];
+			$chapter 		= $scripture['chapter'];
+			$verse 			= $scripture['verse'];
+			$content 		= $scripture['content'];
+			
+			echo $book;
+			echo $chapter;
+			echo $verse;
+			echo $content;
+		}
 	?>
 
 
