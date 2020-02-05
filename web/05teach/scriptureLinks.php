@@ -29,8 +29,8 @@ VAR_DUMP($scriptures);
 			echo $verse;
 			echo $content;
 			echo "<h1>Scripture Content for:</h1>";
-			echo "<h1><strong>$book $chapter:$verse</strong>?></h1>";
-			echo "<p><?php echo $content?></p>";
+			echo "<h3>$book $chapter:$verse</h3>";
+			echo "<p>$content</p>";
 		}
 	?>
 </body>
