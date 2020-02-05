@@ -1,6 +1,5 @@
 <?php
 $scripture_id = htmlspecialchars($_GET['scripture_id']);
-echo $scripture_id;
 require "dbConnect.php";
 $db = get_db();
 $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptureBD WHERE id = :id');
@@ -22,11 +21,6 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			$chapter 		= $scripture['chapter'];
 			$verse 			= $scripture['verse'];
 			$content 		= $scripture['content'];
-			
-			echo $book;
-			echo $chapter;
-			echo $verse;
-			echo $content;
 			echo "<h1>Scripture Content for:</h1>";
 			echo "<h3>$book $chapter:$verse</h3>";
 			echo "<p>$content</p>";
