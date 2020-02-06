@@ -22,7 +22,7 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php include 'modules/titleartists.php'; ?>
         </div>
         
-        <!-- SECOND DIV--COMMENT:  artists list     -->
+        <!-- SECOND DIV--COMMENT:  ARTISTS LIST     -->
         <div class="main2" >  
         <ul>
 			<?php
@@ -34,7 +34,8 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     echo "<li><h3><a href='biopage.php?id=$id'>$name</a><h3></li>";
                     }
 			?>
-		</ul>                    
+		</ul> 
+        <br><br> <br>                  
         </div>
       
     </div>

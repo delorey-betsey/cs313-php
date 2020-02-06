@@ -146,3 +146,11 @@ footer {
 width: 30px;
 height: 30px;
 }
+ul {
+    list-style-type: circle;
+    margin: 20px;
+  }
+li {
+    list-style-type: circle;
+    margin: 20px;
+  }
