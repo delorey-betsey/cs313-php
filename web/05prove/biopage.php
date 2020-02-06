@@ -21,19 +21,7 @@ var_dump ($artists);
 			<?php
             var_dump ($artists);
 			// Go through each result
-			foreach ($artists as $artist)
-			{
-				$name    = $artist['displayname'];
-                $bio     = $artist['bio'];
-                $pic     = $artist['pic'];
-                echo $name;
-                echo $bio;
-                echo $pic;
 
-                echo "<h3>$name</h3>";
-                echo "<li><p>$bio</p></li>";
-                echo "<li><div><img src="$pic" alt= "pet picture" /></div></li>";
-			}
 			?>
 		</ul>                    
         </div>
