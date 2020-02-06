@@ -30,6 +30,11 @@ echo $artists;
 			{
 				$userID = $artist['userID'];
                 $displayName = $artist['displayName'];
+                echo '**';
+                echo $userID;
+                echo '**';
+                echo $displayName;
+                echo '**';
 				echo "<li><h3><a href='biopage.php?userID=$userID'>$displayName</a><h3></li>";
 			}
 			?>
