@@ -1,5 +1,5 @@
 <?php
-echo 'entering biopage';
+echo "entering biopage";
 $id = htmlspecialchars($_GET['id']);
 echo $id;
 
@@ -12,8 +12,6 @@ $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
 var_dump ($artists);
 ?>
-
-
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  main title     -->
