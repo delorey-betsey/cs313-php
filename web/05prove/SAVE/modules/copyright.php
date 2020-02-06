@@ -1,1 +1,0 @@
-ARfS, All rights reserved.

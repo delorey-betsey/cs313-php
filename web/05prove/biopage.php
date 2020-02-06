@@ -7,6 +7,15 @@ $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARFs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
+    </head>
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  main title     -->
@@ -16,25 +25,26 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         <!-- SECOND DIV--COMMENT:  artists list     -->
         <div class="main2" >  
-        <ul>
-			<?php
-            // Go through each result
-            foreach ($artists as $artist)
-			{
-				$name    = $artist['displayname'];
-                $bio     = $artist['bio'];
-                $pic     = $artist['pic'];
-                 
-                echo "<h3>$name</h3>";
-                echo "<li><p>$bio</p></li>";
-                // echo "<li><p>$pic</p></li>";
-                
-                // echo "<div><img src="$pic" alt= "pet picture" /></div>";
-			}
-			?>
-            <div><img src="<?php echo $pic; ?>" alt="pet picture" /></div>;
-		</ul>                    
-        </div>
-      
+            <ul>
+                <?php
+                // Go through each result
+                foreach ($artists as $artist)
+                {
+                    $name    = $artist['displayname'];
+                    $bio     = $artist['bio'];
+                    $pic     = $artist['pic'];
+                    
+                    echo "<h3>$name</h3>";
+                    echo "<li><p>$bio</p></li>";
+                    // echo "<li><p>$pic</p></li>";
+                    
+                    // echo "<div><img src="$pic" alt= "pet picture" /></div>";
+                }
+                ?>
+            </ul> 
+            <div><img src="<?php echo $pic; ?>" alt="pet picture" />
+            </div>;                   
+        </div>      
     </div>
 </main>
+</html>

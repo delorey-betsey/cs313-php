@@ -6,6 +6,15 @@ $stmt->bindValue(':artistid', 2, PDO::PARAM_INT);
 $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARFs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
+    </head>
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  main title     -->
@@ -30,4 +39,4 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
       
     </div>
 </main>
-
+</html>
