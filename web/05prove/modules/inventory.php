@@ -49,7 +49,7 @@ $items = $_SESSION["items"];
             <div><a  class="item" href="../03prove/modules/dog1.php" title="dog1" >Item 1</a></div>       
             <input class=“largerCheckbox” type="checkbox" id="item1" name="items[]" value="item1">
             <br>
-            <div><img   src="images/dog1.jpg"  alt= "dog1"  /> </div>
+            <div><img   src="images/dog1.jpg"  alt= "dog1"  /> </div>            
             <label for="item1">Item 1 - $10</label>
         </div>
         <br><br>

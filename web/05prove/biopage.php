@@ -27,9 +27,8 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
                  
                 echo "<h3>$name</h3>";
                 echo "<li><p>$bio</p></li>";
-                echo "<div><img src="$pic" alt= "pet picture" /></div>";
-
-
+                echo "<li><p>$pic</p></li>";
+                // echo "<div><img src="$pic" alt= "pet picture" /></div>";
 			}
 
 			?>
