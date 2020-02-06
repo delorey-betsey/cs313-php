@@ -28,10 +28,11 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 echo "<h3>$name</h3>";
                 echo "<li><p>$bio</p></li>";
                 // echo "<li><p>$pic</p></li>";
-                echo "<img src='<?php echo htmlspecialchars($pic); ?>' alt="pet picture" />";
+                
                 // echo "<div><img src="$pic" alt= "pet picture" /></div>";
 			}
 			?>
+            <div><img src="<?php echo $pic; ?>" alt="pet picture" /></div>;
 		</ul>                    
         </div>
       
