@@ -42,6 +42,7 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 }
                 ?>
             </ul> 
+            <br>
             <div><img src="<?php echo $pic; ?>" alt="pet picture" />
             </div>;                   
         </div>      
