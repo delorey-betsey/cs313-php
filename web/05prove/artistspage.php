@@ -1,6 +1,3 @@
-<?php
-echo 'artistspage';
-?>
 <!DOCTYPE html>
 <html>
     <head>
