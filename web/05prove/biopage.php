@@ -16,6 +16,11 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <link rel="stylesheet" href="css/style.css" media="screen">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
+<body>    
+<!-- COMMENT:  flexbox header and nav    -->   
+<?php include 'common/header.php'; ?>
+<?php include 'common/nav.php'; ?>
+
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  main title     -->
@@ -44,4 +49,9 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>      
     </div>
 </main>
+
+<!-- COMMENT:  flexbox bottom nav and footer  -->  
+<?php include 'common/nav.php'; ?>
+<?php include 'common/footer.php'; ?>
+</body>
 </html>
