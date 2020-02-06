@@ -7,6 +7,8 @@ $stmt = $db->prepare('SELECT displayName, bio, pic FROM userArfs WHERE userID = 
 $stmt->bindValue(':userID', $userID, PDO::PARAM_INT);
 $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
+echo 'biopage';
+echo $artists;
 ?>
 
 

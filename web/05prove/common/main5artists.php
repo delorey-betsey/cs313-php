@@ -7,6 +7,8 @@ $stmt = $db->prepare('SELECT userID, displayName FROM userArfs WHERE typeID = :a
 $stmt->bindValue(':artistid', 2, PDO::PARAM_INT);
 $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
+echo 'main5artists';
+echo $artists;
 ?>
 
 
