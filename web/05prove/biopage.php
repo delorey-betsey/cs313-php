@@ -32,19 +32,15 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 {
                     $name    = $artist['displayname'];
                     $bio     = $artist['bio'];
-                    $pic     = $artist['pic'];
-                    
-                    echo "<h3>$name</h3>";
+                    $pic     = $artist['pic'];                    
+                    echo "<li><h3>$name</h3></li>";
                     echo "<li><p>$bio</p></li>";
-                    // echo "<li><p>$pic</p></li>";
-                    
-                    // echo "<div><img src="$pic" alt= "pet picture" /></div>";
                 }
                 ?>
             </ul> 
             <br>
             <div><img src="<?php echo $pic; ?>" alt="pet picture" />
-            </div>;                   
+            </div>                   
         </div>      
     </div>
 </main>

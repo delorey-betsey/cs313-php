@@ -31,7 +31,7 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     {
                     $id     = $artist['userid'];
                     $name   = $artist['displayname'];
-                    echo "<li><p><a href='biopage.php?id=$id'>$name</a><p></li>";
+                    echo "<li><h3><a href='biopage.php?id=$id'>$name</a><h3></li>";
                     }
 			?>
 		</ul>                    
