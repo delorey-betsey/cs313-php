@@ -1,5 +1,7 @@
 <?php
 
+echo 'arriving main5artists from artistpage';
+
 require "dbConnect.php";
 $db = get_db();
 
