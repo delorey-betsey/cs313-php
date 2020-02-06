@@ -30,11 +30,11 @@ var_dump ($artists);
 			{
 				$userID         = $artist['userID'];
                 $displayName    = $artist['displayName'];
-                echo '**';
-                echo $userID;
-                echo '**';
-                echo $displayName;
-                echo '**';
+                echo "<h3>***</h3>";
+                echo "<h3>$userID</h3>";
+                echo "<h3>***</h3>";
+                echo "<h3>$displayName</h3>";
+                echo "<h3>***</h3>";
 				echo "<li><h3><a href='biopage.php?userID=$userID'>$displayName</a><h3></li>";
 			}
 			?>
