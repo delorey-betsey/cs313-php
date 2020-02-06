@@ -149,8 +149,12 @@ height: 30px;
 ul {
     list-style-type: circle;
     margin: 20px;
-  }
+}
 li {
     list-style-type: circle;
     margin: 20px;
-  }
+}
+.biopic {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
