@@ -1,14 +1,16 @@
 <?php
-$userID = htmlspecialchars($_GET['userID']);
+echo 'entering biopage';
+$id = htmlspecialchars($_GET['id']);
+echo $id;
+
 require "dbConnect.php";
 $db = get_db();
 
-$stmt = $db->prepare('SELECT displayName, bio, pic FROM userArfs WHERE userID = :userID');
-$stmt->bindValue(':userID', $userID, PDO::PARAM_INT);
+$stmt = $db->prepare('SELECT displayName, bio, pic FROM userArfs WHERE userid = :id');
+$stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
-echo 'biopage';
-echo $artists;
+var_dump ($artists);
 ?>
 
 
@@ -23,14 +25,15 @@ echo $artists;
         <div class="main2" >  
         <ul>
 			<?php
+            var_dump ($artists);
 			// Go through each result
 			foreach ($artists as $artist)
 			{
-				$displayName    = $artist['displayName'];
-                $bio            = $artist['bio'];
-                $pic            = $artist['pic'];
+				$name    = $artist['displayname'];
+                $bio     = $artist['bio'];
+                $pic     = $artist['pic'];
 
-                echo "<h3>$displayName</h3>";
+                echo "<h3>$name</h3>";
                 echo "<li><p>$bio</p></li>";
                 echo "<li><div><img src="$pic" alt= "pet picture" /></div></li>";
 			}

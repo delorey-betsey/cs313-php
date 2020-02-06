@@ -18,9 +18,6 @@
     <!-- COMMENT:  flexbox nav     -->  
     <?php include 'common/nav.php'; ?>
 
-<?php
-echo 'going to common main5artists';
-?>
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main5artists.php'; ?>
 
