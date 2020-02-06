@@ -20,7 +20,17 @@ var_dump ($artists);
         <ul>
 			<?php
             var_dump ($artists);
-			// Go through each result
+            // Go through each result
+            foreach ($artists as $artist)
+			{
+				$name    = $artist['displayname'];
+                $bio     = $artist['bio'];
+                $pic     = $artist['pic'];
+                echo $name;
+                echo $bio;
+                echo $pic;
+
+			}
 
 			?>
 		</ul>                    
