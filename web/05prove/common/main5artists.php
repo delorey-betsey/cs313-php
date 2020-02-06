@@ -10,7 +10,7 @@ $stmt->bindValue(':artistid', 2, PDO::PARAM_INT);
 $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
 echo 'main5artists';
-var_dump $artists;
+var_dump ($artists);
 ?>
 
 
