@@ -6,7 +6,6 @@ $stmt = $db->prepare('SELECT displayname, bio, pic FROM userarfs WHERE userid = 
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
-var_dump ($artists);
 ?>
 <main>
     <div>
@@ -19,7 +18,6 @@ var_dump ($artists);
         <div class="main2" >  
         <ul>
 			<?php
-            var_dump ($artists);
             // Go through each result
             foreach ($artists as $artist)
 			{
@@ -29,6 +27,7 @@ var_dump ($artists);
                  
                 echo "<h3>$name</h3>";
                 echo "<li><p>$bio</p></li>";
+                echo "<div><img src="$pic" alt= "pet picture" /></div>";
 
 
 			}
