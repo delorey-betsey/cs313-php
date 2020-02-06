@@ -10,7 +10,7 @@ $stmt->bindValue(':artistid', 2, PDO::PARAM_INT);
 $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
 echo 'main5artists';
-echo $artists;
+var_dump $artists;
 ?>
 
 
@@ -28,8 +28,8 @@ echo $artists;
 			// Go through each result
 			foreach ($artists as $artist)
 			{
-				$userID = $artist['userID'];
-                $displayName = $artist['displayName'];
+				$userID         = $artist['userID'];
+                $displayName    = $artist['displayName'];
                 echo '**';
                 echo $userID;
                 echo '**';
