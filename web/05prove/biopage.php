@@ -26,9 +26,10 @@ var_dump ($artists);
 				$name    = $artist['displayname'];
                 $bio     = $artist['bio'];
                 $pic     = $artist['pic'];
-                echo $name;
-                echo $bio;
-                echo $pic;
+                 
+                echo "<h3>$name</h3>";
+                echo "<li><p>$bio</p></li>";
+
 
 			}
 
