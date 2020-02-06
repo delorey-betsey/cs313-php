@@ -56,6 +56,17 @@ shipDT DATE
 );
 INSERT INTO orderArfs (orderID,userID,artID,shipDT) VALUES (500,2005,100,'2020-01-31'),(501,2006,106,NULL);
 
+ALTER TABLE userArfs ADD COLUMN bio text;
+ALTER TABLE userArfs ADD COLUMN pic text;
 
+UPDATE userArfs SET bio = 'Betsey Delorey grew up with many dogs as legit family members.  Her life is so much more because of the unconditional love they share for each other.  She captures that mutual love in her art.' WHERE userid = 2002;
+
+UPDATE userArfs SET bio = 'Jane Jones first met Cleo at the local animal rescue shelter.  It was love at first sight. Jane decided to focus her artwork on cats since creating their life and home together.  They share daily calm and contentment.' WHERE userid = 2003;
+
+UPDATE userArfs SET bio = 'Sam Smith Dog Art grew out of his appreciation for working dogs, growing up on a sheep farm in Utah.  His family trained Jack Russell terriers to help manage their herd. His work highlights the mutually beneficial and rewarding relationships have with their companions.' WHERE userid = 2004;
+
+UPDATE userArfs SET pic ='images/petpicbdelorey.jpg' WHERE userid = 2002;
+UPDATE userArfs SET pic ='images/petpicjjones.jpg' WHERE userid = 2003;
+UPDATE userArfs SET pic ='images/petpicssmith.jpg' WHERE userid = 2004;
 
 

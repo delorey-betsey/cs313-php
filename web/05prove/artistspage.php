@@ -20,7 +20,7 @@
 
 
     <!-- COMMENT:  flexbox main     -->  
-    <?php include 'common/underconstruction.php'; ?>
+    <?php include 'common/main5artists.php'; ?>
 
     <!-- COMMENT:  flexbox nav     -->  
     <?php include 'common/nav.php'; ?>
