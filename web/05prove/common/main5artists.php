@@ -5,7 +5,7 @@ echo 'arriving main5artists from artistpage';
 require "dbConnect.php";
 $db = get_db();
 
-$stmt = $db->prepare('SELECT userID, displayName FROM userArfs WHERE typeID = :artistid');
+$stmt = $db->prepare('SELECT userid, displayname FROM userarfs WHERE typeID = :artistid');
 $stmt->bindValue(':artistid', 2, PDO::PARAM_INT);
 $stmt->execute();
 $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -29,9 +29,9 @@ var_dump ($artists);
                 // Go through each result
                 foreach ($artists as $artist)
                     {
-                    $userID         = $artist['userID'];
+                    $id         = $artist['userid'];
                     echo "<h3>***</h3>";
-                    echo $userID;
+                    echo $id;
                     }
 			?>
 		</ul>                    
