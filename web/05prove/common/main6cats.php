@@ -1,4 +1,5 @@
 <?php
+echo "betsey main6cats";
 require "dbConnect.php";
 $db = get_db();
 $cat = 'cat';

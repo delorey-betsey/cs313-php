@@ -6,6 +6,7 @@
         <?php include 'modules/artistslink.php'; ?>
     </div>
     <div class="navlinks" >
+        betsey nav
         <?php include 'modules/catslink.php'; ?>
     </div>
     <div class="navlinks" >
