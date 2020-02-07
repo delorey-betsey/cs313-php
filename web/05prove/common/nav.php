@@ -7,7 +7,6 @@
     </div>
     <div class="navlinks" >
         <?php include 'modules/catslink.php'; ?>
-        <?php echo "nav catslink"; ?>
     </div>
     <div class="navlinks" >
         <?php include 'modules/dogslink.php'; ?>
