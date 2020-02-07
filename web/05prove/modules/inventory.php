@@ -48,13 +48,8 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
 <main>
-    <div>
-        <!-- FIRST DIV--COMMENT:  main title     -->
-        <div class="main1" >
-            <?php include 'modules/titlecats.php'; ?>
-        </div>
-        
-        <!-- SECOND DIV--COMMENT:  CAT ARTWORK     -->
+    <div>        
+        <!-- COMMENT:  CAT ARTWORK     -->
         <div class="grouping" >  
             <?php
                 foreach ($inventory as $item)
