@@ -1,15 +1,16 @@
 <?php
 require "dbConnect.php";
 $db = get_db();
-$stmt = $db->prepare('SELECT userid, displayname FROM userarfs WHERE typeID = :artistid');
-$stmt->bindValue(':artistid', 2, PDO::PARAM_INT);
+$dog = 'dog';
+$stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid WHERE a.title = :title'); 
+$stmt->bindValue(':title', $dog, PDO::PARAM_STR);
 $stmt->execute();
-$artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ARFs</title>
+        <title>ARfS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/style.css" media="screen">
@@ -19,25 +20,35 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div>
         <!-- FIRST DIV--COMMENT:  main title     -->
         <div class="main1" >
-            <?php include 'modules/titleartists.php'; ?>
+            <?php include 'modules/titledogs.php'; ?>
         </div>
         
-        <!-- SECOND DIV--COMMENT:  ARTISTS LIST     -->
-        <div class="main2" >  
-        <ul>
-			<?php
-                // Go through each result
-                foreach ($artists as $artist)
-                    {
-                    $id     = $artist['userid'];
-                    $name   = $artist['displayname'];
-                    echo "<li><h3><a href='biopage.php?id=$id'>$name</a><h3></li>";
-                    }
+        <!-- SECOND DIV--COMMENT:  DOG ARTWORK     -->
+        <div class="grouping" >  
+            <?php
+                foreach ($dogs as $dog)
+                {
+                    echo "<div class='art'>";
+
+                        $artid      = $dog['artid'];
+                        $artist     = $dog['displayname'];
+                        $brief      = $dog['brief'];
+                        $price      = $dog['price'];
+                        $thumb      = $dog['thumb'];
+                        $fullsize   = $dog['fullsize'];
+
+                        echo "<div><br>Item Number: $artid  </div>";
+                        echo "<div><br>Created by:  $artist </div>";
+                        echo "<div><br>Description: $brief  </div>";
+                        echo "<div><br>Price:       $price  </div>";
+                        echo "<div><img src=$thumb alt= $brief /> </div>";
+                        echo "<br>";
+
+                    echo "</div>";
+                }               
 			?>
-		</ul> 
-        <br><br> <br>                  
-        </div>
-      
+            <br><br><br>                  
+        </div>      
     </div>
 </main>
 </html>
