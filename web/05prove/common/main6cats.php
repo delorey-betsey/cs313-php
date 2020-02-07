@@ -2,7 +2,6 @@
 require "dbConnect.php";
 $db = get_db();
 $cat = 'cat';
-echo ($cat);
 $stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid WHERE a.title = :title'); 
 $stmt->bindValue(':title', $cat, PDO::PARAM_STR);
 $stmt->execute();
@@ -26,7 +25,6 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         <!-- SECOND DIV--COMMENT:  CAT ARTWORK     -->
         <div class="grouping" >  
-        <ul>
             <?php
                 foreach ($cats as $cat)
                 {
@@ -49,10 +47,8 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     echo "</div>";
                 }               
 			?>
-		</ul> 
-        <br><br><br>                  
-        </div>
-      
+            <br><br><br>                  
+        </div>      
     </div>
 </main>
 </html>
