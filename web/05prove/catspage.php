@@ -9,7 +9,6 @@
     </head>
 
 <body>
-    betsey catspage
     <!-- TEMPLATE  --> 
         
     <!-- COMMENT:  flexbox header     -->   
