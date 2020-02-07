@@ -21,6 +21,7 @@
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main6cats.php'; ?>
+    <?php echo "leaving catspage"; ?>
 
     <!-- COMMENT:  flexbox nav     -->  
     <?php include 'common/nav.php'; ?>
