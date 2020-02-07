@@ -6,11 +6,12 @@ $stmt = $db->prepare('SELECT a.artid, a.brief, a. title, a.price, a.thumb, a.ful
 $stmt->bindValue(':title', $cat, PDO::PARAM_STR);
 $stmt->execute();
 $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
+var_dump ($cats);
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ARFs</title>
+        <title>ARfS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/style.css" media="screen">
@@ -30,7 +31,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 // Go through each result                
                 foreach ($cats as $cat)
                     {
-                    echo "<div class='art'>";
+                    // echo "<div class='art'>";
                     $artid      = $cat['artid'];
                     $artist     = $cat['displayname'];
                     $brief      = $cat['brief'];
@@ -38,19 +39,17 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     $thumb      = $cat['thumb'];
                     $fullsize   = $cat['fullsize'];
 
-                    echo "<div><a  class="item" href=$fullsize title=$artid >$artid</a></div>";       
-                    echo "<br>";
-                    echo "<input class='largerCheckbox' type='checkbox' id=$artid name='items[$artid]' value=$artid>";
-                    echo "<br>";
-                    echo "<div><img src="$thumb"  alt='cat picture'/></div>";            
-                    echo "<br>";
-                    echo "$price";
+                    echo $artid;
+                    echo $artist;
+                    echo $brief;
+                    echo $price;
+                    echo $thumb;
+                    echo $fullsize;
 
-                    echo "</div>";
-                    }                
+               
 			?>
 		</ul> 
-        <br><br> <br>                  
+        <br><br><br>                  
         </div>
       
     </div>
