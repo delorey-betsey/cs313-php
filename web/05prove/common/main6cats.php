@@ -1,15 +1,12 @@
 <?php
 require "dbConnect.php";
 $db = get_db();
-
 $cat = 'cat';
 echo ($cat);
-
 $stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid WHERE a.title = :title'); 
 $stmt->bindValue(':title', $cat, PDO::PARAM_STR);
 $stmt->execute();
 $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
-var_dump ($cats);
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,8 +29,28 @@ var_dump ($cats);
         <div class="grouping" >  
         <ul>
             <?php
+                foreach ($cats as $cat)
+                {
+                // echo "<div class='art'>";
+                $artid      = $cat['artid'];
+                $artist     = $cat['displayname'];
+                $brief      = $cat['brief'];
+                $price      = $cat['price'];
+                $thumb      = $cat['thumb'];
+                $fullsize   = $cat['fullsize'];
 
-               
+                echo $artid;
+                echo "<br>";
+                echo $artist;
+                echo "<br>";
+                echo $brief;
+                echo "<br>";
+                echo $price;
+                echo "<br>";
+                echo $thumb;
+                echo "<br>";
+                echo $fullsize;
+                }               
 			?>
 		</ul> 
         <br><br><br>                  
