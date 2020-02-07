@@ -1,5 +1,4 @@
 <?php
-echo 'entering main6cats';
 require "dbConnect.php";
 $db = get_db();
 $cat = 'cat';
@@ -25,29 +24,28 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
         
         <!-- SECOND DIV--COMMENT:  CAT ARTWORK     -->
-        <div class="main2" >  
+        <div class="grouping" >  
         <ul>
             <?php
-            var_dump ($cats);
-                // Go through each result
-                
+                // Go through each result                
                 foreach ($cats as $cat)
                     {
-                    echo "<div>";
+                    echo "<div class='art'>";
                     $artid      = $cat['artid'];
                     $artist     = $cat['displayname'];
                     $brief      = $cat['brief'];
                     $price      = $cat['price'];
                     $thumb      = $cat['thumb'];
                     $fullsize   = $cat['fullsize'];
-                    echo $artid;
-                    echo $artist;
-                    echo $brief;
-                    echo $price;
-                    echo $thumb;
-                    echo $fullsize;
 
-                    // echo "<li><h3><a href='biopage.php?id=$id'>$name</a><h3></li>";
+                    echo "<div><a  class="item" href=$fullsize title=$artid >$artid</a></div>";       
+                    echo "<br>";
+                    echo "<input class='largerCheckbox' type='checkbox' id=$artid name='items[$artid]' value=$artid>";
+                    echo "<br>";
+                    echo "<div><img src="$thumb"  alt='cat picture'/></div>";            
+                    echo "<br>";
+                    echo "$price";
+
                     echo "</div>";
                     }                
 			?>
@@ -58,4 +56,41 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </main>
 </html>
+<div class="grouping">
+
+        <div class="art">
+            <div><a  class="item" href="../03prove/modules/dog1.php" title="dog1" >Item 1</a></div>       
+            <input class=“largerCheckbox” type="checkbox" id="item1" name="items[]" value="item1">
+            <br>
+            <div><img   src="images/dog1.jpg"  alt= "dog1"  /> </div>            
+            <label for="item1">Item 1 - $10</label>
+        </div>
+        <br><br>
+
+        <div class="art">   
+            <div><a class="item" href="../03prove/modules/dog2.php" title="dog2" >Item 2</a> </div>
+            <input class=“largerCheckbox” type="checkbox" id="item2" name="items[]" value="item2">
+            <br>
+            <div><img  src="images/dog2.jpg"  alt= "dog2"  /> </div>
+            <label for="item2">Item 2 - $20</label>
+        </div>
+        <br><br>
+
+        <div class="art">    
+            <div><a class="item"  href="../03prove/modules/cat1.php" title="cat1" >Item 3</a></div>
+            <input class=“largerCheckbox” type="checkbox" id="item3" name="items[]" value="item3">
+            <br>
+            <div><img  src="images/cat1.jpg"  alt= "cat1"  /> </div>
+            <label for="item3">Item 3 - $30</label>
+        </div>       
+        <br><br>
+
+        <div class="art">    
+            <div><a class="item"  href="../03prove/modules/cat2.php" title="cat2" >Item 4</a></div>            
+            <input class=“largerCheckbox” type="checkbox" id="item4" name="items[]" value="item4">
+            <br>
+            <div><img  src="images/cat3.jpg"  alt= "cat3"  /> </div>
+            <label for="item4">Item 4 - $40</label>
+        </div>
+    </div>    
 

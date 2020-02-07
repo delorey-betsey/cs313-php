@@ -69,4 +69,45 @@ UPDATE userArfs SET pic ='images/petpicbdelorey.jpg' WHERE userid = 2002;
 UPDATE userArfs SET pic ='images/petpicjjones.jpg' WHERE userid = 2003;
 UPDATE userArfs SET pic ='images/petpicssmith.jpg' WHERE userid = 2004;
 
+UPDATE art SET title = 'cat' where artid = 100;
+UPDATE art SET title = 'dog' where artid = 106;
+
+ALTER TABLE art RENAME COLUMN description TO brief;
+
+ALTER TABLE art ADD COLUMN thumb VARCHAR(50);
+ALTER TABLE art ADD COLUMN fullsize VARCHAR(50);
+
+UPDATE art SET artist = 2003 where artid = 100;
+UPDATE art SET artist = 2003 where artid = 101;
+UPDATE art SET artist = 2003 where artid = 102;
+UPDATE art SET artist = 2004 where artid = 109;
+UPDATE art SET artist = 2004 where artid = 110;
+UPDATE art SET artist = 2004 where artid = 111;
+
+UPDATE art SET fullsize ='images/full/cat100.jpg' WHERE artid = 100;
+UPDATE art SET fullsize ='images/full/cat101.jpg' WHERE artid = 101;
+UPDATE art SET fullsize ='images/full/cat102.jpg' WHERE artid = 102;
+UPDATE art SET fullsize ='images/full/cat103.jpg' WHERE artid = 103;
+UPDATE art SET fullsize ='images/full/cat104.jpg' WHERE artid = 104;
+UPDATE art SET fullsize ='images/full/cat105.jpg' WHERE artid = 105;
+UPDATE art SET fullsize ='images/full/dog106.jpg' WHERE artid = 106;
+UPDATE art SET fullsize ='images/full/dog107.jpg' WHERE artid = 107;
+UPDATE art SET fullsize ='images/full/dog108.jpg' WHERE artid = 108;
+UPDATE art SET fullsize ='images/full/dog109.jpg' WHERE artid = 109;
+UPDATE art SET fullsize ='images/full/dog110.jpg' WHERE artid = 110;
+UPDATE art SET fullsize ='images/full/dog111.jpg' WHERE artid = 111;
+
+UPDATE art SET thumb ='images/thumb/cat100.jpg' WHERE artid = 100;
+UPDATE art SET thumb ='images/thumb/cat101.jpg' WHERE artid = 101;
+UPDATE art SET thumb ='images/thumb/cat102.jpg' WHERE artid = 102;
+UPDATE art SET thumb ='images/thumb/cat103.jpg' WHERE artid = 103;
+UPDATE art SET thumb ='images/thumb/cat104.jpg' WHERE artid = 104;
+UPDATE art SET thumb ='images/thumb/cat105.jpg' WHERE artid = 105;
+UPDATE art SET thumb ='images/thumb/dog106.jpg' WHERE artid = 106;
+UPDATE art SET thumb ='images/thumb/dog107.jpg' WHERE artid = 107;
+UPDATE art SET thumb ='images/thumb/dog108.jpg' WHERE artid = 108;
+UPDATE art SET thumb ='images/thumb/dog109.jpg' WHERE artid = 109;
+UPDATE art SET thumb ='images/thumb/dog110.jpg' WHERE artid = 110;
+UPDATE art SET thumb ='images/thumb/dog111.jpg' WHERE artid = 111;
+
 
