@@ -19,7 +19,6 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </head>
 <main>
     <div>
-        betsey main
         <!-- FIRST DIV--COMMENT:  main title     -->
         <div class="main1" >
             <?php include 'modules/titlecats.php'; ?>
@@ -31,25 +30,23 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php
                 foreach ($cats as $cat)
                 {
-                // echo "<div class='art'>";
-                $artid      = $cat['artid'];
-                $artist     = $cat['displayname'];
-                $brief      = $cat['brief'];
-                $price      = $cat['price'];
-                $thumb      = $cat['thumb'];
-                $fullsize   = $cat['fullsize'];
+                    echo "<div class='art'>";
 
-                echo $artid;
-                echo "<br>";
-                echo $artist;
-                echo "<br>";
-                echo $brief;
-                echo "<br>";
-                echo $price;
-                echo "<br>";
-                echo $thumb;
-                echo "<br>";
-                echo $fullsize;
+                        $artid      = $cat['artid'];
+                        $artist     = $cat['displayname'];
+                        $brief      = $cat['brief'];
+                        $price      = $cat['price'];
+                        $thumb      = $cat['thumb'];
+                        $fullsize   = $cat['fullsize'];
+
+                        echo "<div><br>Item Number: $artid  </div>";
+                        echo "<div><br>Created by:  $artist </div>";
+                        echo "<div><br>Description: $brief  </div>";
+                        echo "<div><br>Price:       $price  </div>";
+                        echo "<div><img src=$thumb alt= $brief /> </div>";
+                        echo "<br>";
+
+                    echo "</div>";
                 }               
 			?>
 		</ul> 
