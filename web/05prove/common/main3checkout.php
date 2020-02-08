@@ -40,7 +40,7 @@ $items = $_SESSION["items"];
             Zip: <input type="text" name="zip"> 
             <br><br>
 
-            <div >          
+            <!-- <div >           -->
         <!-- <input type="submit" >  -->
         <button type="submit" name="submitbutton" value="submitbutton"><img src="images/submitbutton.jpg" alt="submitbutton"></button>      
         </form>
