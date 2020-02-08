@@ -14,7 +14,8 @@ $items = $_SESSION["items"];
         {
         echo("All proceeds benefit Dane County Humane Society.");
         echo "<br>";
-        echo("Please select items by checkboxes.");
+        echo("Please select items by checkboxes. Then press Add to Cart.");
+        echo "<br>";
         } 
     else {
                 $N = count($items);
@@ -84,14 +85,14 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         // echo "<div><a href=$fullsize><img src=$thumb alt= $brief></a> </div>";
                         // echo "<br>";
                         echo "<div><br>Item Number: #$artid  </div>";
-                        echo "<div><br>Created by:  $artist </div>";
-                        echo "<div><br>Description: $brief  </div>";
-                        echo "<div><br>Price:       $price  </div>";
+                        echo "<div>Created by:  $artist </div>";
+                        echo "<div>Description: $brief  </div>";
+                        echo "<div>Price:       $price  </div>";
                         echo "<br>";
-                        echo "(Click for fullsize image.)";
+                        echo "(Click thumbnail for fullsize image.)";
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";       
                         echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";   
-                        echo "Check to add to cart.";  
+                        echo "Check box to add to cart.";  
                         echo "<label for=artid>#$artid - $price</label>";   
                         
                     echo "</div>";
