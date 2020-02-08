@@ -48,6 +48,10 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
 <main>
+        <!-- FIRST DIV--COMMENT:  main title     -->
+        <div class="main1" >
+            <?php include 'modules/title.php'; ?>
+        </div>
     <div>        
         <!-- COMMENT:  CAT ARTWORK     -->
         <form method="post" action="">
