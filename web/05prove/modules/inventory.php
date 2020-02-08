@@ -78,7 +78,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<div><br>Created by:  $artist </div>";
                         echo "<div><br>Description: $brief  </div>";
                         echo "<div><br>Price:       $price  </div>";
-
+                        echo "<input type="checkbox" class=“largerCheckbox” name=$artid value=$artid>";
                         echo "<div><img src=$thumb alt= $brief /> </div>";
                         echo "<br>";
 
