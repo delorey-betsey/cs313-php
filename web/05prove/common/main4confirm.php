@@ -51,10 +51,11 @@ $items = $_SESSION["items"];
                         echo "<br />";
                         }
                     }
+                    echo "<br />";
+                    echo "<br />";
             ?>
     </div>
-    echo "<br />";
-    echo "<br />";
+
 <?php
 // destroy the session
 session_destroy();
