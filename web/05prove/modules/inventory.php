@@ -74,12 +74,13 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
 
+                        // echo "<div><a  class="item" href="../05prove/modules/full.php" title="item" >Item</a></div>";
                         echo "<div><br>Item Number: $artid  </div>";
                         echo "<div><br>Created by:  $artist </div>";
                         echo "<div><br>Description: $brief  </div>";
                         echo "<div><br>Price:       $price  </div>";
-                        echo "<input type="checkbox" class=“largerCheckbox” name=$artid value=$artid>";
-                        echo "<div><img src=$thumb alt= $brief /> </div>";
+                        // echo "<input type="checkbox" class=“largerCheckbox” name=$artid value=$artid>";
+                        // echo "<div><img src=$thumb alt= $brief /> </div>";
                         echo "<br>";
 
                     echo "</div>";
