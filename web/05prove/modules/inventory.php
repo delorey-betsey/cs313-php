@@ -83,18 +83,18 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         // echo "<div><input type="checkbox" class=“largerCheckbox” name=$artid value=$artid>
                         //       <label for=$artid>$artid</label></div>";
                         // echo "<div><a href=$fullsize><img src=$thumb alt= $brief></a> </div>";
-                        // echo "<br>";
+                        // echo "<br>";                        
+                        
+                        echo "Check box to add to cart."; 
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
+                        echo "<label for=artid>#$artid - $price</label>"; 
+                        echo "(Click thumbnail for fullsize image.)";
+                        echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";       
+                        echo "<br>";
                         echo "<div><br>Item Number: #$artid  </div>";
                         echo "<div>Created by:  $artist </div>";
                         echo "<div>Description: $brief  </div>";
-                        echo "<div>Price:       $price  </div>";
-                        echo "<br>";
-                        echo "(Click thumbnail for fullsize image.)";
-                        echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";       
-                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";   
-                        echo "Check box to add to cart.";  
-                        echo "<label for=artid>#$artid - $price</label>";   
-                        
+                        echo "<div>Price:       $price  </div>";                        
                     echo "</div>";
                 }               
 			?>
