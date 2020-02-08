@@ -1,4 +1,37 @@
 <?php
+session_start();
+$username = $_SESSION["username"];
+if(!isset($_SESSION['items'])){
+    $items = $_POST['items'];
+    $_SESSION["items"] = $items;
+    }
+$items = $_SESSION["items"];
+?>
+
+<!--  inventory <div></div>  -->
+<?php
+    if(empty($items)) 
+        {
+        echo("All proceeds benefit Dane County Humane Society.");
+        echo "<br><br>";
+        echo("Please select items by checkboxes. <br>Then press Add to Cart.");
+        } 
+    else {
+                $N = count($items);
+        echo("You selected $N items(s): ");
+        echo "<br />";
+        for($i=0; $i < $N; $i++)
+                {
+                echo($items[$i] . "");
+                echo ":  Added to Cart";
+                $_SESSION["$selection[$i]"] = $items[$i];
+                echo "<br />";
+                }
+        echo "<br />";
+        }
+?>
+
+<?php
 require "dbConnect.php";
 $db = get_db();
 $cat = 'cat';
@@ -17,13 +50,19 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
 <main>
-    <div>
-        <!-- FIRST DIV--COMMENT:  main title     -->
-        <div class="main1" >
-            <?php include 'modules/titlecats.php'; ?>
+    <div>        
+        <!-- COMMENT:  CAT ARTWORK     -->
+        <form method="post" action="">
+
+        <div >
+            <!-- <div></div> -->
+            <!-- <div >           -->
+                <!-- <input type="submit" >  -->
+                <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
+                <!-- <br><br> -->
+            <!-- </div> -->
         </div>
         
-        <!-- SECOND DIV--COMMENT:  CAT ARTWORK     -->
         <div class="grouping" >  
             <?php
                 foreach ($cats as $cat)
@@ -36,19 +75,24 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $price      = $cat['price'];
                         $thumb      = $cat['thumb'];
                         $fullsize   = $cat['fullsize'];
-
-                        echo "<div><br>Item Number: $artid  </div>";
-                        echo "<div><br>Created by:  $artist </div>";
-                        echo "<div><br>Description: $brief  </div>";
-                        echo "<div><br>Price:       $price  </div>";
-                        echo "<div><img src=$thumb alt= $brief /> </div>";
-                        echo "<br>";
-
+                    
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
+                        echo "<label for=artid>#$artid - $price</label>"; 
+                        echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
+                        echo "(Click thumbnail for fullsize image.)";
+                        echo "<div><br>Item Number: #$artid  </div>";
+                        echo "<div>Created by:  $artist </div>";
+                        echo "<div>Description: $brief  </div>";
+                        echo "<div>Price:       $price  </div>";                        
                     echo "</div>";
                 }               
 			?>
             <br><br><br>                  
-        </div>      
+        </div>
+        </form>      
     </div>
 </main>
 </html>
+
+
+  
