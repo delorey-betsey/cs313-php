@@ -83,14 +83,14 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         //       <label for=$artid>$artid</label></div>";
                         // echo "<div><a href=$fullsize><img src=$thumb alt= $brief></a> </div>";
                         // echo "<br>";
-                        echo "<div><br>Item Number: $artid  </div>";
+                        echo "<div><br>Item Number: #$artid  </div>";
                         echo "<div><br>Created by:  $artist </div>";
                         echo "<div><br>Description: $brief  </div>";
                         echo "<div><br>Price:       $price  </div>";
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";       
                         echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";   
                         echo "Check to add to cart.";  
-                        echo "<label for=artid>$artid - $price</label>";   
+                        echo "<label for=artid>#$artid - $price</label>";   
                         
                     echo "</div>";
                 }               
