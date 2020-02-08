@@ -46,9 +46,7 @@ $items = $_SESSION["items"];
                     echo("$N items(s) Purchased: ");
                     for($i=0; $i < $N; $i++)
                         {
-                        echo "<br />";
                         echo($items[$i] . " ");
-                        echo "<br />";
                         }
                     }
             ?>

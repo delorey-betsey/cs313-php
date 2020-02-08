@@ -33,8 +33,6 @@ $items = $_SESSION["items"];
                             {
                             echo "<br />";
                             echo($items[$i] . " ");
-                            echo "<br />";
-                            echo "<br />";
                             }
                         }
                 ?>

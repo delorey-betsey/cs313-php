@@ -21,7 +21,7 @@ $items = $_SESSION["items"];
 </div>
         
         <h3> Ship To info: </h3>
-        <br><br>
+        <br>
     
         <form method="post" action="confirmationpage.php">
         
