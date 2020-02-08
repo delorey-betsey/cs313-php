@@ -73,17 +73,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $price      = $item['price'];
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
-
-                        // // echo "<div><a  class="item" href="../05prove/modules/full.php" title="item" >Item</a></div>";
-                        // echo "<div><br>Item Number: $artid  </div>";
-                        // echo "<div><br>Created by:  $artist </div>";
-                        // echo "<div><br>Description: $brief  </div>";
-                        // echo "<div><br>Price:       $price  </div>";
-                        // echo "<div><input type="checkbox" class=“largerCheckbox” name=$artid value=$artid>
-                        //       <label for=$artid>$artid</label></div>";
-                        // echo "<div><a href=$fullsize><img src=$thumb alt= $brief></a> </div>";
-                        // echo "<br>";                        
-                        
+                    
                         echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
                         echo "<label for=artid>#$artid - $price</label>"; 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   

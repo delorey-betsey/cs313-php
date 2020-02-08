@@ -15,6 +15,7 @@ $items = $_SESSION["items"];
         echo("All proceeds benefit Dane County Humane Society.");
         echo "<br><br>";
         echo("Please select items by checkboxes. <br>Then press Add to Cart.");
+        echo "<br>";
         } 
     else {
                 $N = count($items);
@@ -34,7 +35,7 @@ $items = $_SESSION["items"];
 <?php
 require "dbConnect.php";
 $db = get_db();
-$cat = 'dog';
+$dog = 'dog';
 $stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid WHERE a.title = :title'); 
 $stmt->bindValue(':title', $dog, PDO::PARAM_STR);
 $stmt->execute();
@@ -50,8 +51,12 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
 <main>
+        <!-- FIRST DIV--COMMENT:  main title     -->
+        <div class="main1" >
+            <?php include 'modules/titledogs.php'; ?>
+        </div>
     <div>        
-        <!-- COMMENT:  CAT ARTWORK     -->
+        <!-- COMMENT:  DOG ARTWORK     -->
         <form method="post" action="">
 
         <div >
