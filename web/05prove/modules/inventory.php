@@ -86,7 +86,8 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 }               
 			?>
             <br><br><br>                  
-        </div>      
+        </div>
+        </form>      
     </div>
 </main>
 </html>
