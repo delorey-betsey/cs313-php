@@ -53,6 +53,8 @@ $items = $_SESSION["items"];
                     }
             ?>
     </div>
+    echo "<br />";
+    echo "<br />";
 <?php
 // destroy the session
 session_destroy();
