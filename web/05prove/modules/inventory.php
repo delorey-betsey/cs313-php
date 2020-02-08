@@ -50,6 +50,17 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <main>
     <div>        
         <!-- COMMENT:  CAT ARTWORK     -->
+        <form method="post" action="">
+
+        <div class="addtocart">
+            <div></div>
+            <div >          
+                <!-- <input type="submit" >  -->
+                <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
+                <br><br>
+            </div>
+        </div>
+        
         <div class="grouping" >  
             <?php
                 foreach ($inventory as $item)
@@ -67,6 +78,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<div><br>Created by:  $artist </div>";
                         echo "<div><br>Description: $brief  </div>";
                         echo "<div><br>Price:       $price  </div>";
+                        echo "<input class=“largerCheckbox” type="checkbox" id="item1" name="items[]" value="Add to Cart--">"
                         echo "<div><img src=$thumb alt= $brief /> </div>";
                         echo "<br>";
 
