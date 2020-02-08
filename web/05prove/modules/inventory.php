@@ -52,8 +52,8 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- COMMENT:  CAT ARTWORK     -->
         <form method="post" action="">
 
-        <div class="addtocart">
-            <div></div>
+        <div >
+            <!-- <div></div> -->
             <!-- <div >           -->
                 <!-- <input type="submit" >  -->
                 <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
