@@ -1,11 +1,11 @@
 # NOTE: This is the same script used in the previous team activity
 
 # Create a database and connect to it
-CREATE DATABASE scripture_ta;
+CREATE DATABASE scriptureBD;
 \c scripture_ta
 
 # Create a table for the scriptures
-CREATE TABLE scripture (
+CREATE TABLE scriptureBD (
   id SERIAL PRIMARY KEY NOT NULL,
   book VARCHAR(80) NOT NULL,
   chapter INT NOT NULL,

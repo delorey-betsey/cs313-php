@@ -19,7 +19,7 @@ INSERT INTO topic (name) VALUES ('Charity');
 # Some people like to put an additional "id" on a table like this, but it is
 # not strictly necessary.
 CREATE TABLE scripture_topic (
-  scriptureId int NOT NULL REFERENCES scripture(id),
+  scriptureId int NOT NULL REFERENCES scriptureBD(id),
   topicId int NOT NULL REFERENCES topic(id)
   );
 
