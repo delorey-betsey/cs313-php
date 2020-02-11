@@ -1,7 +1,7 @@
 # NOTE: This is the same script used in the previous team activity
 
 # Create a database and connect to it
-CREATE DATABASE scriptureBD;
+CREATE DATABASE scripture_ta;
 \c scripture_ta
 
 # Create a table for the scriptures
