@@ -1,9 +1,6 @@
 <?php
-
-ini_set('display_errors', 1);
 require("dbConnect.php");
 $db = get_db();
-
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +35,6 @@ $db = get_db();
 	<label>Topics:</label><br />
 
 <?php
-
 
 try
 {
