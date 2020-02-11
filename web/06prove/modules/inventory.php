@@ -25,16 +25,26 @@ $items = $_SESSION["items"];
                 echo($items[$i] . "");
                 echo ":  Added to Cart";
                 $_SESSION["$selection[$i]"] = $items[$i];
+
+                    <?php
+                    require "dbConnect.php";
+                    $db = get_db();
+                     
+                    $stmt = $db->prepare('UPDATE art SET selected = 1 WHERE a.id = :id'); 
+                    $stmt->bindValue(':id', $items[$i], PDO::PARAM_INT);
+                    $stmt->execute();
+                    ?>
+
                 echo "<br />";
                 }
-        echo "<br />";
-        }
+                echo "<br />";
+                }
 ?>
 
 <?php
 require "dbConnect.php";
 $db = get_db();
-$stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid'); 
+$stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, a.selected, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid'); 
 $stmt->execute();
 $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -53,7 +63,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php include 'modules/title.php'; ?>
         </div>
     <div>        
-        <!-- COMMENT:  CAT ARTWORK     -->
+        <!-- COMMENT: INVENTORY     -->
         <form method="post" action="">
 
         <div >
@@ -77,7 +87,14 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $price      = $item['price'];
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
+                        $selected   = $item['selected'];
                     
+                        if ($selected) => 0 {
+                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>"; 
+                        }
+                        if ($selected) = NULL {
+                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>"; 
+                        }
                         echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
                         echo "<label for=artid>#$artid - $price</label>"; 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
