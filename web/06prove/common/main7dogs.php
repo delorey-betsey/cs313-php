@@ -18,19 +18,19 @@ var_dump($items);
         echo("Please select items by checkboxes. <br>Then press Add to Cart.");
         echo "<br>";
         } 
-    else {
-                $N = count($items);
-        echo("You selected $N items(s): ");
-        echo "<br />";
-        for($i=0; $i < $N; $i++)
-                {
-                echo($items[$i] . "");
-                echo ":  Added to Cart";
-                $_SESSION["$selection[$i]"] = $items[$i];
-                echo "<br />";
-                }
-        echo "<br />";
-        }
+        else {
+            $N = count($items);
+            echo("You selected $N items(s): ");
+            echo "<br />";
+            for($i=0; $i < $N; $i++)
+                    {
+                    echo($items[$i] . "");
+                    echo ":  Added to Cart";
+                    $_SESSION["$selection[$i]"] = $items[$i];
+                    echo "<br />";
+                    }
+            echo "<br />";
+            }
 ?>
 
 <?php

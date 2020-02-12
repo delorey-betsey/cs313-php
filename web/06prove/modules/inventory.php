@@ -18,7 +18,7 @@ var_dump $items;
         echo("Please select items by checkboxes. <br>Then press Add to Cart.");
         } 
     else {
-                $N = count($items);
+        $N = count($items);
         echo("You selected $N items(s): ");
         echo "<br />";
         for($i=0; $i < $N; $i++)
