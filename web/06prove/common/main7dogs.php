@@ -6,6 +6,7 @@ if(!isset($_SESSION['items'])){
     $_SESSION["items"] = $items;
     }
 $items = $_SESSION["items"];
+var_dump($items);
 ?>
 
 <!--  inventory <div></div>  -->
