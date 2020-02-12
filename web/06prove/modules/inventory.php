@@ -30,11 +30,7 @@ $db = get_db();
                 echo ":  Added to Cart";
                 $_SESSION["$selection[$i]"] = $items[$i];
 
-                <?php                                     
-                    $stmt = $db->prepare('UPDATE art a SET selected = 1 WHERE a.artid = :id'); 
-                    $stmt->bindValue(':id', $items[$i], PDO::PARAM_INT);
-                    $stmt->execute();
-                ?>
+
 
                 echo "<br />";
                 }
