@@ -11,39 +11,36 @@ var_dump $items;
 
 <!--  inventory <div></div>  -->
 <?php
-require "dbConnect.php";
-$db = get_db();
-
     if(empty($items)) 
         {
         echo("All proceeds benefit Dane County Humane Society.");
         echo "<br><br>";
         echo("Please select items by checkboxes. <br>Then press Add to Cart.");
+        echo "<br>";
         } 
-    else {
-        $N = count($items);
-        echo("You selected $N items(s): ");
-        echo "<br />";
-        for($i=0; $i < $N; $i++)
-                {
-                echo($items[$i] . "");
-                echo ":  Added to Cart";
-                $_SESSION["$selection[$i]"] = $items[$i];
-
-
-
-                echo "<br />";
-                }
-                echo "<br />";
-                }
+        else {
+            $N = count($items);
+            echo("You selected $N items(s): ");
+            echo "<br />";
+            for($i=0; $i < $N; $i++)
+                    {
+                    echo($items[$i] . "");
+                    echo ":  Added to Cart";
+                    $_SESSION["$selection[$i]"] = $items[$i];
+                    echo "<br />";
+                    }
+            echo "<br />";
+            }
 ?>
 
 <?php
 require "dbConnect.php";
 $db = get_db();
-$stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, a.selected, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid'); 
+$cat = 'cat';
+$stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid WHERE a.title = :title'); 
+$stmt->bindValue(':title', $cat, PDO::PARAM_STR);
 $stmt->execute();
-$inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -57,10 +54,10 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <main>
         <!-- FIRST DIV--COMMENT:  main title     -->
         <div class="main1" >
-            <?php include 'modules/title.php'; ?>
+            <?php include 'modules/titlecats.php'; ?>
         </div>
     <div>        
-        <!-- COMMENT: INVENTORY     -->
+        <!-- COMMENT:  CAT ARTWORK     -->
         <form method="post" action="">
 
         <div >
@@ -74,26 +71,18 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         <div class="grouping" >  
             <?php
-                foreach ($inventory as $item)
+                foreach ($cats as $cat)
                 {
                     echo "<div class='art'>";
 
-                        $artid      = $item['artid'];
-                        $artist     = $item['displayname'];
-                        $brief      = $item['brief'];
-                        $price      = $item['price'];
-                        $thumb      = $item['thumb'];
-                        $fullsize   = $item['fullsize'];
-                        $selected   = $item['selected'];
+                        $artid      = $cat['artid'];
+                        $artist     = $cat['displayname'];
+                        $brief      = $cat['brief'];
+                        $price      = $cat['price'];
+                        $thumb      = $cat['thumb'];
+                        $fullsize   = $cat['fullsize'];
                     
-                        if ($selected) => 0 {
-                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'
-                            <?php echo 'checked="checked"';?> />"; 
-                        }
-                        if ($selected) = NULL {
-                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>"; 
-                        }
-                                              
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
                         echo "<label for=artid>#$artid - $price</label>"; 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
                         echo "(Click thumbnail for fullsize image.)";

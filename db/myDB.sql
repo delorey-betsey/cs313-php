@@ -110,4 +110,8 @@ UPDATE art SET thumb ='images/thumb/dog109.jpg' WHERE artid = 109;
 UPDATE art SET thumb ='images/thumb/dog110.jpg' WHERE artid = 110;
 UPDATE art SET thumb ='images/thumb/dog111.jpg' WHERE artid = 111;
 
+ALTER TABLE art ADD COLUMN selected VARCHAR(1);
+ALTER TABLE art ALTER COLUMN selected DROP DEFAULT;
+UPDATE art SET selected = null;
+
 
