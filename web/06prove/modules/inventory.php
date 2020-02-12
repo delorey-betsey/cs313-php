@@ -11,6 +11,9 @@ var_dump $items;
 
 <!--  inventory <div></div>  -->
 <?php
+require "dbConnect.php";
+$db = get_db();
+
     if(empty($items)) 
         {
         echo("All proceeds benefit Dane County Humane Society.");
@@ -27,14 +30,11 @@ var_dump $items;
                 echo ":  Added to Cart";
                 $_SESSION["$selection[$i]"] = $items[$i];
 
-                    <?php
-                    require "dbConnect.php";
-                    $db = get_db();
-                     
-                    $stmt = $db->prepare('UPDATE art SET selected = 1 WHERE a.id = :id'); 
+                <?php                                     
+                    $stmt = $db->prepare('UPDATE art a SET selected = 1 WHERE a.artid = :id'); 
                     $stmt->bindValue(':id', $items[$i], PDO::PARAM_INT);
                     $stmt->execute();
-                    ?>
+                ?>
 
                 echo "<br />";
                 }
