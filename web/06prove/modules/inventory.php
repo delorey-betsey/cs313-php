@@ -52,7 +52,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <main>
         <!-- FIRST DIV--COMMENT:  main title     -->
         <div class="main1" >
-            <?php include 'modules/titlecats.php'; ?>
+            <?php include 'modules/title.php'; ?>
         </div>
     <div>        
         <!-- COMMENT:  CAT ARTWORK     -->
