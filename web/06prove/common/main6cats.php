@@ -5,7 +5,7 @@ if(!isset($_SESSION['items'])){
     $items = $_POST['items'];
     $_SESSION["items"] = $items;
     }
-$items = $_SESSION["items"];
+// $items = $_SESSION["items"];
 ?>
 
 <!--  inventory <div></div>  -->
