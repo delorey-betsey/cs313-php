@@ -9,10 +9,10 @@
 ***********************************************************/
 session_start();
 
-echo "session username is:";
-echo "<br>";
-echo $_SESSION['username'];
-echo "<br>";
+// echo "session username is:";
+// echo "<br>";
+// echo $_SESSION['username'];
+// echo "<br>";
 
 if (isset($_SESSION['username']))
 {
