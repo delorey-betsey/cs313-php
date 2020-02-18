@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['items'])){
+if(isset($_SESSION['items'])){
     $items = $_POST['items'];
     $_SESSION["items"] = $items;
     }
