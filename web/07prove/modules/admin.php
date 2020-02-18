@@ -35,11 +35,11 @@ else
 <body>
 <div>
 
-	<h1>Welcome to the Site Admin</h1>
+	<h1>Welcome to ARfS Admin</h1>
 
 	Your username is: <?= $username ?><br /><br />
 
-	<a href="signOut.php">Sign Out</a>
+	<a href="modules/signOut.php">Sign Out</a>
 </div>
 
 </body>
