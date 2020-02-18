@@ -1,8 +1,8 @@
 <main>
     <div>        
-        <!-- SECOND DIV--COMMENT:  main inventory     -->
+        <!-- SECOND DIV--COMMENT:  main admin     -->
         <div class="main2" >  
-            <?php include 'modules/admin.php'; ?>                    
+            <?php include 'admin.php'; ?>                    
         </div>
       
     </div>
