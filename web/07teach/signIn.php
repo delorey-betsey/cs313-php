@@ -87,8 +87,7 @@ echo "<br>";
 
 		// // now check to see if the hashed password matches
 		// if (password_verify($password, $hashedPasswordFromDB))
-		if ($password = $hashedPasswordFromDB)
-		{
+		if ($password = $hashedPasswordFromDB) {
 echo "<br>";
 echo "2 $ badLogin is:";
 echo "<br>";
