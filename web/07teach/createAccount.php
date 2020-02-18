@@ -13,27 +13,27 @@
 // If you have an earlier version of PHP (earlier than 5.5)
 // You need to download and include password.php.
 //require("password.php");
-echo "createAccount.php variables";
-echo "post txtUser is:";
-echo "<br>";
-echo $_POST['txtUser'];
-echo "<br>";
-echo "post txtPassword is:";
-echo "<br>";
-echo $_POST['txtPassword'];
-echo "<br>";
+// echo "createAccount.php variables";
+// echo "post txtUser is:";
+// echo "<br>";
+// echo $_POST['txtUser'];
+// echo "<br>";
+// echo "post txtPassword is:";
+// echo "<br>";
+// echo $_POST['txtPassword'];
+// echo "<br>";
 // get the data from the POST
 $username = $_POST['txtUser'];
 $password = $_POST['txtPassword'];
 
-echo "$ username is:";
-echo "<br>";
-echo $username;
-echo "<br>";
-echo "$ password is:";
-echo "<br>";
-echo $password];
-echo "<br>";
+// echo "$ username is:";
+// echo "<br>";
+// echo $username;
+// echo "<br>";
+// echo "$ password is:";
+// echo "<br>";
+// echo $password];
+// echo "<br>";
 
 if (!isset($username) || $username == ""
 	|| !isset($password) || $password == "")
@@ -53,7 +53,7 @@ $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 require("dbConnect.php");
 $db = get_db();
 
-$query = 'INSERT INTO login(username, password) VALUES(:username, :password)';
+$query = 'INSERT INTO login7t (username, password) VALUES (:username, :password)';
 $statement = $db->prepare($query);
 $statement->bindValue(':username', $username);
 
