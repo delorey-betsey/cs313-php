@@ -12,14 +12,10 @@
         <?php include 'modules/dogslink.php'; ?>
     </div>
 
-    <div class="navlinks" >
-        
+    <div class="navlinks" >        
     </div>
-    <div class="navlinks" >
-         
-    </div>
-    <div class="navlinks" >
-        
+
+    <div class="navlinks" >         
     </div>
 
     <div class="navlinks" >
@@ -31,7 +27,9 @@
     <div class="navlinks" >
         <?php include 'modules/checkoutlink.php'; ?>
     </div> 
-     
+    <div class="navlinks" >
+        <?php include 'modules/adminlink.php'; ?>
+    </div> 
  
 </nav>
 
