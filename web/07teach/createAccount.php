@@ -14,17 +14,26 @@
 // You need to download and include password.php.
 //require("password.php");
 echo "createAccount.php variables";
-echo "session txtUser is:";
+echo "post txtUser is:";
 echo "<br>";
 echo $_POST['txtUser'];
 echo "<br>";
-echo "session txtPassword is:";
+echo "post txtPassword is:";
 echo "<br>";
 echo $_POST['txtPassword'];
 echo "<br>";
 // get the data from the POST
 $username = $_POST['txtUser'];
 $password = $_POST['txtPassword'];
+
+echo "$ username is:";
+echo "<br>";
+echo $username;
+echo "<br>";
+echo "$ password is:";
+echo "<br>";
+echo $password];
+echo "<br>";
 
 if (!isset($username) || $username == ""
 	|| !isset($password) || $password == "")
