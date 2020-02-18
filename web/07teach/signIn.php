@@ -61,10 +61,10 @@ echo "<br>";
 
 	$result = $statement->execute();
 
-echo "$ result is:";
-echo "<br>";
-var_dump $result;
-echo "<br>";
+// echo "$ result is:";
+// echo "<br>";
+// var_dump $result;
+// echo "<br>";
 
 	if ($result)
 	{
