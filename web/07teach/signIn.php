@@ -40,6 +40,16 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 	$username = $_POST['txtUser'];
 	$password = $_POST['txtPassword'];
 
+echo "<br>";
+echo "$ username is:";
+echo "<br>";
+echo $username;
+echo "<br>";
+echo "$ password is:";
+echo "<br>";
+echo $password;
+echo "<br>";
+
 	// Connect to the DB
 	require("dbConnect.php");
 	$db = get_db();
