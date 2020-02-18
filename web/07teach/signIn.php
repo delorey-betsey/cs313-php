@@ -30,6 +30,11 @@ session_start();
 // echo "<br>";
 
 $badLogin = false;
+echo "<br>";
+echo "1 $ badLogin is:";
+echo "<br>";
+echo $badLogin;
+echo "<br>";
 
 // First check to see if we have post variables, if not, just
 // continue on as always.
@@ -83,6 +88,11 @@ echo "<br>";
 		// now check to see if the hashed password matches
 		if (password_verify($password, $hashedPasswordFromDB))
 		{
+echo "<br>";
+echo "2 $ badLogin is:";
+echo "<br>";
+echo $badLogin;
+echo "<br>";
 			// password was correct, put the user on the session, and redirect to home
 			$_SESSION['username'] = $username;
 			header("Location: home.php");
@@ -91,12 +101,22 @@ echo "<br>";
 		else
 		{
 			$badLogin = true;
+echo "<br>";
+echo "3 $ badLogin is:";
+echo "<br>";
+echo $badLogin;
+echo "<br>";
 		}
 
 	}
 	else
 	{
 		$badLogin = true;
+echo "<br>";
+echo "4 $ badLogin is:";
+echo "<br>";
+echo $badLogin;
+echo "<br>";
 	}
 }
 
@@ -115,6 +135,11 @@ echo "<br>";
 
 <?php
 if ($badLogin)
+echo "<br>";
+echo "5 $ badLogin is:";
+echo "<br>";
+echo $badLogin;
+echo "<br>";
 {
 	echo "Incorrect username or password!<br /><br />\n";
 }
