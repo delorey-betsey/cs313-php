@@ -30,6 +30,11 @@ else
 <html>
 <head>
 	<title>Admin Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
+    
 </head>
 
 <body>
