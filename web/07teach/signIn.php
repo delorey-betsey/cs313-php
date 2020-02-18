@@ -15,7 +15,18 @@
 // If you have an earlier version of PHP (earlier than 5.5)
 // You need to download and include password.php.
 //require("password.php"); // used for password hashing.
+
 session_start();
+
+echo "signin.php variables";
+echo "session txtUser is:";
+echo "<br>";
+echo $_POST['txtUser'];
+echo "<br>";
+echo "session txtPassword is:";
+echo "<br>";
+echo $_POST['txtPassword'];
+echo "<br>";
 
 $badLogin = false;
 
