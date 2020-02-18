@@ -19,6 +19,7 @@
 session_start();
 
 echo "signin.php variables";
+echo "<br>";
 echo "session txtUser is:";
 echo "<br>";
 echo $_POST['txtUser'];
