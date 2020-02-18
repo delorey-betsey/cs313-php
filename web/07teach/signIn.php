@@ -18,16 +18,16 @@
 
 session_start();
 
-echo "signin.php variables";
-echo "<br>";
-echo "session txtUser is:";
-echo "<br>";
-echo $_POST['txtUser'];
-echo "<br>";
-echo "session txtPassword is:";
-echo "<br>";
-echo $_POST['txtPassword'];
-echo "<br>";
+// echo "signin.php variables";
+// echo "<br>";
+// echo "session txtUser is:";
+// echo "<br>";
+// echo $_POST['txtUser'];
+// echo "<br>";
+// echo "session txtPassword is:";
+// echo "<br>";
+// echo $_POST['txtPassword'];
+// echo "<br>";
 
 $badLogin = false;
 
@@ -40,15 +40,15 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 	$username = $_POST['txtUser'];
 	$password = $_POST['txtPassword'];
 
-echo "<br>";
-echo "$ username is:";
-echo "<br>";
-echo $username;
-echo "<br>";
-echo "$ password is:";
-echo "<br>";
-echo $password;
-echo "<br>";
+// echo "<br>";
+// echo "$ username is:";
+// echo "<br>";
+// echo $username;
+// echo "<br>";
+// echo "$ password is:";
+// echo "<br>";
+// echo $password;
+// echo "<br>";
 
 	// Connect to the DB
 	require("dbConnect.php");
@@ -70,6 +70,15 @@ echo "<br>";
 	{
 		$row = $statement->fetch();
 		$hashedPasswordFromDB = $row['password'];
+
+echo "$ password is:";
+echo "<br>";
+echo $password;
+echo "<br>";
+echo "$ hashedPasswordFromDB is:";
+echo "<br>";
+echo $hashedPasswordFromDB;
+echo "<br>";
 
 		// now check to see if the hashed password matches
 		if (password_verify($password, $hashedPasswordFromDB))
