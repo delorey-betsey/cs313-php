@@ -20,7 +20,7 @@ if (isset($_SESSION['username']))
 }
 else
 {
-	header("Location: modules/signIn.php");
+	header("Location: signIn.php");
 	die(); // we always include a die after redirects.
 }
 
@@ -44,7 +44,7 @@ else
 
 	Your username is: <?= $username ?><br /><br />
 
-	<a href="modules/signOut.php">Sign Out</a>
+	<a href="signOut.php">Sign Out</a>
 </div>
 
 </body>
