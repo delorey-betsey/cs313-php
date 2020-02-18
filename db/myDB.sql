@@ -114,4 +114,17 @@ ALTER TABLE art ADD COLUMN selected VARCHAR(1);
 ALTER TABLE art ALTER COLUMN selected DROP DEFAULT;
 UPDATE art SET selected = null;
 
+07 teach:
+
+CREATE TABLE login7t
+(
+	id SERIAL PRIMARY KEY NOT NULL,
+	username VARCHAR(80) UNIQUE NOT NULL,
+	password VARCHAR(255) NOT NULL
+);
+
+INSERT INTO login7t (id, username, password) VALUES (100, 'bd_user', 'bd_pass');
+
+
+
 
