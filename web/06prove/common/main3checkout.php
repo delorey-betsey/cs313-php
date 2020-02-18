@@ -1,14 +1,14 @@
 <?php
 session_start();
-if(isset($_SESSION['items'])){
+if(!isset($_SESSION['items'])){
     $items = $_POST['items'];
     $_SESSION["items"] = $items;
     }
-else
-{
-	header("Location: homepage.php");
-	die(); // we always include a die after redirects.
-}
+// else
+// {
+// 	header("Location: signIn.php");
+// 	die(); // we always include a die after redirects.
+// }
 $items = $_SESSION["items"];
 ?>
 
