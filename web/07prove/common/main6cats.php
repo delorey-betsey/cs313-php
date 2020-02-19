@@ -47,7 +47,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <link rel="stylesheet" href="css/style.css" media="screen">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
-<main>
+<main class="main2">
 <!-- FIRST DIV--COMMENT:  main title     -->
 <div class="main1title" >
             <?php include 'modules/titlecats.php'; ?>
