@@ -23,8 +23,8 @@ if (isset($_SESSION['username']))
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
-<?php echo "going to admin.php from adminpage.php"; ?>
-<?php echo $username; ?>
+<!-- <?php echo "going to admin.php from adminpage.php"; ?>
+<?php echo $username; ?> -->
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'admin.php'; ?>
