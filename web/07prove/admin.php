@@ -9,7 +9,7 @@ if (isset($_SESSION['username']))
 		header("Location: signIn.php");
 		die();  
 	}
- if (isset($_SESSION['newArtistID']))
+//  if (isset($_SESSION['newArtistID']))
 //  {
 // 	$newArtistID = $_SESSION['newArtistID'];
 // 	$newArtistName = $_SESSION['newArtistName'];
