@@ -14,8 +14,6 @@ $items = $_SESSION["items"];
         {
         echo("All proceeds benefit Dane County Humane Society.");
         echo "<br><br>";
-        echo("Please select items by checkboxes. <br>Then press Add to Cart.");
-        echo "<br>";
         } 
         else {
             $N = count($items);
