@@ -1,5 +1,5 @@
 <?php
-
+<?php echo "entering admin.php from adminpage.php"; ?>
 session_start();
 
 // echo "session username is:";
