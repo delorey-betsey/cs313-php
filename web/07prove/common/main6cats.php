@@ -59,13 +59,8 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- COMMENT:  CAT ARTWORK     -->
         <form method="post" action="">
 
-        <div >
-            <!-- <div></div> -->
-            <!-- <div >           -->
-                <!-- <input type="submit" >  -->
+        <div  class="tanbackground" >
                 <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
-                <!-- <br><br> -->
-            <!-- </div> -->
         </div>
         
         <div class="grouping" >  

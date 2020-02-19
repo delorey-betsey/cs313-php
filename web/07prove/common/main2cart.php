@@ -14,7 +14,7 @@ $items = $_SESSION["items"];
             <?php include 'modules/titlecart.php'; ?>            
         </div>
 
-        <form method="post" action="cartpage.php">
+        <form class="formdiv" method="post" action="cartpage.php">
             <br><br>
             Items in cart: 
                 <?php

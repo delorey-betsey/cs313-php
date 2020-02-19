@@ -48,7 +48,8 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </head>
 <main>
         <!-- FIRST DIV--COMMENT:  main title     -->
-        <div class="main1title 'modules/title.php'; ?>
+        <div class="main1title" >
+            <?php include 'modules/title.php'; ?>
         </div>
         <div class="dosisxlite">
             <?php
@@ -59,7 +60,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- COMMENT:  CAT ARTWORK     -->
         <form method="post" action="">
 
-        <div >
+        <div class="tanbackground">
             <!-- <div></div> -->
             <!-- <div >           -->
                 <!-- <input type="submit" >  -->
