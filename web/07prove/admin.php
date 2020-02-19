@@ -46,7 +46,7 @@ $db = get_db();
 	<h2>ADD NEW ARTIST</h2>
 
 		<!-- <form id="mainForm" action="addartist.php" method="POST"> -->
-		<form id="mainForm" action="" method="POST">
+		<form class="formdiv" id="mainForm" action="" method="POST">
 
 			<label for="userName">User name:</label>
 			<input type="text" id="userName" name="userName"></input>			
