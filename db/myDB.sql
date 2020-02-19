@@ -125,6 +125,8 @@ CREATE TABLE login7t
 
 INSERT INTO login7t (id, username, password) VALUES (100, 'bd_user', 'bd_pass');
 
+ALTER TABLE userArfs RENAME COLUMN password TO userpassword;
+
 
 
 
