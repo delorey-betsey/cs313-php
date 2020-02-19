@@ -1,6 +1,6 @@
-<?php
+<!-- <?php
 echo "entering admin.php from adminpage.php"; 
-?>
+?> -->
 <?php
 session_start();
 
@@ -12,7 +12,7 @@ session_start();
 if (isset($_SESSION['username']))
 	{
 		$username    = $_SESSION['username'];
-		echo "Your username is: <?= $username ?><br /><br />";
+		echo "Your username is: <?= $username ?>";
 	}
 	else
 	{
@@ -22,8 +22,9 @@ if (isset($_SESSION['username']))
 // if (isset($_SESSION['newArtistID']))
 // 	{
 // 		$newArtistID = $_SESSION['newArtistID'];
-// 		echo "New artist has been added: ID = <?= $newArtistID ?><br /><br />";
-// ?>
+// 		echo "New artist has been added: ID = <?= $newArtistID <br /><br />";
+?>
+
 <?php
 require("dbConnect.php");
 $db = get_db();
@@ -44,7 +45,7 @@ $db = get_db();
 <div>
 
 	<h1>Welcome to ARfS Admin</h1>
-
+	<br><br>
 	<h2>ADD NEW ARTIST</h2>
 
 		<!-- <form id="mainForm" action="addartist.php" method="POST">
@@ -75,7 +76,7 @@ $db = get_db();
 		</form> -->
 
 </div>
-
+	<br><br>
 	<a href="signOut.php">Sign Out</a>
 </div>
 
