@@ -1,19 +1,9 @@
 <?php
-
-// get the data from the POST
-$typeID       = $_POST['typeID'];
 $userName     = $_POST['userName'];
 $userPassword = $_POST['userPassword'];
 $displayName  = $_POST['displayName'];
 $pic          = $_POST['pic'];
 $bio          = $_POST['bio'];
-
-// echo "book=$book\n";
-// echo "chapter=$chapter\n";
-// echo "verse=$verse\n";
-// echo "content=$content\n";
-
-// we could (and should!) put additional checks here to verify that all this data is actually provided
 
 require("dbConnect.php");
 $db = get_db();
@@ -44,6 +34,7 @@ catch (Exception $ex)
 	}
 
 $_SESSION['newArtistID'] = $newArtistID;
+$_SESSION['newArtistName'] = $username;
 header("Location: admin.php");
 
 die(); // we always include a die after redirects. In this case, there would be no
