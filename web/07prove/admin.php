@@ -39,7 +39,7 @@ $db = get_db();
 
 <body>
 <div>
-	<?php echo "You are signed in as: <?= $username" ?>
+	<?php echo "You are signed in as: " $username ?>
 	<br /><br />
 	<h1>Welcome to ARfS Admin</h1>
 	<br><br>
