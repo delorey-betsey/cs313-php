@@ -10,7 +10,7 @@ $items = $_SESSION["items"];
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  Cart     -->
-        <div class="main1" >
+        <div class="main1title" >
             <?php include 'modules/titlecart.php'; ?>            
         </div>
 

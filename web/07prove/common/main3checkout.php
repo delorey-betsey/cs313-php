@@ -15,7 +15,7 @@ $items = $_SESSION["items"];
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  Confirmation     -->
-        <div class="main1" >
+        <div class="main1title" >
             <?php include 'modules/titlecheckout.php'; ?>            
         </div>
 
