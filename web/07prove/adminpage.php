@@ -24,10 +24,10 @@ if (isset($_SESSION['newArtistID']))
     <?php include 'common/nav.php'; ?>
 
 <?php
-    echo "in adminpage headed to admin";
-    echo "New artist $newArtistName has been added: ID = $newArtistID ";
+    echo $newArtistID;
+    echo $newArtistName;
+    echo "headed to admin";
 ?>
-
     <!-- COMMENT:  flexbox main     -->  
     <div class="main2" >
         <?php include 'admin.php'; ?>
