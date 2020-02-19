@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (isset($_SESSION['newArtistID']))
+	{
+		$newArtistID    = $_SESSION['newArtistID'];
+        $newArtistName  = $_SESSION['newArtistName'];
+	}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,6 +22,11 @@
     <!-- COMMENT:  flexbox header and nav    -->   
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
+
+<?php
+    echo "in adminpage headed to admin";
+    echo "New artist $newArtistName has been added: ID = $newArtistID ";
+?>
 
     <!-- COMMENT:  flexbox main     -->  
     <div class="main2" >
