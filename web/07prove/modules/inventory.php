@@ -13,7 +13,6 @@ $items = $_SESSION["items"];
     if(empty($items)) 
         {
         echo("All proceeds benefit Dane County Humane Society.");
-        echo "<br><br>";
         } 
         else {
             $N = count($items);
@@ -54,8 +53,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
         <div class="dosisxlite">
             <?php
-            echo("Please select items by checkboxes. <br>Then press Add to Cart.");
-            echo "<br>";
+            echo("Please select checkboxes. <br>Then press Add to Cart.<br><br>");
             ?>
         </div>
     <div>        
