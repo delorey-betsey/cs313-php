@@ -75,7 +75,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 // echo "<br>";
 			// password was correct, put the user on the session, and redirect to home
 			$_SESSION['username'] = $username;
-			header("Location: admin.php");
+			header("Location: adminpage.php");
 			die(); // we always include a die after redirects.
 		}
 		else
