@@ -52,6 +52,12 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="main1" >
             <?php include 'modules/title.php'; ?>
         </div>
+        <div class="dosisxlite">
+            <?php
+            echo("Please select items by checkboxes. <br>Then press Add to Cart.");
+            echo "<br>";
+            ?>
+        </div>
     <div>        
         <!-- COMMENT:  CAT ARTWORK     -->
         <form method="post" action="">
