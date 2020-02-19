@@ -127,6 +127,17 @@ INSERT INTO login7t (id, username, password) VALUES (100, 'bd_user', 'bd_pass');
 
 ALTER TABLE userArfs RENAME COLUMN password TO userpassword;
 
+CREATE TABLE loginArfs
+(
+	id SERIAL PRIMARY KEY NOT NULL,
+	username VARCHAR(80) UNIQUE NOT NULL,
+	password VARCHAR(255) NOT NULL
+);
+
+INSERT INTO userArfs(typeID,userName,userPassword,displayName,pic,bio) 
+	VALUES(2,'jsmith',123,'Jane Smith','images/jsmith.jpg','I love to draw pets.');
+	
+DELETE FROM userArfs WHERE userid = 7;
 
 
 

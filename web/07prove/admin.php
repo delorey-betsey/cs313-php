@@ -9,14 +9,11 @@ if (isset($_SESSION['username']))
 		header("Location: signIn.php");
 		die();  
 	}
-?>
-
-<?php
  if (isset($_SESSION['newArtistID']))
- {
-	$newArtistID = $_SESSION['newArtistID'];
-	$newArtistName = $_SESSION['newArtistName'];
- }
+//  {
+// 	$newArtistID = $_SESSION['newArtistID'];
+// 	$newArtistName = $_SESSION['newArtistName'];
+//  }
  ?>
 
 
@@ -43,7 +40,7 @@ $db = get_db();
 	<h1>Welcome to ARfS Admin</h1>
 	<br><br>
 
-<?php 
+<!-- <?php 
 	if (isset($_SESSION['newArtistID']))
 		{
 			echo "New artist $newArtistName has been added: ID = $newArtistID ";
@@ -79,7 +76,7 @@ $db = get_db();
 			<input type="submit" value="Add to Database" />
 		</form>
 	}
-?>
+?> -->
 </div>
 	<br><br>
 	<a href="signOut.php">Sign Out</a>
