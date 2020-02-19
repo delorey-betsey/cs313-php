@@ -19,7 +19,9 @@
     <?php include 'common/nav.php'; ?>
 
     <!-- COMMENT:  flexbox main     -->  
-    <?php include 'common/main5artists.php'; ?>
+    <div class="main2" >
+        <?php include 'common/main5artists.php'; ?>
+    </div>
 
     <!-- COMMENT:  flexbox nav     -->  
     <?php include 'common/nav.php'; ?>

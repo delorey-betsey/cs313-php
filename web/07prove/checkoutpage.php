@@ -15,9 +15,10 @@
     <?php include 'common/nav.php'; ?>
 
 
-    <!-- COMMENT:  flexbox main     -->  
-    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form -->
-    <?php include 'common/main3checkout.php'; ?>
+    <!-- COMMENT:  flexbox main     --> 
+    <div class="main2" >
+        <?php include 'common/main3checkout.php'; ?>
+    </div>
 
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  

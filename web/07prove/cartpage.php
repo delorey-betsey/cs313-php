@@ -16,9 +16,9 @@
 
 
     <!-- COMMENT:  flexbox main     -->  
-    <?php include 'common/main2cart.php'; ?>
-
-
+    <div class="main2" >
+        <?php include 'common/main2cart.php'; ?>
+    </div> 
 
     <!-- COMMENT:  flexbox bottom nav and footer  -->  
     <?php include 'common/nav.php'; ?>
