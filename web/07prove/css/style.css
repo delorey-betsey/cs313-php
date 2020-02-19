@@ -85,17 +85,18 @@ a:active {color: red; background-color:#ffffff;}
     font-family: 'Boogaloo', cursive;
     font-size:3em;
     padding:.5em 0 .5em .25em;
-    background-color: #ffffff;
+    background-color: #faf0e6;
 }
 .main2 {
     position: relative;
     text-align: left;
+    background-color: #faf0e6;
 }
 .main3 {
     font-family: 'Dosis', sans-serif;
     font-size:1em;
     padding:.5em 0 .5em 1em;
-    background-color: #ffffff;
+    background-color: #faf0e6;
 }
 .dosisxlite {
     font-family: 'Dosis', sans-serif;
