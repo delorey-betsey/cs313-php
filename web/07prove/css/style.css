@@ -97,6 +97,10 @@ a:active {color: red; background-color:#ffffff;}
     padding:.5em 0 .5em 1em;
     background-color: #ffffff;
 }
+.dosisxlite {
+    font-family: 'Dosis', sans-serif;
+    font-size:1em;
+}
 .inventory {
     display:flex;
     flex-flow: row wrap;
