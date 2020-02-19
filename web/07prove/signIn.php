@@ -59,7 +59,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 	require("dbConnect.php");
 	$db = get_db();
 
-	$query = 'SELECT password FROM login7t WHERE username=:username';
+	$query = 'SELECT password FROM userArfs WHERE username=:username';
 
 	$statement = $db->prepare($query);
 	$statement->bindValue(':username', $username);
@@ -95,7 +95,7 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 // echo "<br>";
 			// password was correct, put the user on the session, and redirect to home
 			$_SESSION['username'] = $username;
-			header("Location: adminpage.php");
+			header("Location: admin.php");
 			die(); // we always include a die after redirects.
 		}
 		else

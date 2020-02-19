@@ -1,6 +1,3 @@
-<!-- <?php
-echo "entering admin.php from adminpage.php"; 
-?> -->
 <?php
 session_start();
 
@@ -19,6 +16,7 @@ if (isset($_SESSION['username']))
 		die(); // we always include a die after redirects.
 	}
 ?>
+
 <!-- if (isset($_SESSION['newArtistID'])){
 $newArtistID = $_SESSION['newArtistID'];
 <?php echo "New artist has been added: ID = <?= $newArtistID <br /><br />";?> -->
