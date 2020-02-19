@@ -23,7 +23,7 @@ try {// Add the Artist
 	$statement->execute();
 
 	// get the new id
-	$newArtistID = $db->lastInsertId("userArfs_id_seq");
+	$newArtistID = $db->lastInsertId("userArfs_userid_seq");
 	}
 catch (Exception $ex)
 	{
