@@ -12,7 +12,7 @@ if(!isset($_SESSION['items'])){
         <?php include 'modules/logo.php'; ?>
     </div>
    
-    <div class="main1" id="welcome" >Welcome to ARfS!      
+    <div class="main1welcome" id="welcome" >Welcome to ARfS!      
     </div>
 </header>
 

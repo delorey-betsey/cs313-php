@@ -48,7 +48,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </head>
 <main>
         <!-- FIRST DIV--COMMENT:  main title     -->
-        <div class="main1" >
+        <div class="main1art" >
             <?php include 'modules/title.php'; ?>
         </div>
         <div class="dosisxlite">
