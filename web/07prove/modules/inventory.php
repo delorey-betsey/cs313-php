@@ -57,7 +57,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
             ?>
         </div>
     <div>        
-        <!-- COMMENT:  CAT ARTWORK     -->
+        <!-- COMMENT:  ARTWORK     -->
         <form method="post" action="">
 
         <div class="tanbackground">

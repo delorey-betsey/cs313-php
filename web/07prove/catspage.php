@@ -20,7 +20,9 @@
 
 
     <!-- COMMENT:  flexbox main     -->  
-    <?php include 'common/main6cats.php'; ?>
+    <div class="main2" >
+        <?php include 'common/main6cats.php'; ?>
+    </div>
 
     <!-- COMMENT:  flexbox nav     -->  
     <?php include 'common/nav.php'; ?>
