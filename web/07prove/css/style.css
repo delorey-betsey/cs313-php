@@ -85,7 +85,7 @@ a:active {color: red; background-color:#ffffff;}
     font-family: 'Boogaloo', cursive;
     font-size:3em;
     padding:.5em 0 .5em .25em;
-    background-color: #faf0e6;
+    background-color: #ffffff;
 }
 .main2 {
     position: relative;
@@ -106,6 +106,7 @@ a:active {color: red; background-color:#ffffff;}
     display:flex;
     flex-flow: row wrap;
     justify-content:space-between;
+    background-color: #faf0e6;
 }
 .inventory h3 {
     position:relative;
