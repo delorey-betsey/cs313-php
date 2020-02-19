@@ -8,14 +8,11 @@ if(!isset($_SESSION['items'])){
 $items = $_SESSION["items"];
 ?>
 
-<!--  inventory <div></div>  -->
+<!--  dogs inventory <div></div>  -->
 <?php
     if(empty($items)) 
         {
         echo("All proceeds benefit Dane County Humane Society.");
-        echo "<br><br>";
-        echo("Please select items by checkboxes. <br>Then press Add to Cart.");
-        echo "<br>";
         } 
         else {
             $N = count($items);
@@ -51,9 +48,14 @@ $dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
     </head>
 <main>
-        <!-- FIRST DIV--COMMENT:  main title     -->
-        <div class="main1title" >
+<!-- FIRST DIV--COMMENT:  main title     -->
+<div class="main1title" >
             <?php include 'modules/titledogs.php'; ?>
+        </div>
+        <div class="dosisxlite">
+            <?php
+            echo("Please select checkboxes. <br>Then press Add to Cart.<br><br>");
+            ?>
         </div>
     <div>        
         <!-- COMMENT:  DOG ARTWORK     -->
