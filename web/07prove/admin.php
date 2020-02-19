@@ -19,11 +19,11 @@ if (isset($_SESSION['username']))
 		header("Location: signIn.php");
 		die(); // we always include a die after redirects.
 	}
-if (isset($_SESSION['newArtistID']))
-	{
-		$newArtistID = $_SESSION['newArtistID'];
-		echo "New artist has been added: ID = <?= $newArtistID ?><br /><br />";
-?>
+// if (isset($_SESSION['newArtistID']))
+// 	{
+// 		$newArtistID = $_SESSION['newArtistID'];
+// 		echo "New artist has been added: ID = <?= $newArtistID ?><br /><br />";
+// ?>
 <?php
 require("dbConnect.php");
 $db = get_db();
@@ -47,7 +47,7 @@ $db = get_db();
 
 	<h2>ADD NEW ARTIST</h2>
 
-		<form id="mainForm" action="addartist.php" method="POST">
+		<!-- <form id="mainForm" action="addartist.php" method="POST">
 
 			<input type="text" id="userName" name="userName"></input>
 			<label for="userName">User name:</label>
@@ -72,7 +72,7 @@ $db = get_db();
 
 			<input type="submit" value="Add to Database" />
 
-		</form>
+		</form> -->
 
 </div>
 
