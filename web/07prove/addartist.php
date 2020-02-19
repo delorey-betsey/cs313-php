@@ -26,6 +26,18 @@ try {// Add the Artist
 	$newArtistID = $db->lastInsertId("userArfs_userid_seq");
 	$_SESSION['newArtistID']   = $newArtistID;
 	$_SESSION['newArtistName'] = $username;
+
+	echo "addartist variables:";
+	echo "<br>";
+	echo "local id: $newArtistID";
+	echo "<br>";
+	echo "local name: $username";
+	echo "<br>";
+	echo "session id: $_SESSION['newArtistID']";
+	echo "<br>";
+	echo "session name: $_SESSION['newArtistName']";
+	echo "<br>";
+	echo "leaving addartist";
 	}
 catch (Exception $ex)
 	{
