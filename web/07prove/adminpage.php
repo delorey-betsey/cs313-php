@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION['username']))
+	{
+		$username = $_SESSION['username'];
+	}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +23,8 @@
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
-<!-- <?php echo "going to admin.php from adminpage.php"; ?> -->
+<?php echo "going to admin.php from adminpage.php"; ?>
+<?php echo $username; ?>
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'admin.php'; ?>
