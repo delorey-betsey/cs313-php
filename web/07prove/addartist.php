@@ -1,9 +1,9 @@
 <?php
-$userName     = $_POST['userName'];
-$userPassword = $_POST['userPassword'];
-$displayName  = $_POST['displayName'];
-$pic          = $_POST['pic'];
-$bio          = $_POST['bio'];
+$userName     = $_POST['newuserName'];
+$userPassword = $_POST['newuserPassword'];
+$displayName  = $_POST['newdisplayName'];
+$pic          = $_POST['newpic'];
+$bio          = $_POST['newbio'];
 
 require("dbConnect.php");
 $db = get_db();
@@ -14,30 +14,18 @@ try {// Add the Artist
 	$statement = $db->prepare($query);
 
 	$statement->bindValue(':typeID',2);
-	$statement->bindValue(':userName',$userName);
-	$statement->bindValue(':userPassword',$userPassword);
-	$statement->bindValue(':displayName',$displayName);
-	$statement->bindValue(':pic',$pic);
-	$statement->bindValue(':bio',$bio);
+	$statement->bindValue(':userName',$newuserName);
+	$statement->bindValue(':userPassword',$newuserPassword);
+	$statement->bindValue(':displayName',$newdisplayName);
+	$statement->bindValue(':pic',$newpic);
+	$statement->bindValue(':bio',$newbio);
 
 	$statement->execute();
 
 	// get the new id
 	$newArtistID = $db->lastInsertId("userArfs_userid_seq");
-	$_SESSION['newArtistID']   = $newArtistID;
-	$_SESSION['newArtistName'] = $username;
-
-	echo "addartist variables:";
-	echo "<br>";
-	echo "local id: $newArtistID";
-	echo "<br>";
-	echo "local name: $username";
-	echo "<br>";
-	echo "session id: $_SESSION['newArtistID']";
-	echo "<br>";
-	echo "session name: $_SESSION['newArtistName']";
-	echo "<br>";
-	echo "leaving addartist";
+	echo "new artist id:";
+	echo $newArtistID;
 	}
 catch (Exception $ex)
 	{
