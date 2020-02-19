@@ -24,8 +24,6 @@ try {// Add the Artist
 
 	// get the new id
 	$newArtistID = $db->lastInsertId("userArfs_userid_seq");
-	echo "new artist id:";
-	echo $newArtistID;
 	}
 catch (Exception $ex)
 	{
@@ -34,7 +32,8 @@ catch (Exception $ex)
 		echo "Error with DB. Details: $ex";
 		die();
 	}
-
+$_SESSION['newArtistID'] = $newArtistID;
+$_SESSION['newuserName'] = $newuserName;
 header("Location: adminpage.php");
 
 die(); // we always include a die after redirects. In this case, there would be no
