@@ -1,5 +1,7 @@
 <?php
-<?php echo "entering admin.php from adminpage.php"; ?>
+echo "entering admin.php from adminpage.php"; 
+?>
+<?php
 session_start();
 
 // echo "session username is:";
@@ -21,8 +23,7 @@ if (isset($_SESSION['newArtistID']))
 	{
 		$newArtistID = $_SESSION['newArtistID'];
 		echo "New artist has been added: ID = <?= $newArtistID ?><br /><br />";
-	?>
-
+?>
 <?php
 require("dbConnect.php");
 $db = get_db();
