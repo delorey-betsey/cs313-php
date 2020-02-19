@@ -1,10 +1,9 @@
 <?php
 session_start();
-if (isset($_SESSION['newArtistID']))
-	{
-		$newArtistID    = $_SESSION['newArtistID'];
-        $newArtistName  = $_SESSION['newArtistName'];
-	}
+echo "adminpage-- new artist id:";
+echo $_SESSION['newArtistID'];	
+echo "new artist name:";
+echo $_SESSION['newuserName'];
 ?>
 
 <!DOCTYPE html>

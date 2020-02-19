@@ -9,7 +9,7 @@ if (isset($_SESSION['username']))
 		header("Location: signIn.php");
 		die();  
 	}
-echo "new artist id:";
+echo "admin-- new artist id:";
 echo $_SESSION['newArtistID'];	
 echo "new artist name:";
 echo $_SESSION['newuserName'];
