@@ -133,13 +133,14 @@ a:active {color: red; background-color:#ffffff;}
     /* border: 0.313em solid blue; */
 }
 .art {
-    margin:50px;
+    margin:25px;
     border: 0.313em solid black;
     padding: 10px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    background-color: #faf0e6;
 }
 #welcome {
     color: #c74246;
