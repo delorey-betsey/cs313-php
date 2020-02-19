@@ -1,9 +1,9 @@
 <?php
-$userName     = $_POST['newuserName'];
-$userPassword = $_POST['newuserPassword'];
-$displayName  = $_POST['newdisplayName'];
-$pic          = $_POST['newpic'];
-$bio          = $_POST['newbio'];
+$newuserName     = $_POST['newuserName'];
+$newuserPassword = $_POST['newuserPassword'];
+$newdisplayName  = $_POST['newdisplayName'];
+$newpic          = $_POST['newpic'];
+$newbio          = $_POST['newbio'];
 
 require("dbConnect.php");
 $db = get_db();
