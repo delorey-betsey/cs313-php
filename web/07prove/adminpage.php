@@ -15,6 +15,7 @@
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
+<?php echo "entering main8admin"; ?>
 
     <!-- COMMENT:  flexbox main     -->  
     <?php include 'common/main8admin.php'; ?>
