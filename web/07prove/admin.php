@@ -48,24 +48,24 @@ $db = get_db();
 		<!-- <form id="mainForm" action="addartist.php" method="POST"> -->
 		<form id="mainForm" action="" method="POST">
 
-			<input type="text" id="userName" name="userName"></input>
 			<label for="userName">User name:</label>
+			<input type="text" id="userName" name="userName"></input>			
 			<br /><br />
 
-			<input type="text" id="userPassword" name="userPassword"></input>
 			<label for="userPassword">User password:</label>
+			<input type="text" id="userPassword" name="userPassword"></input>
 			<br /><br />
 
-			<input type="text" id="displayName" name="displayName"></input>
 			<label for="displayName">User display name:</label>
+			<input type="text" id="displayName" name="displayName"></input>
 			<br /><br />
 
-			<input type="text" id="pic" name="pic"></input>
 			<label for="pic">Picture file name:</label>
+			<input type="text" id="pic" name="pic"></input>
 			<br /><br />
 
-			<input type="text" id="txtVerse" name="txtVerse"></input>
 			<label for="txtVerse">Short user bio:</label>
+			<input type="text" id="txtVerse" name="txtVerse"></input>
 			<br /><br />
 			<br />
 
