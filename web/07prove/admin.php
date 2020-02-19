@@ -11,19 +11,18 @@ session_start();
 
 if (isset($_SESSION['username']))
 	{
-		$username    = $_SESSION['username'];
-		echo "Your username is: <?= $username ?>";
+		$username = $_SESSION['username'];
 	}
 	else
 	{
 		header("Location: signIn.php");
 		die(); // we always include a die after redirects.
 	}
-// if (isset($_SESSION['newArtistID']))
-// 	{
-// 		$newArtistID = $_SESSION['newArtistID'];
-// 		echo "New artist has been added: ID = <?= $newArtistID <br /><br />";
 ?>
+<!-- if (isset($_SESSION['newArtistID'])){
+$newArtistID = $_SESSION['newArtistID'];
+<?php echo "New artist has been added: ID = <?= $newArtistID <br /><br />";?> -->
+
 
 <?php
 require("dbConnect.php");
