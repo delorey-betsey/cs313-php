@@ -1,12 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION['newArtistID']) && isset($_SESSION['newArtistName']))
-	{
-		$newArtistID = $_SESSION['newArtistID'];
-		$newArtistName = $_SESSION['newArtistName'];
-	}
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,8 +15,6 @@ if (isset($_SESSION['newArtistID']) && isset($_SESSION['newArtistName']))
     <?php include 'common/nav.php'; ?>
 
 <?php
-    echo $newArtistID;
-    echo $newArtistName;
     echo "headed to admin";
 ?>
     <!-- COMMENT:  flexbox main     -->  
