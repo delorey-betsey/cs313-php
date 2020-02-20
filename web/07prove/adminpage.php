@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (isset($_SESSION['newArtistID']) && isset($_SESSION['newArtistName']))
+	{
+		$newArtistID = $_SESSION['newArtistID'];
+		$newArtistName = $_SESSION['newArtistName'];
+	}
 ?>
 
 <!DOCTYPE html>
