@@ -25,15 +25,15 @@ if (isset($_POST['artistID'])
 	$db = get_db();
 
 	try {// Add the Artist
-		$query = 'INSERT INTO art(artist,title,brief,price,listingDT,thumb,fullsize) 
-		VALUES(:artist,:title,:brief,:price,:listingDT,:thumb,:fullsize)';
+		$query = 'INSERT INTO art(artist,title,brief,price,thumb,fullsize) 
+		VALUES(:artist,:title,:brief,:price,:thumb,:fullsize)';
 		$statement = $db->prepare($query);
 
 		$statement->bindValue(':artist',$artistID);
 		$statement->bindValue(':title',$title);
 		$statement->bindValue(':brief',$brief);
 		$statement->bindValue(':price',$price);
-		$statement->bindValue(':listingDT',now());
+		// $statement->bindValue(':listingDT',now());
 		$statement->bindValue(':thumb',$thumb);
 		$statement->bindValue(':fullsize',$fullsize);
 
