@@ -40,7 +40,7 @@ if (isset($_POST['newuserName'])
 			die();
 		}
 $_SESSION['newArtistID'] = $newArtistID;
-$_SESSION['newArtistName'] = $displayName;
+$_SESSION['newArtistName'] = $newuserName;
 header("Location: adminpage.php");
 
 die(); // we always include a die after redirects. In this case, there would be no
