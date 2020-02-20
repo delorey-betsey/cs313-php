@@ -18,7 +18,7 @@ if (isset($_POST['artistID'])
 	$db = get_db();
 
 	try {// Add the Artist
-		$query = 'INSERT INTO userArfs(artist,title,brief,price,listingDT,thumb,fullsize) 
+		$query = 'INSERT INTO art(artist,title,brief,price,listingDT,thumb,fullsize) 
 		VALUES(:typeID,:userName,:userPassword,:displayName,:pic,:bio)';
 		$statement = $db->prepare($query);
 

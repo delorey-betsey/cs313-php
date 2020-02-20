@@ -88,7 +88,6 @@ $db = get_db();
 		<br>
 		<!-- <form class="formdiv" id="mainForm" action="" method="POST"> -->
 		<form class="formdiv" id="mainForm" action="addartwork.php" method="POST">
-		INSERT INTO art (artistID,title,brief,price,listingDT,thumb,fullsize)
 
 			<label for="artistID">Artist ID:</label>
 			<input type="text" id="artistID" name="artistID"></input>			
