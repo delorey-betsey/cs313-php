@@ -1,9 +1,5 @@
 <?php
 session_start();
-echo "adminpage-- new artist id:";
-echo $_SESSION['newArtistID'];	
-echo "new artist name:";
-echo $_SESSION['newuserName'];
 ?>
 
 <!DOCTYPE html>
