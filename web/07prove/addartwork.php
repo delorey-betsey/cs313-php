@@ -19,7 +19,7 @@ if (isset($_POST['artistID'])
 
 	try {// Add the Artist
 		$query = 'INSERT INTO art(artist,title,brief,price,listingDT,thumb,fullsize) 
-		VALUES(:typeID,:userName,:userPassword,:displayName,:pic,:bio)';
+		VALUES(:artist,:title,:brief,:price,:listingDT,:thumb,:fullsize)';
 		$statement = $db->prepare($query);
 
 		$statement->bindValue(':artist',$artistID);
