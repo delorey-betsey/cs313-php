@@ -1,4 +1,5 @@
 <?php
+echo "entering admin";
 session_start();
 if (isset($_SESSION['username']))
 	{
@@ -9,8 +10,11 @@ if (isset($_SESSION['username']))
 		header("Location: signIn.php");
 		die();  
 	}
-?>
-<?php 
+if (isset($_SESSION['newArtistID']) && isset($_SESSION['newArtistName']))
+	{
+		$newArtistID = $_SESSION['newArtistID'];
+		$newArtistName = $_SESSION['newArtistName'];
+	}
 require("dbConnect.php");
 $db = get_db();
 ?>
