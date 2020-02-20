@@ -9,11 +9,6 @@ if (isset($_SESSION['username']))
 		header("Location: signIn.php");
 		die();  
 	}
-if (isset($_SESSION['newArtistID']) && isset($_SESSION['newArtistName']))
-	{
-		$newArtistID = $_SESSION['newArtistID'];
-		$newArtistName = $_SESSION['newArtistName'];
-	}
 require("dbConnect.php");
 $db = get_db();
 ?>
