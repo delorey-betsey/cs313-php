@@ -9,6 +9,8 @@ if (isset($_SESSION['username']))
 		header("Location: signIn.php");
 		die();  
 	}
+?>
+<?php 
 require("dbConnect.php");
 $db = get_db();
 ?>
