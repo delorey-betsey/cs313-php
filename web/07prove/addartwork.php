@@ -14,6 +14,13 @@ if (isset($_POST['artistID'])
 	$thumb      = $_POST['thumb'];
 	$fullsize   = $_POST['fullsize'];
 
+	echo $artistID;
+	echo $title;
+	echo $brief;
+	echo $price;
+	echo $thumb;
+	echo $fullsize;
+
 	require("dbConnect.php");
 	$db = get_db();
 
