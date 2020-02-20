@@ -37,6 +37,12 @@ $db = get_db();
 	<br /><br />
 	<h1>Welcome to ARfS Admin</h1>
 	<br><br>
+	<?php if (isset($_SESSION['newArtistID']))
+	{
+		echo "New artist $newArtistName has been added: ID = $newArtistID ";
+	}
+	?>
+	<br><br>
 	<h2>ADD NEW ARTIST</h2>
 		<br>
 		<!-- <form class="formdiv" id="mainForm" action="" method="POST"> -->
