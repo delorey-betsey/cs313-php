@@ -13,8 +13,6 @@ if (isset($_SESSION['newArtistID']) && isset($_SESSION['newArtistName']))
 	{
 		$newArtistID = $_SESSION['newArtistID'];
 		$newArtistName = $_SESSION['newArtistName'];
-		echo $newArtistID;
-		echo $newArtistName;
 	}
 require("dbConnect.php");
 $db = get_db();
@@ -36,6 +34,12 @@ $db = get_db();
 	<?php echo "You are signed in as: $username";?>
 	<br /><br />
 	<h1>Welcome to ARfS Admin</h1>
+	<br><br>
+	<?php if (isset($_SESSION['newArtistID']))
+		{
+		echo "New artist $newArtistName has been added: ID = $newArtistID ";
+		}
+	?>
 	<br><br>
 	<h2>ADD NEW ARTIST</h2>
 		<br>
