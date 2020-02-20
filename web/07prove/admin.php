@@ -9,13 +9,12 @@ if (isset($_SESSION['username']))
 		header("Location: signIn.php");
 		die();  
 	}
-echo "admin-- new artist id:";
-echo $_SESSION['newArtistID'];	
-echo "new artist name:";
-echo $_SESSION['newuserName'];
- ?>
-
-<?php
+if (isset($_SESSION['newArtistID']) 
+ && isset($_SESSION['newArtistName']))
+	{
+		$newArtistID = $_SESSION['newArtistID'];
+		$newArtistName = $_SESSION['newArtistName'];
+	}
 require("dbConnect.php");
 $db = get_db();
 ?>
@@ -37,7 +36,12 @@ $db = get_db();
 	<br /><br />
 	<h1>Welcome to ARfS Admin</h1>
 	<br><br>
-	<h2>ADD NEW ARTIST</h2>
+	<?php if (isset($_SESSION['newArtistID']))
+	{
+		echo "New artist $newArtistName has been added: ID = $newArtistID ";
+	} else
+	{
+		<h2>ADD NEW ARTIST</h2>
 		<br>
 		<!-- <form class="formdiv" id="mainForm" action="" method="POST"> -->
 		<form class="formdiv" id="mainForm" action="addartist.php" method="POST">
@@ -65,7 +69,8 @@ $db = get_db();
 
 			<input type="submit" value="Add to Database" />
 		</form>
-
+	}
+	?>
 </div>
 	<br><br>
 	<a href="signOut.php">Sign Out</a>

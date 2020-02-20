@@ -1,15 +1,8 @@
 <?php
-/**********************************************************
-* File: signOut.php
-* Author: Br. Burton
-* 
-* Description: Clears the username from the session if there.
-*
-***********************************************************/
-
-require("password.php"); // used for password hashing.
+require("password.php"); 
 session_start();
 unset($_SESSION['username']);
-
+unset($_SESSION['newArtistID']);
+unset($_SESSION['newArtistName']);
 header("Location: homepage.php");
-die(); // we always include a die after redirects.
+die(); 
