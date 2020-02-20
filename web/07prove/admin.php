@@ -35,8 +35,6 @@ $db = get_db();
 <div>
 	<?php echo "You are signed in as: $username";?>
 	<br /><br />
-	<?php echo "New artist $newArtistName has been added: ID = $newArtistID ";?>
-	<br><br>
 	<h1>Welcome to ARfS Admin</h1>
 	<br><br>
 	<h2>ADD NEW ARTIST</h2>
