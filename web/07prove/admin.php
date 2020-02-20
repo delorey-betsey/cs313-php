@@ -1,5 +1,4 @@
 <?php
-echo "entering admin";
 session_start();
 if (isset($_SESSION['username']))
 	{
@@ -14,6 +13,8 @@ if (isset($_SESSION['newArtistID']) && isset($_SESSION['newArtistName']))
 	{
 		$newArtistID = $_SESSION['newArtistID'];
 		$newArtistName = $_SESSION['newArtistName'];
+		echo $newArtistID;
+		echo $newArtistName;
 	}
 require("dbConnect.php");
 $db = get_db();

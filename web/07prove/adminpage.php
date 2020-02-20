@@ -14,9 +14,6 @@
     <?php include 'common/header.php'; ?>
     <?php include 'common/nav.php'; ?>
 
-<?php
-    echo "headed to admin";
-?>
     <!-- COMMENT:  flexbox main     -->  
     <div class="main2" >
         <?php include 'admin.php'; ?>
