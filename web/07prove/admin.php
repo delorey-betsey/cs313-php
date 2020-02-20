@@ -41,34 +41,34 @@ $db = get_db();
 		echo "New artist $newArtistName has been added: ID = $newArtistID ";
 	} else
 	{
-		<h2>ADD NEW ARTIST</h2>
-		<br>
-		<!-- <form class="formdiv" id="mainForm" action="" method="POST"> -->
-		<form class="formdiv" id="mainForm" action="addartist.php" method="POST">
+		echo "<h2>ADD NEW ARTIST</h2>";
+		echo "<br>";
+		// <!-- <form class="formdiv" id="mainForm" action="" method="POST"> -->
+		echo "<form class="formdiv" id="mainForm" action="addartist.php" method="POST">";
 
-			<label for="userName">User name:</label>
-			<input type="text" id="userName" name="newuserName"></input>			
-			<br /><br />
+		echo "<label for="userName">User name:</label>";
+		echo "<input type="text" id="userName" name="newuserName"></input>";			
+		echo "<br /><br />";
 
-			<label for="userPassword">User password:</label>
-			<input type="text" id="userPassword" name="newuserPassword"></input>
-			<br /><br />
+		echo "<label for="userPassword">User password:</label>";
+		echo "<input type="text" id="userPassword" name="newuserPassword"></input>";
+		echo "<br /><br />";
 
-			<label for="displayName">User display name:</label>
-			<input type="text" id="displayName" name="newdisplayName"></input>
-			<br /><br />
+		echo "<label for="displayName">User display name:</label>";
+		echo "<input type="text" id="displayName" name="newdisplayName"></input>";
+		echo "<br /><br />";
 
-			<label for="pic">Picture file name:</label>
-			<input type="text" id="pic" name="newpic"></input>
-			<br /><br />
+		echo "<label for="pic">Picture file name:</label>";
+		echo "<input type="text" id="pic" name="newpic"></input>";
+		echo "<br /><br />";
 
-			<label for="bio">Short user bio:</label>
-			<input type="text" id="bio" name="newbio"></input>
-			<br /><br />
-			<br />
+		echo "<label for="bio">Short user bio:</label>";
+		echo "<input type="text" id="bio" name="newbio"></input>";
+		echo "<br /><br />";
+		echo "<br />";
 
-			<input type="submit" value="Add to Database" />
-		</form>
+		echo "<input type="submit" value="Add to Database" />";
+		echo "</form>";
 	}
 	?>
 </div>
