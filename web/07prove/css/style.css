@@ -41,7 +41,7 @@ header {
     border-color: #faf0e6;
 }
 .button {
-    border-radius: 10px;
+    border-radius: 50px;
 }
 .addtocart {
     display:flex;
@@ -73,7 +73,7 @@ nav {
     width:100px;
     padding: .5em;
     text-align:center;
-    border-radius: 10px;    
+    border-radius: 50px;    
 }
 a {
   text-decoration: none;
@@ -88,7 +88,8 @@ a:active {color: red; background-color:#ffffff;}
 .navlinks a {
   text-decoration: none;
   font-size:16px;  
-  color:#ffffff;
+  color:#faf0e6;
+  border-radius: 50px;
 }
 .navlinks a:link {color: #ffffff;}
 .navlinks a:visited {color: #ffffff;}
