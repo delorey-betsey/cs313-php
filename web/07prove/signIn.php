@@ -47,6 +47,8 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 
 <body>
 <div>
+<a href="homepage.php">Return to Homepage.</a>
+<br /><br />
 
 <?php
 if ($badLogin)
