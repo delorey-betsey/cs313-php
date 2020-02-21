@@ -11,8 +11,10 @@ if (isset($_POST['artistID'])
 	$title 		= $_POST['title'];
 	$brief  	= $_POST['brief'];
 	$price      = $_POST['price'];
-	$thumb      = CONCAT ('image/thumb/', '$_POST['thumb']';
-	$fullsize   = CONCAT ('image/full/', '$_POST['fullsize']';
+	$holdthumb      = $_POST['thumb'];
+	$holdfullsize   = $_POST['fullsize'];
+	$thumb          = CONCAT ('image/thumb/', $holdthumb);
+	$fullsize       = CONCAT ('image/full/', $holdfullsize);
 
 	require("dbConnect.php");
 	$db = get_db();
