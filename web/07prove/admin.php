@@ -107,12 +107,8 @@ $db = get_db();
 			<input type="text" id="price" name="price"></input>
 			<br /><br />
 
-			<label for="thumb">Thumbnail filename:</label>
-			<input type="text" id="thumb" name="thumb"></input>
-			<br /><br />
-
-			<label for="fullsize">Fullsize filename:</label>
-			<input type="text" id="fullsize" name="fullsize"></input>
+			<label for="image">Image filename:</label>
+			<input type="text" id="image" name="image"></input>
 			<br /><br />
 			<br />
 

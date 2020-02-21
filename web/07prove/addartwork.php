@@ -4,15 +4,13 @@ if (isset($_POST['artistID'])
 	&& isset($_POST['title'])
 	&& isset($_POST['brief'])
 	&& isset($_POST['price'])
-	&& isset($_POST['thumb'])
-	&& isset($_POST['fullsize']))
+	&& isset($_POST['image']))
 {
 	$artistID   = $_POST['artistID'];
 	$title 		= $_POST['title'];
 	$brief  	= $_POST['brief'];
 	$price      = $_POST['price'];
-	$holdthumb      = $_POST['thumb'];
-	$holdfullsize   = $_POST['fullsize'];
+	$image      = $_POST['image'];
 	$thumb          = 'images/thumb/' . $holdthumb;
 	$fullsize       = 'images/full/' . $holdfullsize;
 

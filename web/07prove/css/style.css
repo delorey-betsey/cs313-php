@@ -29,6 +29,9 @@ header {
     align-items:center;
     width:100%;
     background-color: #ffffff;
+    border: 25px 25px 0px 25px;
+    border-color: #faf0e6;
+    position: fixed;
     }
 .addtocart {
     display:flex;
