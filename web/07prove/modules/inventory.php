@@ -66,7 +66,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <!-- <div></div> -->
             <!-- <div >           -->
                 <!-- <input type="submit" >  -->
-                <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
+                <button class="button" type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
                 <!-- <br><br> -->
             <!-- </div> -->
         </div>
