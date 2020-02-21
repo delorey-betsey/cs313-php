@@ -29,7 +29,12 @@ header {
     align-items:center;
     width:100%;
     background-color: #ffffff;
-
+    }
+.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
     }
 .border {
     border: 50px;
