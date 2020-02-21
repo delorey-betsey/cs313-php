@@ -1,14 +1,10 @@
 <?php
 session_start();
-if(!isset($_SESSION['items'])){
+if(!isset($_SESSION['items']))
+    {
     $items = $_POST['items'];
     $_SESSION["items"] = $items;
     }
-// else
-// {
-// 	header("Location: signIn.php");
-// 	die(); // we always include a die after redirects.
-// }
 $items = $_SESSION["items"];
 ?>
 
@@ -19,11 +15,19 @@ $items = $_SESSION["items"];
             <?php include 'modules/titlecheckout.php'; ?>            
         </div>
 
-<div class="addtocart">
-    <div></div>
-    <div >          
-    </div>
-</div>
+        <?php
+            if(empty($items)) 
+                {
+                echo("You didn't select any items.");
+                echo "<br />";
+                echo "<br />";
+                } 
+        ?>
+
+    <!-- <div class="addtocart">
+        <div></div>
+        <div></div>
+    </div> -->
         
         <h3> Ship To info: </h3>
         <br>
@@ -45,8 +49,6 @@ $items = $_SESSION["items"];
             Zip: <input type="text" name="zip"> 
             <br><br>
 
-            <!-- <div >           -->
-        <!-- <input type="submit" >  -->
         <button type="submit" name="submitbutton" value="submitbutton"><img src="images/submitbutton.jpg" alt="submitbutton"></button>      
         </form>
         <br><br>
