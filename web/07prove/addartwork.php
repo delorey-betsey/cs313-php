@@ -11,8 +11,8 @@ if (isset($_POST['artistID'])
 	$brief  	= $_POST['brief'];
 	$price      = $_POST['price'];
 	$image      = $_POST['image'];
-	$thumb          = 'images/thumb/' . $holdthumb;
-	$fullsize       = 'images/full/' . $holdfullsize;
+	$thumb          = 'images/thumb/' . $image;
+	$fullsize       = 'images/full/' . $image;
 
 	require("dbConnect.php");
 	$db = get_db();

@@ -11,6 +11,9 @@ if (isset($_POST['newuserName'])
 	$newdisplayName  = $_POST['newdisplayName'];
 	$newpic          = $_POST['newpic'];
 	$newbio          = $_POST['newbio'];
+	
+	$location = "images/";
+	$filename = $location . $newpic;
 
 	require("dbConnect.php");
 	$db = get_db();
@@ -24,7 +27,7 @@ if (isset($_POST['newuserName'])
 		$statement->bindValue(':userName',$newuserName);
 		$statement->bindValue(':userPassword',$newuserPassword);
 		$statement->bindValue(':displayName',$newdisplayName);
-		$statement->bindValue(':pic',$newpic);
+		$statement->bindValue(':pic',$filename);
 		$statement->bindValue(':bio',$newbio);
 
 		$statement->execute();
