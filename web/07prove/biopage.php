@@ -24,7 +24,7 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <main>
     <div>
         <!-- FIRST DIV--COMMENT:  main title     -->
-        <div class="main1" >
+        <div class="main1title" >
             <?php include 'modules/titleartistbio.php'; ?>
         </div>
         
