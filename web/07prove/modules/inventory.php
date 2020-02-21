@@ -1,14 +1,19 @@
 <?php
 session_start();
-// $username = $_SESSION["username"];
-if(!isset($_SESSION['items'])){
+if(isset($_POST['items']))
+{
     $items = $_POST['items'];
-    $_SESSION["items"] = $items;
-    }
-$items = $_SESSION["items"];
+} 
+ if(isset($_SESSION["selections"]))
+{
+    $selections = $_SESSION["selections"];
+} 
+echo "$ items = ";
+echo $items;
+echo "$ selections = ";
+echo $selections; 
 ?>
-
-<!--  inventory <div></div>  -->
+<!--  inventory  -->
 <?php
     if(empty($items)) 
         {
@@ -22,7 +27,7 @@ $items = $_SESSION["items"];
                     {
                     echo($items[$i] . "");
                     echo ":  Added to Cart";
-                    $_SESSION["$selection[$i]"] = $items[$i];
+                    $_SESSION["$selections[$i]"] = $items[$i];
                     echo "<br />";
                     }
             echo "<br />";
@@ -37,7 +42,7 @@ $stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.full
 FROM art a JOIN userarfs u ON a.artist = u.userid 
 WHERE a.soldDT IS NULL'); 
 $stmt->execute();
-$cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -63,26 +68,21 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <form method="post" action="">
 
         <div class="tanbackground">
-            <!-- <div></div> -->
-            <!-- <div >           -->
-                <!-- <input type="submit" >  -->
                 <button type="submit" name="addbutton" value="addbutton"><img class="button" src="images/addbutton.jpg" alt="addbutton"></button>      
-                <!-- <br><br> -->
-            <!-- </div> -->
-        </div>
+       </div>
         
         <div class="grouping" >  
             <?php
-                foreach ($cats as $cat)
+                foreach ($inventory as $item)
                 {
                     echo "<div class='art'>";
 
-                        $artid      = $cat['artid'];
-                        $artist     = $cat['displayname'];
-                        $brief      = $cat['brief'];
-                        $price      = $cat['price'];
-                        $thumb      = $cat['thumb'];
-                        $fullsize   = $cat['fullsize'];
+                        $artid      = $item['artid'];
+                        $artist     = $item['displayname'];
+                        $brief      = $item['brief'];
+                        $price      = $item['price'];
+                        $thumb      = $item['thumb'];
+                        $fullsize   = $item['fullsize'];
                     
                         echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
                         echo "<label for=artid>#$artid - $price</label>"; 
@@ -93,7 +93,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<div>Description: $brief  </div>";
                         echo "<div>Price:       $price  </div>";                        
                     echo "</div>";
-                }               
+                }          
 			?>
             <br><br><br>                  
         </div>
