@@ -6,13 +6,15 @@ if(!isset($_SESSION['items'])){
     }
 ?>
 
-<header class="border">   
+<header>   
     <!-- COMMENT:  logo     -->
-    <div class="logo" >
-        <?php include 'modules/logo.php'; ?>
-    </div>
-   
-    <div class="main1welcome" id="welcome" >Welcome to ARfS!      
+    <div  class="border">
+        <div class="logo" >
+            <?php include 'modules/logo.php'; ?>
+        </div>
+    
+        <div class="main1welcome" id="welcome" >Welcome to ARfS!      
+        </div>
     </div>
 </header>
 
