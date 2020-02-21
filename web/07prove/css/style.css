@@ -76,8 +76,7 @@ nav {
 .navlinks {
     width:100px;
     padding: .5em;
-    text-align:center;
-    border-radius: 15px 15px 0px 0px;    
+    text-align:center;  
 }
 a {
   text-decoration: none;
@@ -93,6 +92,7 @@ a:active {color: red; background-color:#ffffff;}
   text-decoration: none;
   font-size:16px;  
   color:#faf0e6;
+  border-radius: 15px 50px;
 }
 .navlinks a:link {color: #ffffff;}
 .navlinks a:visited {color: #ffffff;}
