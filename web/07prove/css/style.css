@@ -148,6 +148,7 @@ a:active {color: red; background-color:#ffffff;}
 .art {
     margin:25px;
     border: 0.313em solid black;
+    border-radius: 10px;
     padding: 10px;
     display:flex;
     flex-direction:column;
