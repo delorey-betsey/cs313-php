@@ -20,6 +20,11 @@ if (isset($_SESSION['newArtworkID']) && isset($_SESSION['newArtworkTitle']))
 		$newArtworkID 		= $_SESSION['newArtworkID'];
 		$newArtworkTitle 	= $_SESSION['newArtworkTitle'];
 	}
+if (isset($_SESSION['updatemsg']))
+{
+	$updatemsg = $_SESSION['updatemsg'];
+}
+		
 require("dbConnect.php");
 $db = get_db();
 ?>
@@ -41,25 +46,30 @@ $db = get_db();
 	<br />
 	<h1>Welcome to ARfS Admin</h1>
 	<br>
-	<?php if (isset($_SESSION['newArtistID']))
+	<?php 
+	if (isset($_SESSION['newArtistID']))
 		{
-		echo "**New artist $newArtistName has been added: ID = $newArtistID ";
-		echo '<br>';
-		}
-	?>
-	<?php if (isset($_SESSION['newArtworkID']))
-		{
-		echo "**Art for Sale added for Artist ID#: $newArtworkArtist";
-		echo '<br>';
-		echo "**Item#: $newArtworkID";	
-		echo '<br>';
-		echo "**Item title: $newArtworkTitle";
+		echo "**New artist $newArtistName has been added.";
+		echo "ID #: $newArtistID";
 		echo "<br><br>";
 		}
+	if (isset($_SESSION['newArtworkID']))
+		{
+		echo "**Art for Sale added for Artist ID #: $newArtworkArtist";
+		echo '<br>';
+		echo "Item #: $newArtworkID";	
+		echo '<br>';
+		echo "Item title: $newArtworkTitle";
+		echo "<br><br>";
+		}
+	if (isset($_SESSION['updatemsg']))
+	{
+		echo $updatemsg;
+		echo "<br><br>";
+	}
 	?>
 		<h2>ADD NEW ARTIST</h2>
 		<br>
-		<!-- <form class="formdiv" id="mainForm" action="" method="POST"> -->
 		<form class="formdiv" id="mainForm" action="addartist.php" method="POST">
 
 			<label for="userName">User name:</label>
@@ -86,9 +96,9 @@ $db = get_db();
 			<input type="submit" value="Add New Artist" />
 		</form>
 		<br><br>
+
 	<h2>ADD NEW ARTWORK</h2>
 		<br>
-		<!-- <form class="formdiv" id="mainForm" action="" method="POST"> -->
 		<form class="formdiv" id="mainForm" action="addartwork.php" method="POST">
 
 			<label for="artistID">Artist ID:</label>
@@ -113,6 +123,23 @@ $db = get_db();
 			<br />
 
 			<input type="submit" value="Add New Artwork" />
+		</form>	
+		<br><br>
+
+		<h2>UPDATE SOLD ARTWORK</h2>
+		<br>
+		<form class="formdiv" id="mainForm" action="updatesold.php" method="POST">
+
+		<label for="artID">ArtID:</label>
+			<input type="text" id="artID" name="artID"></input>
+			<br /><br />
+			
+			<label for="soldDT">Sold date:</label>
+			<input type="text" id="soldDT" name="soldDT"></input>			
+			<br /><br />
+			<br />
+
+			<input type="submit" value="Update Sold Date" />
 		</form>	
 	</div>
 	<br><br>
