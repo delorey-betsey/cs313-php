@@ -12,10 +12,10 @@ if (isset($_POST['artistID'])
 	$price      = $_POST['price'];
 	$image      = $_POST['image'];
 
-	$thumblocation = "images/thumb";	
+	$thumblocation = "images/thumb/";	
 	$thumbfilename = $thumblocation . $image;
 
-	$fulllocation  = "images/full";
+	$fulllocation  = "images/full/";
 	$fullfilename  = $fulllocation . $image;
 
 	require("dbConnect.php");
