@@ -30,6 +30,9 @@ header {
     width:100%;
     background-color: #ffffff;
     }
+button {
+    border: none;
+}
 .sticky {
     position: fixed;
     top: 0;
@@ -41,7 +44,8 @@ header {
     border-color: #faf0e6;
 }
 .button {
-    border-radius: 50px;
+    border-radius: 25px;
+    border: none;
 }
 .addtocart {
     display:flex;
