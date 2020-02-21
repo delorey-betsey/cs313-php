@@ -21,7 +21,6 @@ $artists = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php include 'common/header.php'; ?>
 <?php include 'common/nav.php'; ?>
 
-
     <div>
         <!-- FIRST DIV--COMMENT:  main title     -->
         <div class="main1title" >
