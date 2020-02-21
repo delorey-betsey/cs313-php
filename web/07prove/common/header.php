@@ -9,7 +9,7 @@ if(!isset($_SESSION['items'])){
 <header>   
     <!-- COMMENT:  logo     -->
  
-        <div class="logo" class="border" class="sticky">
+        <div class="logo">
             <?php include 'modules/logo.php'; ?>
         </div>
     
