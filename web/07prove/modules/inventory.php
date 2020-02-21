@@ -31,10 +31,11 @@ echo "<br>";
                     {
                     echo($items[$i] . "");
                     echo ":  Added to Cart";
-                    $_SESSION["$selections[$i]"] = $items[$i];
+                    $selections[$i] = $items[$i];
                     echo "<br />";
                     }
             echo "<br />";
+            $_SESSION["selections"]; = $selections;
             }
 ?>
 
@@ -88,11 +89,13 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";  
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='$artid'>";  
                         
                         echo "<label for=artid>#$artid - $price</label>"; 
+
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
                         echo "(Click thumbnail for fullsize image.)";
+
                         echo "<div><br>Item Number: #$artid  </div>";
                         echo "<div>Created by:  $artist </div>";
                         echo "<div>Description: $brief  </div>";
