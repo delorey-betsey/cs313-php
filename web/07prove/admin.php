@@ -50,9 +50,9 @@ $db = get_db();
 	<?php if (isset($_SESSION['newArtworkID']))
 		{
 		echo "**Art for Sale added for Artist ID#: $newArtworkArtist";
-		echo "/n";
+		echo '<br>';
 		echo "**Item#: $newArtworkID";	
-		echo "/n";
+		echo '<br>';
 		echo "**Item title: $newArtworkTitle";
 		echo "<br>";
 		}
