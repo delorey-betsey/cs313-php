@@ -11,8 +11,12 @@ if (isset($_POST['artistID'])
 	$brief  	= $_POST['brief'];
 	$price      = $_POST['price'];
 	$image      = $_POST['image'];
-	$thumb          = 'images/thumb/' . $image;
-	$fullsize       = 'images/full/' . $image;
+
+	$thumblocation = "images/thumb";	
+	$thumbfilename = $thumblocation . $image;
+
+	$fulllocation  = "images/full";
+	$fullfilename  = $fulllocation . $image;
 
 	require("dbConnect.php");
 	$db = get_db();
@@ -27,8 +31,8 @@ if (isset($_POST['artistID'])
 		$statement->bindValue(':brief',$brief);
 		$statement->bindValue(':price',$price);
 		// $statement->bindValue(':listingDT',now());
-		$statement->bindValue(':thumb',$thumb);
-		$statement->bindValue(':fullsize',$fullsize);
+		$statement->bindValue(':thumb',$thumbfilename);
+		$statement->bindValue(':fullsize',$fullfilename);
 
 		$statement->execute();
 
