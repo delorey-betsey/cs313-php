@@ -1,8 +1,9 @@
 <?php
 session_start();
 //check artid submitted
+
 if (isset($_POST['artID']))
-{
+{   echo "checking IF for artid";
 	$artID   = $_POST['artID'];
 } else
 {
@@ -11,8 +12,9 @@ if (isset($_POST['artID']))
 }	
 
 // to set sold date back to NULL
+
 if (!isset($_POST['soldDT']))
-{
+{   echo "checking IF for no sold date";
 	$artID   = $_POST['artID'];
 
 	require("dbConnect.php");
@@ -36,9 +38,10 @@ if (!isset($_POST['soldDT']))
 }
 
 // to populate sold date to mark as sold
+
 if (isset($_POST['artID']) 
 	&& isset($_POST['soldDT']))
-{
+{   echo "IF for updating sold date";
 	$artID   = $_POST['artID'];
 	$soldDT  = $_POST['soldDT'];
 
