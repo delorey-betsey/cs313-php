@@ -33,7 +33,7 @@ $items = $_SESSION["items"];
 require "dbConnect.php";
 $db = get_db();
 $dog = 'dog';
-$stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid WHERE a.title = :title'); 
+$stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid WHERE a.title = :title AND WHERE a.soldDT = NULL'); 
 $stmt->bindValue(':title', $dog, PDO::PARAM_STR);
 $stmt->execute();
 $dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);

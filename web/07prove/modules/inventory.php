@@ -33,7 +33,7 @@ $items = $_SESSION["items"];
 require "dbConnect.php";
 $db = get_db();
  
-$stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid'); 
+$stmt = $db->prepare('SELECT a.artid, a.brief, a.title, a.price, a.thumb, a.fullsize, u.displayname FROM art a JOIN userarfs u ON a.artist = u.userid WHERE a.soldDT = NULL'); 
 $stmt->execute();
 $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
