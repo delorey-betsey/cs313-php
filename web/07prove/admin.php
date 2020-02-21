@@ -38,26 +38,26 @@ $db = get_db();
 <body>
 <div>
 	<?php echo "You are signed in as: $username";?>
-	<br /><br />
+	<br />
 	<h1>Welcome to ARfS Admin</h1>
-	<br><br>
+	<br>
 	<?php if (isset($_SESSION['newArtistID']))
 		{
 		echo "**New artist $newArtistName has been added: ID = $newArtistID ";
+		echo '<br>';
 		}
 	?>
-	<br><br>
 	<?php if (isset($_SESSION['newArtworkID']))
-	{
-	echo "**Art for Sale added for Artist ID#: $newArtworkArtist";
-	echo "<br>";
-	echo "**Item#: $newArtworkID";	
-	echo "<br>";
-	echo "**Item title: $newArtworkTitle";
-	}
+		{
+		echo "**Art for Sale added for Artist ID#: $newArtworkArtist";
+		echo "/n";
+		echo "**Item#: $newArtworkID";	
+		echo "/n";
+		echo "**Item title: $newArtworkTitle";
+		echo "<br>";
+		}
 	?>
-	<br><br>
-	<h2>ADD NEW ARTIST</h2>
+		<h2>ADD NEW ARTIST</h2>
 		<br>
 		<!-- <form class="formdiv" id="mainForm" action="" method="POST"> -->
 		<form class="formdiv" id="mainForm" action="addartist.php" method="POST">

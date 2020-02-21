@@ -31,10 +31,10 @@ header {
     background-color: #ffffff;
     }
 .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
     }
 .border {
     border: 50px;
