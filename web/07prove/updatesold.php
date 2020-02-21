@@ -3,23 +3,25 @@ session_start();
 //check artid submitted
 
 if (isset($_POST['artID']))
-{   echo "checking IF for artid";
+{   
+	echo "checking IF for artid";
 	$artID   = $_POST['artID'];
-} else
-{
-	header("Location: adminpage.php");
-	die(); 
+	} else
+	{
+		header("Location: adminpage.php");
+		die(); 
+	}
 }	
 
 // to set sold date back to NULL
 
 if (!isset($_POST['soldDT']))
-{   echo "checking IF for no sold date";
+{   
+	echo "checking IF for no sold date";
 	$artID   = $_POST['artID'];
 
 	require("dbConnect.php");
 	$db = get_db();
-
 	try { //update sold date
 		$query = 'UPDATE art SET soldDT = NULL WHERE artID = :artID';
 		$statement = $db->prepare($query);
@@ -30,8 +32,7 @@ if (!isset($_POST['soldDT']))
 		{
 			echo "Error with DB. Details: $ex";
 			die();
-		}
-	
+		}	
 	$_SESSION['updatemsg']  = '**Sold date set to NULL.';
 	header("Location: adminpage.php");
 	die(); 
@@ -41,7 +42,8 @@ if (!isset($_POST['soldDT']))
 
 if (isset($_POST['artID']) 
 	&& isset($_POST['soldDT']))
-{   echo "IF for updating sold date";
+{   
+	echo "IF for updating sold date";
 	$artID   = $_POST['artID'];
 	$soldDT  = $_POST['soldDT'];
 
@@ -53,15 +55,13 @@ if (isset($_POST['artID'])
 		$statement = $db->prepare($query);
 		$statement->bindValue(':soldDT',$soldDT);
 		$statement->bindValue(':artID',$artID);
-		$statement->execute();
-		
+		$statement->execute();		
 		}
 	catch (Exception $ex)
 		{
 			echo "Error with DB. Details: $ex";
 			die();
-		}
-	
+		}	
 	$_SESSION['updatemsg']  = '**Sold date updated successfully.';
 	header("Location: adminpage.php");
 	die();
