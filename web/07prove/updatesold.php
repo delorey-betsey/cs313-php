@@ -13,6 +13,31 @@ if (isset($_POST['artID']))
 		die(); 
 	}
 
+	// to set sold date back to NULL
+
+if (!isset($_POST['soldDT']))
+{   
+	echo "IF for NULL";
+
+	require("dbConnect.php");
+	$db = get_db();
+
+	try { //update sold date
+		$query = 'UPDATE art SET soldDT = NULL WHERE artID = :artID';
+		$statement = $db->prepare($query);
+		$statement->bindValue(':artID',$artID);
+		$statement->execute();		
+		}
+	catch (Exception $ex)
+		{
+			echo "Error with DB. Details: $ex";
+			die();
+		}	
+	$_SESSION['updatemsg']  = '**Sold date set to NULL.';
+	header("Location: adminpage.php");
+	die(); 
+}
+
 // to populate sold date to mark as sold
 
 if (isset($_POST['artID']) 
@@ -42,29 +67,5 @@ if (isset($_POST['artID'])
 	die();
 }
 
-// to set sold date back to NULL
 
-if (isset($_POST['artID']))
-{   
-	echo "IF for NULL";
-	$artID   = $_POST['artID'];
-
-	require("dbConnect.php");
-	$db = get_db();
-
-	try { //update sold date
-		$query = 'UPDATE art SET soldDT = NULL WHERE artID = :artID';
-		$statement = $db->prepare($query);
-		$statement->bindValue(':artID',$artID);
-		$statement->execute();		
-		}
-	catch (Exception $ex)
-		{
-			echo "Error with DB. Details: $ex";
-			die();
-		}	
-	$_SESSION['updatemsg']  = '**Sold date set to NULL.';
-	header("Location: adminpage.php");
-	die(); 
-}
 ?>
