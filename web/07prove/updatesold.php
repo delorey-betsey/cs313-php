@@ -11,14 +11,10 @@ if (isset($_POST['artID'])
 
 	try { //update sold date
 		$query = 'UPDATE art SET soldDT = :soldDT WHERE artID = :artID';
-
 		$statement = $db->prepare($query);
 		$statement->bindValue(':soldDT',$soldDT);
 		$statement->bindValue(':artID',$artID);
 		$statement->execute();
-
-		// get the new id
-		$newArtworkID = $db->lastInsertId("art_artid_seq");
 		}
 	catch (Exception $ex)
 		{
