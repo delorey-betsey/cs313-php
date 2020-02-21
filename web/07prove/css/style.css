@@ -69,7 +69,7 @@ nav {
     width:100%; 
     min-height:3.125em;
     background-color: #c74246;
-    font-size:22px;
+    font-size:20px;
     border-top: 0.15em solid black;
     border-bottom: 0.15em solid black; 
 }
@@ -85,7 +85,7 @@ a {
   font-size: 85%;  
   color:#000000;
 }
-a:link {color: #000000;border-radius: 30px 30px 0px 0px;}
+a:link {border-radius: 10px 10px 0px 0px;}
 a:visited {color: #000000;}
 a:hover {color: #0000ee; background-color:#ffffff;}
 a:active {color: red; background-color:#ffffff;}
