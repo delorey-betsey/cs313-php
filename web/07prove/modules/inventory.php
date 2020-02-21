@@ -9,9 +9,13 @@ if(isset($_POST['items']))
     $selections = $_SESSION["selections"];
 } 
 echo "$ items = ";
+echo "<br>";
 echo $items;
+echo "<br>";
 echo "$ selections = ";
-echo $selections; 
+echo "<br>";
+echo $selections;
+echo "<br>"; 
 ?>
 <!--  inventory  -->
 <?php
