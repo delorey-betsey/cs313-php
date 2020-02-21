@@ -88,12 +88,18 @@ a:visited {color: #000000;}
 a:hover {color: #0000ee; background-color:#ffffff;}
 a:active {color: red; background-color:#ffffff;}
 
-.navlinks a {
+.navlinkstan a {
   text-decoration: none;
   font-size:16px;  
   color:#faf0e6;
   border-radius: 15px;
 }
+.navlinksblack a {
+    text-decoration: none;
+    font-size:16px;  
+    color:#000000;
+    border-radius: 15px;
+  }
 .navlinks a:link {color: #ffffff;}
 .navlinks a:visited {color: #ffffff;}
 .navlinks a:hover {color: #0000ee; background-color:#faf0e6;padding:0 .25em 1.2em .25em;}
@@ -101,6 +107,7 @@ a:active {color: red; background-color:#ffffff;}
 
 .navbuttonpadding {
     padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .main1welcome {
