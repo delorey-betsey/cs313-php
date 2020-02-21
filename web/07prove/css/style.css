@@ -85,7 +85,7 @@ a {
   font-size: 85%;  
   color:#000000;
 }
-a:link {border-radius: 10px 10px 0px 0px;}
+a:link {border-radius: 10px;}
 a:visited {color: #000000;}
 a:hover {color: #0000ee; background-color:#ffffff;}
 a:active {color: red; background-color:#ffffff;}
