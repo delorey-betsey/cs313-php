@@ -35,7 +35,7 @@ echo "<br>";
                     echo "<br />";
                     }
             echo "<br />";
-            $_SESSION["selections"]; = $selections;
+            $_SESSION["selections"] = $selections;
             }
 ?>
 
