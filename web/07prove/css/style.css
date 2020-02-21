@@ -99,6 +99,10 @@ a:active {color: red; background-color:#ffffff;}
 .navlinks a:hover {color: #0000ee; background-color:#faf0e6;padding:0 .25em 1.2em .25em;}
 .navlinks a:active {color: red; background-color:#faf0e6;padding:0 .25em 1.2em .25em;}
 
+.navbuttonpadding {
+    padding-top: 5px;
+}
+
 .main1welcome {
     font-family: 'Boogaloo', cursive;
     font-size:3em;
