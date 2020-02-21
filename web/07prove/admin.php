@@ -54,7 +54,7 @@ $db = get_db();
 		echo "**Item#: $newArtworkID";	
 		echo '<br>';
 		echo "**Item title: $newArtworkTitle";
-		echo "<br>";
+		echo "<br><br>";
 		}
 	?>
 		<h2>ADD NEW ARTIST</h2>
