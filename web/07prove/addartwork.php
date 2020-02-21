@@ -18,19 +18,21 @@ if (isset($_POST['artistID'])
 	$fulllocation  = "images/full/";
 	$fullfilename  = $fulllocation . $image;
 
+	$today = date("Y-m-d");
+
 	require("dbConnect.php");
 	$db = get_db();
 
 	try {// Add the Artist
-		$query = 'INSERT INTO art(artist,title,brief,price,thumb,fullsize) 
-		VALUES(:artist,:title,:brief,:price,:thumb,:fullsize)';
+		$query = 'INSERT INTO art(artist,title,brief,price,listingDT,thumb,fullsize) 
+		VALUES(:artist,:title,:brief,:price,:listingDT,:thumb,:fullsize)';
 		$statement = $db->prepare($query);
 
 		$statement->bindValue(':artist',$artistID);
 		$statement->bindValue(':title',$title);
 		$statement->bindValue(':brief',$brief);
 		$statement->bindValue(':price',$price);
-		// $statement->bindValue(':listingDT',now());
+		$statement->bindValue(':listingDT',$today);
 		$statement->bindValue(':thumb',$thumbfilename);
 		$statement->bindValue(':fullsize',$fullfilename);
 
