@@ -15,7 +15,7 @@ if (isset($_POST['artID']))
 
 	// to set sold date back to NULL
 
-if (!isset($_POST['soldDT']))
+if (empty($_POST['soldDT']))
 {   
 	echo "IF for NULL";
 
