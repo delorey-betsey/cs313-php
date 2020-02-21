@@ -29,9 +29,12 @@ header {
     align-items:center;
     width:100%;
     background-color: #ffffff;
+
+    }
+.border {
     border: 50px;
     border-color: #faf0e6;
-    }
+}
 .addtocart {
     display:flex;
     flex-flow: row nowrap;

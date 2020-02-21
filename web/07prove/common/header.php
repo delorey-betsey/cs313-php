@@ -6,7 +6,7 @@ if(!isset($_SESSION['items'])){
     }
 ?>
 
-<header>   
+<header class="border">   
     <!-- COMMENT:  logo     -->
     <div class="logo" >
         <?php include 'modules/logo.php'; ?>
