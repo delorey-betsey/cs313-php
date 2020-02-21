@@ -13,8 +13,8 @@ if (isset($_POST['artistID'])
 	$price      = $_POST['price'];
 	$holdthumb      = $_POST['thumb'];
 	$holdfullsize   = $_POST['fullsize'];
-	$thumb          = CONCAT ('image/thumb/', $holdthumb);
-	$fullsize       = CONCAT ('image/full/', $holdfullsize);
+	$thumb          = 'image/thumb/' . $holdthumb;
+	$fullsize       = 'image/full/' . $holdfullsize;
 
 	require("dbConnect.php");
 	$db = get_db();
