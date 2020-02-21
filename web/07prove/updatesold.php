@@ -22,29 +22,7 @@ if (isset($_POST['artID'])
 				echo "Error with DB. Details: $ex";
 				die();
 			}
-	} else {
-		if (isset($_POST['artID']) 
-			&& !isset($_POST['soldDT']))
-			{
-				$artID   = $_POST['artID'];	 
-				try { //update sold date
-					$query = 'UPDATE art SET soldDT = NULL WHERE artID = :artID';
-					$statement = $db->prepare($query);
-					$statement->bindValue(':artID',$artID);
-					$statement->execute();
-					
-					require("dbConnect.php");
-					$db = get_db();
-					}
-				catch (Exception $ex)
-					{
-						// Please be aware that you don't want to output the Exception message in
-						// a production environment
-						echo "Error with DB. Details: $ex";
-						die();
-					}
-			}
-	}
+	} 
 $_SESSION['updatemsg']  = '**Sold date update was successful.';
 header("Location: adminpage.php");
 
