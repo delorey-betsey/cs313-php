@@ -7,12 +7,9 @@ if (isset($_POST['artID']))
 	echo "checking IF for artid";
 	$artID   = $_POST['artID'];
 	echo $artID;
-	} else
+} else
 	{
 		header("Location: adminpage.php");
 		die(); 
 	}
-}	
-
-
 ?>
