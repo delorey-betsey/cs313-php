@@ -92,7 +92,7 @@ a:active {color: red; background-color:#ffffff;}
   text-decoration: none;
   font-size:16px;  
   color:#faf0e6;
-  border-radius: 15px 50px;
+  border-radius: 15px;
 }
 .navlinks a:link {color: #ffffff;}
 .navlinks a:visited {color: #ffffff;}
@@ -124,6 +124,9 @@ a:active {color: red; background-color:#ffffff;}
 }
 .tanbackground {
     background-color: #faf0e6; 
+}
+.blacktext {
+    color: #000000;
 }
 .dosisxlite {
     font-family: 'Dosis', sans-serif;

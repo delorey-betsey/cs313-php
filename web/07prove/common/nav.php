@@ -25,7 +25,7 @@
     <div class="navlinks" >         
     </div>
 
-    <div class="navlinks" >
+    <div class="navlinks" class="blacktext" >
         <?php include 'modules/adminlink.php'; ?>
     </div> 
  
