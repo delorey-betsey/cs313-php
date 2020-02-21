@@ -140,4 +140,43 @@ INSERT INTO userArfs(typeID,userName,userPassword,displayName,pic,bio)
 DELETE FROM userArfs WHERE userid = 7;
 
 
+ALTER TABLE art
+ALTER COLUMN listingDT SET DATA TYPE CURRENT_DATE;
+
+
+ALTER SEQUENCE userArfs_userid_seq RESTART WITH 2007;
+ALTER SEQUENCE art_artid_seq RESTART WITH 112;
+
+UPDATE art SET orderDT = NULL WHERE artid = 100;
+
+ALTER TABLE art RENAME COLUMN orderdt TO soldDT;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
