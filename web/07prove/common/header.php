@@ -8,13 +8,13 @@ if(!isset($_SESSION['items'])){
 
 <header>   
     <!-- COMMENT:  logo     -->
-    <div class="border" class="sticky">
-        <div class="logo" >
+ 
+        <div class="logo" class="border" class="sticky">
             <?php include 'modules/logo.php'; ?>
         </div>
     
         <div class="main1welcome" id="welcome" >Welcome to ARfS!      
         </div>
-    </div>
+
 </header>
 
