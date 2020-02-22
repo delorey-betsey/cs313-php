@@ -90,7 +90,10 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $fullsize   = $item['fullsize'];
                     
                         echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='$artid' >";
-                              <?php  if(items['artid']) == 'on' {checked='checked'} ?>
+                        if(items['$artid']) == 'checked' 
+                            {
+                            checked='checked'
+                            }
                         // echo "if(isset($_POST['items'])) {if $items['artid'] = checked  {checked='checked'}}";   
                         
                         // if(!empty($items)) 
