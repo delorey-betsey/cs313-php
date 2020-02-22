@@ -78,7 +78,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         <div class="grouping" >  
             <?php
-                foreach ($inventory as $item)
+                foreach ($items as $item)
                 {
                     echo "<div class='art'>";
 
@@ -95,7 +95,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         
                         echo "if(!empty($items))         
                             {echo("Let us check.");} ";  
-                                                                                     
+
                         echo "<label for=artid>#$artid - $price</label>"; 
 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
