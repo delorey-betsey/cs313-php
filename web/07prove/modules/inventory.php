@@ -96,7 +96,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $fullsize   = $item['fullsize'];
                     
                         $checking = NULL;
-                        if(in_array($artid,$sessions_selections,TRUE)) 
+                        if(in_array($item['artid'],$sessions_selections,TRUE)) 
                         {
                             echo "checking checked";
                             $checking = 'true';
