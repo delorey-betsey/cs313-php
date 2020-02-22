@@ -92,9 +92,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $fullsize   = $item['fullsize'];
                     
                         echo   "<input class='largerCheckbox' type='checkbox' id='item1' 
-                                    name='items[]' value='$artid' 
-
-                                >";
+                                    name='items[]' value='$artid' >";
 
                         // if(!empty($items))
                         // {
