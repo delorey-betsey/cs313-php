@@ -1,13 +1,15 @@
 <?php
 session_start();
+
 if(isset($_POST['items']))
 {
     $items = $_POST['items'];
 } 
- if(isset($_SESSION["selections"]))
+if(isset($_SESSION["selections"]))
 {
     $sessions_selections = $_SESSION["selections"];
 } 
+
 echo "$ POST items = ";
 echo "<br>";
 var_dump ($_POST['items']);
@@ -21,6 +23,7 @@ echo "<br>";
 var_dump ($sessions_selections);
 echo "<br>"; 
 ?>
+
 <!--  inventory  -->
 <?php
     if(empty($items)) 
