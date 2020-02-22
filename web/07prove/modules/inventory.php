@@ -98,12 +98,12 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         if(in_array($artid,$items,TRUE)) 
                         {
                             echo "checking checked";
-                            $checking = 'unchecked';
+                            $checking = 'true';
                             echo "$ checking = $checking"; 
                         } else
                         {
                             echo "checking UNchecked";
-                            $checking ='unchecked';                            
+                            $checking ='false';                            
                             echo "$ checking = $checking"; 
                         }                        
 
