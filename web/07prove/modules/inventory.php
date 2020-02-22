@@ -7,7 +7,7 @@ if(isset($_POST['items']))
 } 
  if(isset($_SESSION["selections"]))
 {
-    $selections = $_SESSION["selections"];
+    $sessions_selections = $_SESSION["selections"];
 } 
 echo "$ items = ";
 echo "<br>";
@@ -15,7 +15,7 @@ var_dump ($items);
 echo "<br>";
 echo "$ selections = ";
 echo "<br>";
-var_dump ($selections);
+var_dump ($sessions_selections);
 echo "<br>"; 
 ?>
 <!--  inventory  -->
@@ -58,7 +58,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/style.css" media="screen">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
-    </head>
+    </head> 
 <main>
         <!-- FIRST DIV--COMMENT:  main title     -->
         <div class="main1title" >
@@ -71,7 +71,8 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     <div>        
         <!-- COMMENT:  ARTWORK     -->
-        <form method="post" action="">
+        <!-- <form method="post" action=""> -->
+        <?php <form method="post" action=".$_SERVER['PHP_SELF'].">?>
 
         <div class="tanbackground">
                 <button type="submit" name="addbutton" value="addbutton"><img class="button" src="images/addbutton.jpg" alt="addbutton"></button>      
@@ -90,8 +91,17 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='$artid' >";
-                        if($items['$artid'] ="checked")  echo "checked='checked'";
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' 
+                                name='items[]' value='$artid' 
+                                <?php if(in_array("$artid", $session_selections)) echo "checked='checked'"; ?> 
+                                >";
+
+                        // if(!empty($items))
+                        // {
+                        //     echo("Items empty/");
+                        // } else
+                        //     if($items['$artid'] ="checked")  echo "checked='checked'";
+                        //     }
 
                         // if(items['$artid']) == 'checked' 
                         //     {
