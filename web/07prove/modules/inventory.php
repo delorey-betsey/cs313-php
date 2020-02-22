@@ -93,8 +93,9 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         // // echo "if(in_array($artid, $items)) {checked='checked'}"; 
                         // echo "if(isset($_POST['items'])) {if $items['artid'] = checked  {checked='checked'}}";   
                         
-                        echo "if(isset($_POST['items']))         
-                            {echo("Let us check.");} ";                                                           
+                        echo "if(!empty($items))         
+                            {echo("Let us check.");} ";  
+                                                                                     
                         echo "<label for=artid>#$artid - $price</label>"; 
 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
