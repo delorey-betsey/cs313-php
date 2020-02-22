@@ -95,16 +95,24 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        $checking = NULL;
-                        if(in_array($item['artid'],$sessions_selections,TRUE)) 
-                        {
-                            echo "checking checked";
-                            $checking = 'checked';
-                            echo "$ checking = $checking"; 
-                        }                       
+                        // $checking = NULL;
+                        // if(in_array($item['artid'],$sessions_selections,TRUE)) 
+                        // {
+                        //     echo "checking checked";
+                        //     $checking = 'checked';
+                        //     echo "$ checking = $checking"; 
+                        // }                       
 
                         echo   "<input class='largerCheckbox' type='checkbox' id='item1' 
-                                    name='items[]' value='$artid'  >";                    
+                                    name='items[]' value='$artid' 
+
+                        <?php
+                            if(in_array($item['artid'],$sessions_selections,TRUE)) 
+                            {
+                                echo "checked"; 
+                            } 
+                        ?>                                   
+                        >";                    
 
                         echo "<label for=artid>#$artid - $price</label>"; 
 
