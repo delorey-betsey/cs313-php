@@ -3,6 +3,7 @@ session_start();
 if(isset($_POST['items']))
 {
     $items = $_POST['items'];
+    $_SESSION['items'];
 } 
  if(isset($_SESSION["selections"]))
 {
@@ -89,7 +90,8 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='$artid' >";
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='$artid' 
+                              <?php if($_SESSION['$items['$artid']]=="on"){echo 'checked';}?>>";
                         // if(items['$artid']) == 'checked' 
                         //     {
                         //     checked='checked'
