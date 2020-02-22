@@ -13,7 +13,7 @@ echo "$ items = ";
 echo "<br>";
 var_dump ($items);
 echo "<br>";
-echo "$ selections = ";
+echo "$ sessions_selections = ";
 echo "<br>";
 var_dump ($sessions_selections);
 echo "<br>"; 
@@ -32,11 +32,11 @@ echo "<br>";
                     {
                     echo($items[$i] . "");
                     echo ":  Added to Cart";
-                    $selections[$i] = $items[$i];
+                    $sessions_selections[$i] = $items[$i];
                     echo "<br />";
                     }
             echo "<br />";
-            $_SESSION["selections"] = $selections;
+            $_SESSION["selections"] = $sessions_selections;
             }
 ?>
 
@@ -91,9 +91,18 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        echo "<input class='largerCheckbox' type='checkbox' id='item1' 
-                                name='items[]' value='$artid' 
-                                <?php if(in_array("$artid", $session_selections)) echo "checked='checked'"; ?> 
+                        echo   "<input class='largerCheckbox' type='checkbox' id='item1' 
+                                    name='items[]' value='$artid' 
+                                    <?php if(in_array($artid, $session_selections, TRUE)) 
+                                        {
+                                            echo "checking checked";
+                                            echo "checked='checked'"; 
+                                        } else
+                                        {
+                                            echo "checking UNchecked";
+                                            echo "checked='unchecked'";
+                                        }
+                                    ?> 
                                 >";
 
                         // if(!empty($items))
