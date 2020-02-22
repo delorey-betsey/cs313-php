@@ -99,7 +99,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         if(in_array($item['artid'],$sessions_selections,TRUE)) 
                         {
                             echo "checking checked";
-                            $checking = 'true';
+                            $checking = 'checked';
                             echo "$ checking = $checking"; 
                         }                       
 
