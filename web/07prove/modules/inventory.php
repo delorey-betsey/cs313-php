@@ -1,29 +1,22 @@
 <?php
 session_start();
-
 if(isset($_POST['items']))
 {
     $items = $_POST['items'];
 } 
-if(isset($_SESSION["selections"]))
+ if(isset($_SESSION["selections"]))
 {
-    $sessions_selections = $_SESSION["selections"];
+    $selections = $_SESSION["selections"];
 } 
-
-echo "$ POST items = ";
-echo "<br>";
-var_dump ($_POST['items']);
-echo "<br>";
 echo "$ items = ";
 echo "<br>";
 var_dump ($items);
 echo "<br>";
-echo "$ sessions_selections = ";
+echo "$ selections = ";
 echo "<br>";
-var_dump ($sessions_selections);
+var_dump ($selections);
 echo "<br>"; 
 ?>
-
 <!--  inventory  -->
 <?php
     if(empty($items)) 
@@ -38,11 +31,11 @@ echo "<br>";
                     {
                     echo($items[$i] . "");
                     echo ":  Added to Cart";
-                    $sessions_selections[$i] = $items[$i];
+                    $selections[$i] = $items[$i];
                     echo "<br />";
                     }
             echo "<br />";
-            $_SESSION["selections"] = $sessions_selections;
+            $_SESSION["selections"] = $selections;
             }
 ?>
 
@@ -64,7 +57,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/style.css" media="screen">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo|Dosis" rel="stylesheet">
-    </head> 
+    </head>
 <main>
         <!-- FIRST DIV--COMMENT:  main title     -->
         <div class="main1title" >
@@ -80,9 +73,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <form method="post" action="">
 
         <div class="tanbackground">
-                <button type="submit" name="addbutton" value="addbutton">
-                    <img class="button" src="images/addbutton.jpg" alt="addbutton">
-                </button>      
+                <button type="submit" name="addbutton" value="addbutton"><img class="button" src="images/addbutton.jpg" alt="addbutton"></button>      
        </div>
         
         <div class="grouping" >  
@@ -98,22 +89,8 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        // $checking = NULL;
-                        // if(in_array($item['artid'],$sessions_selections,TRUE)) 
-                        // {
-                        //     echo "checking checked";
-                        //     $checking = 'checked';
-                        //     echo "$ checking = $checking"; 
-                        // }                       
-
-                        if(in_array($item['artid'],$sessions_selections,TRUE)) 
-                        {
-                             echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' checked"; 
-                        } else
-                        {
-                             echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]'";
-                        }                    
-
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='$artid'>";  
+                        
                         echo "<label for=artid>#$artid - $price</label>"; 
 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
@@ -124,8 +101,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<div>Description: $brief  </div>";
                         echo "<div>Price:       $price  </div>";                        
                     echo "</div>";
-                }  
-                $_SESSION["selections"] = $items;        
+                }          
 			?>
             <br><br><br>                  
         </div>
