@@ -90,10 +90,19 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        echo   "<input class='largerCheckbox' type='checkbox' id='item1' 
-                                    name='items[]' value='$artid' >";
+                        <?php if(in_array($artid, $session_selections,TRUE)) 
+                        {
+                            echo "checking checked";
+                            $checking ='checked'; 
+                        } else
+                        {
+                            echo "checking UNchecked";
+                            $checking ='unchecked';
+                        }
+                        ?>
 
-                      
+                        echo   "<input class='largerCheckbox' type='checkbox' id='item1' 
+                                    name='items[]' value='$artid' checked='$checking' >";                    
 
 
                         // if(!empty($items))
