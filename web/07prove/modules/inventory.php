@@ -93,11 +93,11 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         if(in_array($artid,$items,TRUE)) 
                         {
                             echo "checking checked";
-                            $checking = 'checked'; 
+                            $checking = 'unchecked'; 
                         } else
                         {
                             echo "checking UNchecked";
-                            $checking ='checked';
+                            $checking ='unchecked';
                         }                        
 
                         echo   "<input class='largerCheckbox' type='checkbox' id='item1' 
