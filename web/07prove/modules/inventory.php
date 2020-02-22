@@ -90,8 +90,10 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $fullsize   = $item['fullsize'];
                     
                         echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='$artid' >";
-                        // echo "if(in_array($artid, $items)) {checked='checked'}"; 
-                        echo "if(isset($_POST['items'])) {if $items['artid'] = checked  {checked='checked'}}";                                                              
+                        // // echo "if(in_array($artid, $items)) {checked='checked'}"; 
+                        // echo "if(isset($_POST['items'])) {if $items['artid'] = checked  {checked='checked'}}";   
+                        
+                        echo "if(isset($_POST['items'])) echo 'hello'";                                                           
                         echo "<label for=artid>#$artid - $price</label>"; 
 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
