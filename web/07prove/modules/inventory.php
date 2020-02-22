@@ -71,8 +71,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     <div>        
         <!-- COMMENT:  ARTWORK     -->
-        <!-- <form method="post" action=""> -->
-        <?php <form method="post" action=".$_SERVER['PHP_SELF'].">?>
+        <form method="post" action="">
 
         <div class="tanbackground">
                 <button type="submit" name="addbutton" value="addbutton"><img class="button" src="images/addbutton.jpg" alt="addbutton"></button>      
