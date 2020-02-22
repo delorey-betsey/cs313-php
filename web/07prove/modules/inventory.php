@@ -95,7 +95,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         
                         if(!empty($items)) 
                         {
-                        echo("All proceeds benefit Dane County Humane Society.");
+                        echo("checked = 'checked'");
                         }  
 
                         echo "<label for=artid>#$artid - $price</label>"; 
