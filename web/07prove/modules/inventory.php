@@ -31,11 +31,21 @@ echo "<br>";
                     {
                     echo($items[$i] . "");
                     echo ":  Added to Cart";
-                    $selections[$i] = $items[$i];
+                    array_push($selections,$items[$i]);
                     echo "<br />";
                     }
-            echo "<br />";
-            array_push($_SESSION["selections"],$selections);
+            echo "<br>";
+            $_SESSION["selections"] = $selections;
+            
+echo "-----------"; 
+echo "All selections: ";
+echo "<br>";
+var_dump ($selections);
+echo "<br>"; 
+echo "All session_selections:";
+echo "<br>";
+var_dump ($_SESSION["selections"]);
+echo "<br>"; 
             }
 ?>
 
