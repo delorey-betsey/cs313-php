@@ -31,10 +31,10 @@ echo "<br>";
                     {
                     echo($items[$i] . "");
                     echo ":  Added to Cart";
-                    array_push($selections,$items[$i]);
                     echo "<br />";
                     }
             echo "<br>";
+            $selections = array_merge($selections,$items)
             $_SESSION["selections"] = $selections;
             
 echo "-----------"; 
