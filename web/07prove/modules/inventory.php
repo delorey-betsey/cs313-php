@@ -34,7 +34,7 @@ echo "<br>";
                     echo "<br />";
                     }
             echo "<br>";
-            $selections = array_merge($selections,$items)
+            $selections = array_merge($selections,$items);
             $_SESSION["selections"] = $selections;
             
 echo "-----------"; 
