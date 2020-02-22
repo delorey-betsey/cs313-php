@@ -3,12 +3,15 @@ session_start();
 if(isset($_POST['items']))
 {
     $items = $_POST['items'];
-    $_SESSION['items'];
 } 
  if(isset($_SESSION["selections"]))
 {
     $sessions_selections = $_SESSION["selections"];
 } 
+echo "$ POST items = ";
+echo "<br>";
+var_dump ($_POST['items']);
+echo "<br>";
 echo "$ items = ";
 echo "<br>";
 var_dump ($items);
@@ -74,7 +77,9 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <form method="post" action="">
 
         <div class="tanbackground">
-                <button type="submit" name="addbutton" value="addbutton"><img class="button" src="images/addbutton.jpg" alt="addbutton"></button>      
+                <button type="submit" name="addbutton" value="addbutton">
+                    <img class="button" src="images/addbutton.jpg" alt="addbutton">
+                </button>      
        </div>
         
         <div class="grouping" >  
@@ -93,34 +98,17 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         if(in_array($artid,$items,TRUE)) 
                         {
                             echo "checking checked";
-                            $checking = 'unchecked'; 
+                            $checking = 'unchecked';
+                            echo "$ checking = $checking"; 
                         } else
                         {
                             echo "checking UNchecked";
-                            $checking ='unchecked';
+                            $checking ='unchecked';                            
+                            echo "$ checking = $checking"; 
                         }                        
 
                         echo   "<input class='largerCheckbox' type='checkbox' id='item1' 
-                                    name='items[]' value='$artid' checked=unchecked >";                    
-
-
-                        // if(!empty($items))
-                        // {
-                        //     echo("Items empty/");
-                        // } else
-                        //     if($items['$artid'] ="checked")  echo "checked='checked'";
-                        //     }
-
-                        // if(items['$artid']) == 'checked' 
-                        //     {
-                        //     checked='checked'
-                        //     }
-                        // echo "if(isset($_POST['items'])) {if $items['artid'] = checked  {checked='checked'}}";   
-                        
-                        // if(!empty($items)) 
-                        // {
-                        // echo("checked = 'checked'");
-                        // }  
+                                    name='items[]' value='$artid' checked='$checking' >";                    
 
                         echo "<label for=artid>#$artid - $price</label>"; 
 
