@@ -121,7 +121,8 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<div>Description: $brief  </div>";
                         echo "<div>Price:       $price  </div>";                        
                     echo "</div>";
-                }          
+                }  
+                $_SESSION["selections"] = $items;        
 			?>
             <br><br><br>                  
         </div>
