@@ -93,7 +93,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         // // echo "if(in_array($artid, $items)) {checked='checked'}"; 
                         // echo "if(isset($_POST['items'])) {if $items['artid'] = checked  {checked='checked'}}";   
                         
-                        if(empty($items)) 
+                        if(!empty($items)) 
                         {
                         echo("All proceeds benefit Dane County Humane Society.");
                         }  
