@@ -94,16 +94,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     name='items[]' value='$artid' >";
 
                       
-                        if(in_array($artid, $session_selections, TRUE)) 
-                        {
-                            echo "checking checked";
-                            echo "checked='checked'"; 
-                        } else
-                        {
-                            echo "checking UNchecked";
-                            echo "checked='unchecked'";
-                        }
-                       
+
 
                         // if(!empty($items))
                         // {
