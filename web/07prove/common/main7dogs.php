@@ -1,14 +1,17 @@
 <?php
 session_start();
-$username = $_SESSION["username"];
-if(!isset($_SESSION['items'])){
+
+if(isset($_POST['items']))
+{
     $items = $_POST['items'];
-    $_SESSION["items"] = $items;
-    }
-$items = $_SESSION["items"];
+} 
+if(isset($_SESSION["selections"]))
+{
+     
+} 
 ?>
 
-<!--  dogs inventory <div></div>  -->
+<!--  inventory  -->
 <?php
     if(empty($items)) 
         {
@@ -16,17 +19,33 @@ $items = $_SESSION["items"];
         } 
         else {
             $N = count($items);
-            echo("You selected $N items(s): ");
+            echo("$N item(s) added to cart: ");
             echo "<br />";
             for($i=0; $i < $N; $i++)
                     {
                     echo($items[$i] . "");
-                    echo ":  Added to Cart";
-                    $_SESSION["$selection[$i]"] = $items[$i];
+                    $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
                     }
-            echo "<br />";
+            echo "<br>";             
             }
+?>
+ 
+<?php
+if(isset($_SESSION["selections"]))
+{
+    echo "<br />";
+    $selections = $_SESSION["selections"];
+    $N = count($selections);
+    echo("Total items in cart: $N");
+    echo "<br />";
+    for($i=0; $i < $N; $i++)
+    {
+        echo($selections[$i] . "");
+        echo "<br />";
+        }
+        echo "<br>";           
+} 
 ?>
 
 <?php
