@@ -47,7 +47,9 @@ echo "<br>";
             echo "<br>";             
             }
 ?>
- <?php           
+
+<?php  
+echo "<br>";         
 echo "-----------"; 
 echo "$ items = ";
 echo "<br>";
