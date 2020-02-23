@@ -1,10 +1,8 @@
 <?php
 session_start();
-if(!isset($_SESSION['items'])){
-    $items = $_POST['items'];
-    $_SESSION["items"] = $items;
+if(!isset($_SESSION['selections'])){
+    $items = $_SESSION['selections'];
     }
-$items = $_SESSION["items"];
 ?>
 
 <main>
