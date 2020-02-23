@@ -7,8 +7,8 @@ $state  = $_POST['state'];
 $zip    = $_POST['zip'];
 $username = $_SESSION["username"];
 $items = $_POST['items'];
-if(isset($_SESSION['selections'])){
-    $items = $_SESSION['selections'];
+if(isset($_SESSION['items'])){
+    $items = $_SESSION['items'];
     }
 ?>
 
