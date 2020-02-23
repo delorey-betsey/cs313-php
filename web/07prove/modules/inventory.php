@@ -5,10 +5,6 @@ if(isset($_POST['items']))
 {
     $items = $_POST['items'];
 } 
-if(isset($_SESSION["items"]))
-{
-     
-} 
 ?>
 
 <!--  inventory  -->
@@ -18,6 +14,7 @@ if(isset($_SESSION["items"]))
     if(!empty($items)) 
         {
             $N = count($items);
+            echo "<br />";
             echo("$N item(s) added to cart: ");
             echo "<br />";
             for($i=0; $i < $N; $i++)
@@ -87,12 +84,12 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="grouping" >  
             <?php
             
-            echo "<br>";         
-            echo "-----------"; 
-            echo "<br>";  
-            echo "$ items = ";
-            echo "<br>";
-            var_dump ($items);
+            // echo "<br>";         
+            // echo "-----------"; 
+            // echo "<br>";  
+            // echo "$ items = ";
+            // echo "<br>";
+            // var_dump ($items);
             
             // echo "<br>";
             // echo "All selections: ";

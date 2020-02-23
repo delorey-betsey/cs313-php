@@ -3,9 +3,6 @@ session_start();
 if(isset($_SESSION['items'])){
     $items = $_SESSION['items'];
     }
-if(isset($_SESSION['selections'])){
-    $items = $_SESSION['selections'];
-    }
 ?>
 
 <main>
