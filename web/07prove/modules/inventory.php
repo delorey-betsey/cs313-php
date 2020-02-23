@@ -87,7 +87,6 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="grouping" >  
             <?php
                 foreach ($inventory as $item)
-                foreach ($cats as $cat)
                 {
                     echo "<div class='art'>";
 

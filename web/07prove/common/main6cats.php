@@ -56,6 +56,7 @@ WHERE a.title = :title  AND a.soldDT IS NULL');
 $stmt->bindValue(':title', $cat, PDO::PARAM_STR);
 $stmt->execute();
 $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 <!DOCTYPE html>
 <html>
