@@ -51,6 +51,7 @@ echo "<br>";
 <?php  
 echo "<br>";         
 echo "-----------"; 
+echo "<br>";  
 echo "$ items = ";
 echo "<br>";
 var_dump ($items);
