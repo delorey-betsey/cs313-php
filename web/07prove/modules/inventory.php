@@ -29,7 +29,7 @@ if(isset($_SESSION["selections"]))
             }
 ?>
  
-<?php
+<!-- <?php
 if(isset($_SESSION["selections"]))
 {
     echo "<br />";
@@ -44,7 +44,7 @@ if(isset($_SESSION["selections"]))
         }
         echo "<br>";           
 } 
-?>
+?> -->
 
 <?php
 require "dbConnect.php";
@@ -86,6 +86,26 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         <div class="grouping" >  
             <?php
+            
+            echo "<br>";         
+            echo "-----------"; 
+            echo "<br>";  
+            echo "$ items = ";
+            echo "<br>";
+            var_dump ($items);
+            
+            echo "<br>";
+            echo "All selections: ";
+            echo "<br>";
+            var_dump ($selections);
+            
+            echo "<br>"; 
+            echo "session_selections:";
+            echo "<br>";
+            var_dump ($_SESSION["selections"]);
+            echo "<br>"; 
+            echo "-----------";   
+            
                 foreach ($inventory as $item)
                 {
                     echo "<div class='art'>";
@@ -96,25 +116,6 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $price      = $item['price'];
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
-
-                        echo "<br>";         
-                        echo "-----------"; 
-                        echo "<br>";  
-                        echo "$ items = ";
-                        echo "<br>";
-                        var_dump ($items);
-                        
-                        echo "<br>";
-                        echo "All selections: ";
-                        echo "<br>";
-                        var_dump ($selections);
-                        
-                        echo "<br>"; 
-                        echo "session_selections:";
-                        echo "<br>";
-                        var_dump ($_SESSION["selections"]);
-                        echo "<br>"; 
-                        echo "-----------";   
 
                         if(in_array("item $artid",$selections,TRUE)) 
                         {   echo "hola";
