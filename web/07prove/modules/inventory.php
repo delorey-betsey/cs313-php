@@ -20,7 +20,6 @@ if(isset($_POST['items']))
             for($i=0; $i < $N; $i++)
                     {
                     echo($items[$i] . "");
-                    // $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
                     }          
             }
@@ -129,7 +128,8 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<div>Description: $brief  </div>";
                         echo "<div>Price:       $price  </div>";                        
                     echo "</div>";
-                }          
+                }  
+            $_SESSION["items"] = $items;        
 			?>
             <br><br><br>                  
         </div>
