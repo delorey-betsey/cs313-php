@@ -7,24 +7,8 @@ if(isset($_POST['items']))
 } 
 if(isset($_SESSION["selections"]))
 {
-    $selections = $_SESSION["selections"];
+     
 } 
-
-echo "$ items = ";
-echo "<br>";
-var_dump ($items);
-
-echo "<br>";
-echo "All selections: ";
-echo "<br>";
-var_dump ($selections);
-
-echo "<br>"; 
-echo "session_selections:";
-echo "<br>";
-var_dump ($_SESSION["selections"]);
-echo "<br>"; 
-
 ?>
 
 <!--  inventory  -->
@@ -39,33 +23,27 @@ echo "<br>";
             echo "<br />";
             for($i=0; $i < $N; $i++)
                     {
+                    echo "Added to cart:";     
                     echo($items[$i] . "");
-                    echo ":  Added to Cart";
                     $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
                     }
             echo "<br>";             
             }
 ?>
-
-<?php  
-echo "<br>";         
-echo "-----------"; 
-echo "<br>";  
-echo "$ items = ";
-echo "<br>";
-var_dump ($items);
-
-echo "<br>";
-echo "All selections: ";
-echo "<br>";
-var_dump ($selections);
-
-echo "<br>"; 
-echo "session_selections:";
-echo "<br>";
-var_dump ($_SESSION["selections"]);
-echo "<br>"; 
+ 
+<?php
+    $selections = $_SESSION["selections"];
+    $N = count($selections);
+    echo("You have selected $N total items(s).");
+    echo "<br />";
+    for($i=0; $i < $N; $i++)
+    {
+        echo "All items in cart:";
+        echo($selections[$i] . "");
+        echo "<br />";
+        }
+        echo "<br>"; 
 ?>
 
 <?php
@@ -78,6 +56,7 @@ WHERE a.soldDT IS NULL');
 $stmt->execute();
 $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
