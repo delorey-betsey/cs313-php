@@ -14,6 +14,7 @@ if(isset($_SESSION["selections"]))
 <!--  inventory  -->
 <?php
     echo("All proceeds benefit Dane County Humane Society.");
+    echo "<br />";
     if(!empty($items)) 
         {
             $N = count($items);

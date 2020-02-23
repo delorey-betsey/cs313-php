@@ -13,7 +13,7 @@ if(isset($_SESSION['selections'])){
         </div>
 
         <form class="formdiv" method="post" action="cartpage.php">
-            <br><br>
+
             Items in cart: 
                 <?php
                     if(empty($items)) 
