@@ -98,10 +98,10 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $fullsize   = $item['fullsize'];
                     
                         if(in_array($item['artid'],$selections,TRUE)) 
-                        {
+                        {   echo "hola";
                             echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid' checked>"; 
                         } else
-                        {
+                        {   echo "adios";
                             echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";
                         }                       
                         echo "<label for=artid>#$artid - $price</label>"; 
