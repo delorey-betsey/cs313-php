@@ -24,8 +24,7 @@ if(isset($_SESSION["selections"]))
                     echo($items[$i] . "");
                     $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
-                    }
-            echo "<br>";             
+                    }           
             }
 ?>
  
