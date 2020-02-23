@@ -96,7 +96,26 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $price      = $item['price'];
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
-                    
+
+                        echo "<br>";         
+                        echo "-----------"; 
+                        echo "<br>";  
+                        echo "$ items = ";
+                        echo "<br>";
+                        var_dump ($items);
+                        
+                        echo "<br>";
+                        echo "All selections: ";
+                        echo "<br>";
+                        var_dump ($selections);
+                        
+                        echo "<br>"; 
+                        echo "session_selections:";
+                        echo "<br>";
+                        var_dump ($_SESSION["selections"]);
+                        echo "<br>"; 
+                        echo "-----------";   
+                                          
                         if(in_array($artid,$selections,TRUE)) 
                         {   echo "hola";
                             echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid' checked>"; 
