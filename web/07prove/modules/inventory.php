@@ -99,7 +99,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='$artid'>";  
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";  
                         
                         echo "<label for=artid>#$artid - $price</label>"; 
 
