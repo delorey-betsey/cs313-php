@@ -1,14 +1,15 @@
 <?php
 session_start();
-$first_time = "first";
+
 if(isset($_POST['items']))
 {
     $items = $_POST['items'];
 } 
- if(isset($_SESSION["selections"]))
+if(isset($_SESSION["selections"]))
 {
     $selections = $_SESSION["selections"];
 } 
+
 echo "$ items = ";
 echo "<br>";
 var_dump ($items);
@@ -17,7 +18,9 @@ echo "$ selections = ";
 echo "<br>";
 var_dump ($selections);
 echo "<br>"; 
+
 ?>
+
 <!--  inventory  -->
 <?php
     if(empty($items)) 
@@ -32,19 +35,11 @@ echo "<br>";
                     {
                     echo($items[$i] . "");
                     echo ":  Added to Cart";
+                    $additem = $items[$i]
+                    $_SESSION["selections"][],$additem);
                     echo "<br />";
                     }
-            echo "<br>";
-            switch ($first_time){
-                case "first":
-                    $_SESSION["selections"] = $items;
-                    $first_time = "not_first";
-                    break;
-                case "not_first":
-                    $_SESSION["selections"] = array_merge($selections,$items);
-                     break;
-                default:
-                    echo "we're broken.";    
+            echo "<br>";  
                 } 
             
 echo "-----------"; 
