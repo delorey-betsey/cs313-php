@@ -114,13 +114,13 @@ $dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $dog['thumb'];
                         $fullsize   = $dog['fullsize'];
 
-                        if(in_array("item $artid",$items,TRUE)) 
-                        {   echo "hola";
-                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid' checked>"; 
-                        } else
-                        {   echo "adios";
-                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";
-                        }                       
+                        // if(in_array("item $artid",$items,TRUE)) 
+                        // {   echo "hola";
+                        //     echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid' checked>"; 
+                        // } else
+                        // {   echo "adios";
+                        //     echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";
+                        // }                       
                         echo "<label for=artid>#$artid - $price</label>"; 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
                         echo "(Click thumbnail for fullsize image.)";
@@ -130,7 +130,7 @@ $dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<div>Price:       $price  </div>";                        
                     echo "</div>";
                 }  
-            $_SESSION["items"] = $items;        
+            // $_SESSION["items"] = $items;        
 			?>
             <br><br><br>                  
         </div>

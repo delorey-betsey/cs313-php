@@ -52,8 +52,8 @@ WHERE a.title = :title  AND a.soldDT IS NULL');
 $stmt->bindValue(':title', $cat, PDO::PARAM_STR);
 $stmt->execute();
 $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -114,13 +114,13 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $cat['thumb'];
                         $fullsize   = $cat['fullsize'];
 
-                        if(in_array("item $artid",$items,TRUE)) 
-                        {   echo "hola";
-                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid' checked>"; 
-                        } else
-                        {   echo "adios";
-                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";
-                        }                       
+                        // if(in_array("item $artid",$items,TRUE)) 
+                        // {   echo "hola";
+                        //     echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid' checked>"; 
+                        // } else
+                        // {   echo "adios";
+                        //     echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";
+                        // }                       
                         echo "<label for=artid>#$artid - $price</label>"; 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
                         echo "(Click thumbnail for fullsize image.)";
@@ -130,7 +130,7 @@ $cats = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<div>Price:       $price  </div>";                        
                     echo "</div>";
                 }  
-            $_SESSION["items"] = $items;        
+            // $_SESSION["items"] = $items;        
 			?>
             <br><br><br>                  
         </div>
