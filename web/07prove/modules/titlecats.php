@@ -1,1 +1,1 @@
-Cat Art for Sale
+View Cat Artwork
