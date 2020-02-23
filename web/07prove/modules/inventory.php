@@ -97,7 +97,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        if(in_array($item['artid'],$selections,TRUE)) 
+                        if(in_array($item['artid'],$_SESSION["selections"],TRUE)) 
                         {   echo "hola";
                             echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid' checked>"; 
                         } else
