@@ -1,5 +1,6 @@
 <?php
 session_start();
+$first_time = "first";
 if(isset($_POST['items']))
 {
     $items = $_POST['items'];
@@ -34,15 +35,25 @@ echo "<br>";
                     echo "<br />";
                     }
             echo "<br>";
-            $selections = array_merge($selections,$items);
-            $_SESSION["selections"] = $selections;
+            switch ($first_time){
+                case "first":
+                    $_SESSION["selections"] = $items;
+                    $first_time = "not_first";
+                    break;
+                case "not_first":
+                    $_SESSION["selections"] = array_merge($selections,$items);
+                     break;
+                default:
+                    echo "we're broken.";    
+                } 
             
 echo "-----------"; 
+echo "<br>";
 echo "All selections: ";
 echo "<br>";
 var_dump ($selections);
 echo "<br>"; 
-echo "All session_selections:";
+echo "session_selections:";
 echo "<br>";
 var_dump ($_SESSION["selections"]);
 echo "<br>"; 
