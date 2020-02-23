@@ -33,6 +33,9 @@ if(isset($_SESSION["selections"]))
 ?>
  
 <?php
+if(isset($_SESSION["selections"]))
+{
+    echo "<br />";
     $selections = $_SESSION["selections"];
     $N = count($selections);
     echo("You have selected $N total items(s).");
@@ -43,7 +46,8 @@ if(isset($_SESSION["selections"]))
         echo($selections[$i] . "");
         echo "<br />";
         }
-        echo "<br>"; 
+        echo "<br>";           
+} 
 ?>
 
 <?php
