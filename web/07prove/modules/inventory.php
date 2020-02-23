@@ -5,7 +5,7 @@ if(isset($_POST['items']))
 {
     $items = $_POST['items'];
 } 
-if(isset($_SESSION["selections"]))
+if(isset($_SESSION["items"]))
 {
      
 } 
@@ -23,7 +23,7 @@ if(isset($_SESSION["selections"]))
             for($i=0; $i < $N; $i++)
                     {
                     echo($items[$i] . "");
-                    $_SESSION["selections"][] = $items[$i];
+                    // $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
                     }          
             }
@@ -94,18 +94,18 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
             echo "<br>";
             var_dump ($items);
             
-            echo "<br>";
-            echo "All selections: ";
-            echo "<br>";
-            var_dump ($selections);
+            // echo "<br>";
+            // echo "All selections: ";
+            // echo "<br>";
+            // var_dump ($selections);
             
-            echo "<br>"; 
-            echo "session_selections:";
-            echo "<br>";
-            var_dump ($_SESSION["selections"]);
-            echo "<br>"; 
-            echo "-----------";   
-            
+            // echo "<br>"; 
+            // echo "session_selections:";
+            // echo "<br>";
+            // var_dump ($_SESSION["selections"]);
+            // echo "<br>"; 
+            // echo "-----------";   
+
                 foreach ($inventory as $item)
                 {
                     echo "<div class='art'>";
@@ -117,7 +117,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
 
-                        if(in_array("item $artid",$selections,TRUE)) 
+                        if(in_array("item $artid",$items,TRUE)) 
                         {   echo "hola";
                             echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid' checked>"; 
                         } else
