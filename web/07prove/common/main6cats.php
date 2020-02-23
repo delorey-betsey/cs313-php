@@ -13,11 +13,9 @@ if(isset($_SESSION["selections"]))
 
 <!--  inventory  -->
 <?php
-    if(empty($items)) 
+    echo("All proceeds benefit Dane County Humane Society.");
+    if(!empty($items)) 
         {
-        echo("All proceeds benefit Dane County Humane Society.");
-        } 
-        else {
             $N = count($items);
             echo("$N item(s) added to cart: ");
             echo "<br />";
