@@ -90,12 +90,12 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 {
                     echo "<div class='art'>";
 
-                        $artid      = $cat['artid'];
-                        $artist     = $cat['displayname'];
-                        $brief      = $cat['brief'];
-                        $price      = $cat['price'];
-                        $thumb      = $cat['thumb'];
-                        $fullsize   = $cat['fullsize'];
+                        $artid      = $item['artid'];
+                        $artist     = $item['displayname'];
+                        $brief      = $item['brief'];
+                        $price      = $item['price'];
+                        $thumb      = $item['thumb'];
+                        $fullsize   = $item['fullsize'];
                     
                         echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
                         echo "<label for=artid>#$artid - $price</label>"; 
