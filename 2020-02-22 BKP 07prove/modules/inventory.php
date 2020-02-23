@@ -1,42 +1,49 @@
 <?php
 session_start();
+
 if(isset($_POST['items']))
 {
     $items = $_POST['items'];
 } 
- if(isset($_SESSION["selections"]))
+if(isset($_SESSION["selections"]))
 {
-    $selections = $_SESSION["selections"];
+     
 } 
-echo "$ items = ";
-echo "<br>";
-var_dump ($items);
-echo "<br>";
-echo "$ selections = ";
-echo "<br>";
-var_dump ($selections);
-echo "<br>"; 
 ?>
+
 <!--  inventory  -->
 <?php
-    if(empty($items)) 
+    echo("All proceeds benefit Dane County Humane Society.");
+    echo "<br>"; 
+    if(!empty($items)) 
         {
-        echo("All proceeds benefit Dane County Humane Society.");
-        } 
-        else {
             $N = count($items);
-            echo("You selected $N items(s): ");
+            echo("$N item(s) added to cart: ");
             echo "<br />";
             for($i=0; $i < $N; $i++)
                     {
                     echo($items[$i] . "");
-                    echo ":  Added to Cart";
-                    $selections[$i] = $items[$i];
+                    $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
-                    }
-            echo "<br />";
-            $_SESSION["selections"] = $selections;
+                    }          
             }
+?>
+ 
+<?php
+if(isset($_SESSION["selections"]))
+{
+    echo "<br />";
+    $selections = $_SESSION["selections"];
+    $N = count($selections);
+    echo("Total items in cart: $N");
+    echo "<br />";
+    for($i=0; $i < $N; $i++)
+    {
+        echo($selections[$i] . "");
+        echo "<br />";
+        }
+        echo "<br>";           
+} 
 ?>
 
 <?php
@@ -49,6 +56,7 @@ WHERE a.soldDT IS NULL');
 $stmt->execute();
 $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -89,13 +97,10 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $thumb      = $item['thumb'];
                         $fullsize   = $item['fullsize'];
                     
-                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='$artid'>";  
-                        
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
                         echo "<label for=artid>#$artid - $price</label>"; 
-
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
                         echo "(Click thumbnail for fullsize image.)";
-
                         echo "<div><br>Item Number: #$artid  </div>";
                         echo "<div>Created by:  $artist </div>";
                         echo "<div>Description: $brief  </div>";
