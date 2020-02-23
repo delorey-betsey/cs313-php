@@ -13,10 +13,16 @@ if(isset($_SESSION["selections"]))
 echo "$ items = ";
 echo "<br>";
 var_dump ($items);
+
 echo "<br>";
-echo "$ selections = ";
+echo "All selections: ";
 echo "<br>";
 var_dump ($selections);
+
+echo "<br>"; 
+echo "session_selections:";
+echo "<br>";
+var_dump ($_SESSION["selections"]);
 echo "<br>"; 
 
 ?>
@@ -38,20 +44,25 @@ echo "<br>";
                     $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
                     }
-            echo "<br>";  
-                } 
-            
+            echo "<br>";             
+            }
+?>
+ <?php           
 echo "-----------"; 
+echo "$ items = ";
+echo "<br>";
+var_dump ($items);
+
 echo "<br>";
 echo "All selections: ";
 echo "<br>";
 var_dump ($selections);
+
 echo "<br>"; 
 echo "session_selections:";
 echo "<br>";
 var_dump ($_SESSION["selections"]);
 echo "<br>"; 
-            }
 ?>
 
 <?php
