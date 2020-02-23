@@ -19,11 +19,10 @@ if(isset($_SESSION["selections"]))
         } 
         else {
             $N = count($items);
-            echo("You selected $N items(s): ");
+            echo("$N item(s) added to cart: ");
             echo "<br />";
             for($i=0; $i < $N; $i++)
                     {
-                    echo "Added to cart:";     
                     echo($items[$i] . "");
                     $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
@@ -38,11 +37,10 @@ if(isset($_SESSION["selections"]))
     echo "<br />";
     $selections = $_SESSION["selections"];
     $N = count($selections);
-    echo("You have selected $N total items(s).");
+    echo("Total items in cart: $N");
     echo "<br />";
     for($i=0; $i < $N; $i++)
     {
-        echo "All items in cart:";
         echo($selections[$i] . "");
         echo "<br />";
         }
