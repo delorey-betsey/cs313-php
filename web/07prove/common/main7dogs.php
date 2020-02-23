@@ -5,31 +5,27 @@ if(isset($_POST['items']))
 {
     $items = $_POST['items'];
 } 
-if(isset($_SESSION["selections"]))
-{
-     
-} 
 ?>
 
 <!--  inventory  -->
 <?php
     echo("All proceeds benefit Dane County Humane Society.");
-    echo "<br />";
+    echo "<br>"; 
     if(!empty($items)) 
         {
             $N = count($items);
+            echo "<br />";
             echo("$N item(s) added to cart: ");
             echo "<br />";
             for($i=0; $i < $N; $i++)
                     {
                     echo($items[$i] . "");
-                    $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
-                    }           
+                    }          
             }
 ?>
  
-<?php
+<!-- <?php
 if(isset($_SESSION["selections"]))
 {
     echo "<br />";
@@ -44,7 +40,7 @@ if(isset($_SESSION["selections"]))
         }
         echo "<br>";           
 } 
-?>
+?> -->
 
 <?php
 require "dbConnect.php";
@@ -81,12 +77,32 @@ $dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- COMMENT:  DOG ARTWORK     -->
         <form method="post" action="">
 
-        <div  class="tanbackground">
-                <button type="submit" name="addbutton" value="addbutton"><img src="images/addbutton.jpg" alt="addbutton"></button>      
-        </div>
+        <div class="tanbackground">
+                <button type="submit" name="addbutton" value="addbutton"><img class="button" src="images/addbutton.jpg" alt="addbutton"></button>      
+       </div>
         
         <div class="grouping" >  
             <?php
+            
+            // echo "<br>";         
+            // echo "-----------"; 
+            // echo "<br>";  
+            // echo "$ items = ";
+            // echo "<br>";
+            // var_dump ($items);
+            
+            // echo "<br>";
+            // echo "All selections: ";
+            // echo "<br>";
+            // var_dump ($selections);
+            
+            // echo "<br>"; 
+            // echo "session_selections:";
+            // echo "<br>";
+            // var_dump ($_SESSION["selections"]);
+            // echo "<br>"; 
+            // echo "-----------";   
+
                 foreach ($dogs as $dog)
                 {
                     echo "<div class='art'>";
@@ -97,8 +113,14 @@ $dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $price      = $dog['price'];
                         $thumb      = $dog['thumb'];
                         $fullsize   = $dog['fullsize'];
-                    
-                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
+
+                        if(in_array("item $artid",$items,TRUE)) 
+                        {   echo "hola";
+                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid' checked>"; 
+                        } else
+                        {   echo "adios";
+                            echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";
+                        }                       
                         echo "<label for=artid>#$artid - $price</label>"; 
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
                         echo "(Click thumbnail for fullsize image.)";
@@ -107,7 +129,8 @@ $dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         echo "<div>Description: $brief  </div>";
                         echo "<div>Price:       $price  </div>";                        
                     echo "</div>";
-                }               
+                }  
+            $_SESSION["items"] = $items;        
 			?>
             <br><br><br>                  
         </div>
@@ -115,3 +138,6 @@ $dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </main>
 </html>
+
+
+  
