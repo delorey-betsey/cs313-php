@@ -35,8 +35,7 @@ echo "<br>";
                     {
                     echo($items[$i] . "");
                     echo ":  Added to Cart";
-                    $additem = $items[$i]
-                    $_SESSION["selections"][],$additem);
+                    $_SESSION["selections"][] = $items[$i];
                     echo "<br />";
                     }
             echo "<br>";  
