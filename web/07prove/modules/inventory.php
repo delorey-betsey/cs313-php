@@ -13,11 +13,9 @@ if(isset($_SESSION["selections"]))
 
 <!--  inventory  -->
 <?php
-    if(empty($items)) 
+    echo("All proceeds benefit Dane County Humane Society.");
+    if(!empty($items)) 
         {
-        echo("All proceeds benefit Dane County Humane Society.");
-        } 
-        else {
             $N = count($items);
             echo("$N item(s) added to cart: ");
             echo "<br />";
@@ -89,23 +87,21 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="grouping" >  
             <?php
                 foreach ($inventory as $item)
+                foreach ($cats as $cat)
                 {
                     echo "<div class='art'>";
 
-                        $artid      = $item['artid'];
-                        $artist     = $item['displayname'];
-                        $brief      = $item['brief'];
-                        $price      = $item['price'];
-                        $thumb      = $item['thumb'];
-                        $fullsize   = $item['fullsize'];
+                        $artid      = $cat['artid'];
+                        $artist     = $cat['displayname'];
+                        $brief      = $cat['brief'];
+                        $price      = $cat['price'];
+                        $thumb      = $cat['thumb'];
+                        $fullsize   = $cat['fullsize'];
                     
-                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";  
-                        
+                        echo "<input class='largerCheckbox' type='checkbox' id='item1' name='items[]' value='item $artid'>";                          
                         echo "<label for=artid>#$artid - $price</label>"; 
-
                         echo "<div><a  class='item' <a href=$fullsize><img src=$thumb alt= $brief></a></div>";   
                         echo "(Click thumbnail for fullsize image.)";
-
                         echo "<div><br>Item Number: #$artid  </div>";
                         echo "<div>Created by:  $artist </div>";
                         echo "<div>Description: $brief  </div>";
