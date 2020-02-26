@@ -77,9 +77,9 @@ $dogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- COMMENT:  DOG ARTWORK     -->
         <form method="post" action="">
 
-        <div class="tanbackground">
+        <!-- <div class="tanbackground">
                 <button type="submit" name="addbutton" value="addbutton"><img class="button" src="images/addbutton.jpg" alt="addbutton"></button>      
-       </div>
+       </div> -->
         
         <div class="grouping" >  
             <?php
