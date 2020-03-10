@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ../partials/head %>
+</head>
+<body class="container">
+
+	<header>
+		<% include ../partials/header %>
+	</header>
+
+	<main>
+		<div class="jumbotron">
+			<h1>This IS Triathlon</h1>
+			<h2>The Truth:</h2>
+			<p><%= tagline %></p>
+			<h2>The Goal:</h2>
+
+			<ul>
+				<% workouts.forEach(function(workout) { %>
+					<li><%= workout.name %> - <%= workout.fitlevel %></li>
+				<% }); %>
+			</ul>
+			<h2>Welcome!</h2>
+		</div>
+	</main>
+
+	<footer>
+		<% include ../partials/footer %>
+	</footer>
+	
+</body>
+</html>

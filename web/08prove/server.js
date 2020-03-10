@@ -1,8 +1,5 @@
 var http = require('http');
 
-
-
-
 function sayHello(req,res) {
 	console.log("Received a request for: " + req.url);
     var request = req.url;
